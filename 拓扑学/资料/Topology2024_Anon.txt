@@ -1,0 +1,1180 @@
+--- Page 1 ---
+Yichao Huang
+Introduction to Topology:
+Exercises
+September 23, 2026
+Beijing Institute of Technology
+
+--- Page 2 ---
+2
+
+--- Page 3 ---
+Contents
+1 Topological Spaces and Continuous Functions . . . . . . . . . . . . . . . . . . . . . 5
+1.1 Warm-ups . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .5
+1.2 Main exercise: subspace topology. . . . . . . . . . . . . . . . . . . . . . . . . . . . .6
+1.3 A little more: metric space exercises. . . . . . . . . . . . . . . . . . . . . . . . . . .7
+1.4 Colles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .8
+2 Connectedness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.1 Warm-ups . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .11
+2.2 Main exercise: arithmetic progression topologies. . . . . . . . . . . . . . . .11
+2.3 A little more: metric space exercises. . . . . . . . . . . . . . . . . . . . . . . . . . .13
+2.4 Colles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .13
+3 Compactness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.1 Warm-ups . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .15
+3.2 Main exercise 1: the Hausdorff distance. . . . . . . . . . . . . . . . . . . . . . . .16
+3.3 Main exercise 2: the de Bruijn-Erdős theorem. . . . . . . . . . . . . . . . . . .16
+3.4 A little more: metric space exercises. . . . . . . . . . . . . . . . . . . . . . . . . . .17
+3.5 Colles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .18
+3
+
+--- Page 4 ---
+4 Completeness and Baire Category . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4.1 Warm-ups . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .21
+4.2 Main exercise 1: two convergence arguments. . . . . . . . . . . . . . . . . . . .22
+4.3 Main exercise 2: Banach’s fixed point theorem. . . . . . . . . . . . . . . . . .22
+4.4 A little more: metric space exercises. . . . . . . . . . . . . . . . . . . . . . . . . . .23
+4.5 Colles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .24
+5 Constructions of Topology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+5.1 Colles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .30
+6 More Colles exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+7 Revision exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+7.1 Compactness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .37
+7.2 Connectedness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .38
+7.3 Completeness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .39
+7.4 Baire category theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .40
+8 Solutions to revision exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+8.1 Compactness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .41
+8.2 Connectedness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .43
+8.3 Completeness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .44
+8.4 Baire category theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .46
+8.5 More exercises from the web. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .47
+8.6 More exercises from textbooks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .47
+4
+
+--- Page 5 ---
+1
+Topological Spaces and Continuous Functions
+1.1 Warm-ups
+Q1. Consider the Sierpiński space with𝑋 = {0, 1} and O = {∅, {0}, {0, 1}}.
+1. Calculate the closure of{1}.
+2. Is (𝑋, O) Hausdorff?
+3. Consider O′ = {∅, {1}, {0, 1}}. Show thatO and O′ are homeomorphic by ex-
+hibiting a continuous function𝑓 : (𝑋, O) → ( 𝑋, O′).
+4. Show that all sequences in(𝑋, O) converge to1.
+5. Describe the set of sequences in(𝑋, O) that converge to0.
+6. Exhibit a sequence that converges both to0 and 1 in (𝑋, O).
+7. Show that there are only three continuous functions from(𝑋, O) to itself.
+Q2. Let 𝑓 :𝑋 →𝑌 be a function and suppose that𝑌 is endowed with a topologyO.
+Show that if𝑓 −1(O) = {𝑓 −1 (𝑂) ⊂ 𝑋 ; 𝑂 ∈ O} , then𝑓 −1(O) is a topology on𝑋.
+Show that this is the coarsest topology on𝑋 that makes the function𝑓 continuous.
+The above topology is called the initial topology on𝑋 induced by𝑓.
+Q3. Show that given a family of topologies{(𝑋, O𝛼)}𝛼∈ A, their intersection, in
+which𝐴 ⊂ 𝑋 is open if and only if it is open in allO𝛼, is still a topology. Argue that
+replacing the intersection by the union would not work.
+Q4. Show that the following are equivalent definitions for “O1 is finer thanO2”:
+5
+
+--- Page 6 ---
+1. Every closed set ofO2 is closed inO1;
+2. The identity map(𝐸, O1) → (𝐸, O2) is continuous;
+3. For any𝑥 ∈ 𝑋, a neighborhood of𝑥 in O2 is a neighborhood of𝑥 in O1.
+Q5. Suppose that (𝑋, O1) is finer than(𝑋, O2). Show that:
+1. If O2 is Hausdorff, thenO1 is also Hausdorff;
+2. If O1 is separable (i.e. has a countable dense subset), thenO2 is also separable;
+3. For all𝐴 ⊂ 𝑋, its closure inO1 is contained in its closure inO2, and its interior
+in O2 is included in its interior inO1.
+Q6.Showthat 𝑋 isHausdorffifandonlyifthediagonal Δ = {(𝑥,𝑥 ) |𝑥 ∈ 𝑋 } ⊂ 𝑋 ×𝑋
+is closed in the product topology of𝑋 ×𝑋.
+1.2 Main exercise: subspace topology
+Let (𝑋, O𝑋) be a topological space and𝐴 ⊂ 𝑋. Denote by𝜄 : 𝐴 → 𝑋 the inclusion
+map. We define the subspace topology of𝐴 induced by the topology of𝑋 by declar-
+ing that𝑈 ⊂ 𝐴 is open if and only if there exists some open set𝑂 of 𝑋 such that
+𝑈 =𝑂 ∩𝐴.
+Q1. Show that𝐹 ⊂ 𝐴 is closed in𝐴 if and only if there exists some closed set𝐹′ of
+𝑋 such that𝐹 =𝐹′ ∩𝐴.
+Q2. Show that ifB is a basis of𝑋, then{𝑂 ∩𝐴 |𝑂 ∈ B} is a basis of𝐴.
+Q3. Show that if𝐴 is open (resp. closed) in𝑋 if and only if all open (resp. closed)
+sets𝑈 of𝐴 is open (resp. closed) in𝑋.
+Q4. Show that the inclusion map𝜄 : 𝐴 → 𝑋 is continuous and that the subspace
+topologyisthesameastheweak/initialtopologyinducedby 𝜄(seeanexercisebefore
+for the weak topology).
+Q5. If we have a sequence of subspaces𝐴 ⊂ 𝐵 ⊂ 𝑋 (𝐵 is also equipped with the
+subspace topology induced by𝑋), then the closure of𝐴 in 𝐵 is the intersection of
+the closure of𝐴 in𝑋 with𝐵.
+6
+
+--- Page 7 ---
+Q6. Show that if𝐴 is the closure of𝐴 in𝑋, then𝐴 is dense in𝐴 (with the induced
+topology of𝐴 on𝐴).
+Q7. Show that if𝑋 is a metric space with distance𝑑, then the subspace topology on
+𝐴 is also a metric topological space with the restriction of𝑑 to𝐴.
+Q8.If𝑋 is a Hausdorff metric space, then𝐴 with the induced topology is also Haus-
+dorff.
+*Q9. Give an example where the subspace𝐴 ⊂ 𝑋 is Hausdorff but two points in𝐴
+do not have disjoint neighborhoods in𝑋. You can consider𝑌 =𝑋 ∪ {𝜔} where𝜔 is
+an extra point, and any non-empty open set in𝑌 is of the form𝑂 ∪ {𝜔} for𝑂 open
+in𝑋.
+1.3 A little more: metric space exercises
+Q1. Show the following theorem.
+Every open subset𝑈 of Rcan be uniquely expressed as a countable union of disjoint
+open intervals. The end points of the intervals do not belong to𝑈.
+Hint: you can consider the maximal open interval𝐼𝑥 ⊂𝑈 containing a point𝑥 ∈𝑈.
+Q2. Recall that a distance𝑑 on a set𝑋 is a function𝑑 :𝑋 ×𝑋 → R≥0 such that¹
+1. Diagonale condition:𝑑 (𝑥,𝑥 ) = 0 for all𝑥 ∈ 𝑋;
+2. Separation condition: if𝑑 (𝑥,𝑦 ) = 0 then𝑥 =𝑦;
+3. Symmetry condition:𝑑 (𝑥,𝑦 ) =𝑑 (𝑦,𝑥 ) for all𝑥,𝑦 ∈ 𝑋;
+4. Triangular inequality:𝑑 (𝑥,𝑦 ) ≤ 𝑑 (𝑥,𝑦 ) +𝑑 (𝑦,𝑧 ) for all𝑥,𝑦,𝑧 ∈ 𝑋.
+We call(𝑋,𝑑 ) a metric space. An ultra-metric is a distance where we replace con-
+dition 4 by the stronger condition that
+∀𝑥,𝑦,𝑧 ∈ 𝑋, 𝑑 (𝑥,𝑧 ) ≤ max(𝑑 (𝑥,𝑦 ),𝑑 (𝑦,𝑧 )).
+For example the usual𝑝-adic metric is ultrametric.
+Let𝑑 by an ultrametric and show the following:
+¹ A pseudo-distance is such that conditions1, 2, 4 are verified: we will not use this in this exercise.
+7
+
+--- Page 8 ---
+1. If𝑑 (𝑥,𝑦 ) ≠𝑑 (𝑥,𝑧 ) then𝑑 (𝑦,𝑧 ) = max(𝑑 (𝑥,𝑦 ),𝑑 (𝑥,𝑧 )).
+2. Every point in an open ball is the center of this ball.
+3. Every point in an open ball is the center of the sphere defined by this ball.
+4. For any two open balls, they are either disjoint, or one is contained in the other.
+Q3. Suppose that(𝑋,𝑑 ) is a metric space. Show that𝑑∗(𝑥,𝑦 ) = min(𝑑 (𝑥,𝑦 ), 1) and
+𝑑∗∗(𝑥,𝑦 ) = 𝑑 (𝑥,𝑦 )
+1+𝑑 (𝑥,𝑦 ) are both metrics and they induce the same topology as𝑑.
+Note that the notion of boundedness depends on the choice of the metric, not on the
+topology.
+1.4 Colles
+C1. Usual metric topology ofR𝑛.
+Recall what is the usual metric topology ofR𝑛. Show that any union of open sets in
+R𝑛 is open. Show that intersections of open sets inR𝑛 might not be open.
+C2. Reciprocal image and union/intersection.
+Recallwhatisthereciprocalimageofafunction.Showthatthisoperationcommutes
+with the operations of union and intersection. What about direct image?
+C3. Subspace of a vector space generated by a family of vectors.
+Recall what is the vector space generated by a family of vectors. Give an abstract
+construction using the stability of vector spaces under intersection, and a concrete
+construction using finite linear combination.
+C4. Closed sets inR.
+Show that a set𝐹 is closed inR under the usual metric topology if and only if all
+convergent sequences of𝐹 have their limit in𝐹.
+C5. Intersection of topologies.
+Recall that the intersection of a family of topologies on the same space𝑋 is still a
+topology. Recall what is the topology generated by a family of subsets of𝑋. Is there
+a concrete construction of this topology using finite intersections?
+8
+
+--- Page 9 ---
+C6. Initial topology.
+Show that if𝑓 : 𝑋 → (𝑌, O) is a map into a topological space𝑌, then the family of
+sets 𝑓 −1 (𝑂) with𝑂 ∈ O defines a topology on𝑋. Show that it is the most coarse
+topology on𝑋 making 𝑓 continuous: this is call the initial topology. Study the case
+where 𝑓 is an inclusion map, for example𝑓 : R → R2 with the Euclidean topology
+on R2. Can you do the other way and pushforward a topology on𝑋 to define the
+“final topology” on𝑌?
+C7. Cocountable topology.
+Let 𝑋 be a set. Show that the following is a topology: all non-trivial open sets are
+complement of some finite subset of𝑋. This is called the cofinite topology on𝑋.
+Show that the sequence{1, 2, 3, 4,... } in the cofinite topology onR converges to
+every point inR. Can you define the cocountable topology on𝑋? Now take𝑋 = R
+equippedwiththecocountabletopology,andconsider (−1, 1) ⊂ R.Showthat 𝐵 = R.
+Show that no sequence in(−1, 1) converges to2 ∈ R.
+C8. Zariski topology.
+Let K be a field,𝑛 ∈ N a non-negative integer, andA𝑛 (K) = K𝑛. A Zariski-closed
+set ofA𝑛 (K) is such that
+𝐹 = {𝑥 ∈ A𝑛 (K) ; ∀𝑖 ∈ 𝐼,𝑃 𝑖 (𝑥) = 0},
+where (𝑃𝑖)𝑖 ∈𝐼 is a family of polynomials onA𝑛 (K). Show that this indeed defines a
+topology (called of course the Zariski topology).
+Show that Zariski-open sets in R2 are dense in R2. Find the Zariski-closure of
+{( 0, 1
+𝑛 ) ; 𝑛 ≥ 0} ⊂ R2.
+There is a famous theorem of David Hilbert (known as Nullstellensatz) shows that
+any Zariski-closed set ofA𝑛 (K) is the commun zero set of afinitefamily of polyno-
+mials.
+C9. Basis of topology.
+Recall the definition of a basis of topology. Recall also the characterization thereof.
+What happens if any conditions is removed? Show that equivalence of the definition
+and the characterization.
+9
+
+--- Page 10 ---
+
+
+--- Page 11 ---
+2
+Connectedness
+2.1 Warm-ups
+Q1.Showthat Rand R2 havethesamecardinal,butarenothomeomorphic.Youcan
+consider the image ofR2 \ {0}.
+Q2. Prove that there is no continuous function𝑓 : R → R such that𝑓 (P) ⊂ Q and
+𝑓 (Q) ⊂ P (where P is the set of prime integers). You can consider𝑓 (R). Alterna-
+tively, consider the restriction to[0, 1] of 1
+1+|𝑓 |.
+Q3. Show that a connected space that is locally path connected is path connected.
+You can consider the “path-connected” component of a point.
+2.2 Main exercise: arithmetic progression topologies
+We study three arithmetic progression topologies on the setZ or the setZ>0. They
+are all obtained by taking as a basis a suitable collection of arithmetic progressions.
+Part A: the Furstenberg topology onZ
+Wedefineatopologyon Zbyusingthe(non-trivial)arithmeticprogressions 𝑆(𝑎,𝑏 ) =
+𝑎Z +𝑏 = {𝑎𝑛 +𝑏 |𝑛 ∈ Z} with𝑎 ≠ 0 as a basis. That is, a set onZ is open if and
+only if it is∅, Z or can be written as a union of arithmetic sequences𝑆(𝑎,𝑏 ).
+A1. Show that𝑈 ⊂ Z is open if and only if for any𝑥 ∈ 𝑈, there is some non-zero
+𝑎 ∈ Z such that𝑆(𝑎,𝑥 ) ⊂ 𝑈.
+11
+
+--- Page 12 ---
+A2. Show that this defines a topology onZ, i.e. verify the axioms for a topology.
+ThistopologyisknownastheFurstenbergtopologyon Zortheevenlyspacedinteger
+topology.
+A3. Show that a non-empty finite set inZ cannot be open. In particular,Z \ {−1, 1}
+is not closed.
+A4. Show that𝑆(𝑎,𝑏 ) is both open and closed (for𝑎 ≠ 0).
+A5. Show that the union over prime numbersÐ
+𝑝∈P𝑆(𝑝, 0) is Z \ {−1, 1}.
+A6. Show that there are infinitely many prime numbers.
+This is Furstenberg’s topological proof on the infiniteness of prime numbers.
+Part B: the Golomb topology and the Kirch topology onZ>0
+We define a topology onZ>0 by using the (non-trivial) arithmetic progressions𝑎N +
+𝑏 = {𝑎𝑛 +𝑏 | 𝑛 ∈ N} with𝑎,𝑏 relatively prime as a basis. Here the convention is
+that N = {0, 1, 2,... } ≠ Z>0.
+B1. Show that we can restrict the basis to the pairs with𝑏 < 𝑎and𝑏,𝑎 relatively
+prime.
+B2. Show that this defines indeed a topology onZ>0.
+This topology is known as the Golomb topology onZ>0 or the relative prime integer
+topology.
+Wedefineanothertopologyon Z>0 byusingthe(non-trivial)arithmeticprogressions
+𝑝N +𝑏 = {𝑝𝑛 +𝑏 |𝑛 ∈ N} with𝑝 prime and𝑝 not dividing𝑏 as a (pre)basis. Here
+the convention is thatN = {0, 1, 2,... } ≠ Z>0.
+B3. Show that we can restrict the basis to the pairs with𝑏 < 𝑝with the same condi-
+tions.
+B4. Show that this defines indeed a topology onZ>0.
+This topology is known as the Kirch topology onZ>0 or the prime integer topology.
+Part C: topological properties of arithmetic progression topologies
+This part explores the different topological properties of the above defined spaces.
+C1. Show that the Furstenberg topology is Hausdorff and regular. It is metrizable,
+but not completely metrizable. Indeed, it is homeomorphic to the rational numbers
+Q with the subspace topology inherited fromR.
+12
+
+--- Page 13 ---
+C2. Show that the Golomb topology and the Kirch topology are Hausdorff, but not
+regular.
+C3.ShowthattheFurstenbergtopologyistotallydisconnected,theGolombtopology
+isconnected,butnotlocallyconnectedandtheKirchtopologyisbothconnectedand
+locally connected.
+2.3 A little more: metric space exercises
+Q1. Show that a connected metric space with more than one point is uncountable.
+Q2. Show that the general linear group GL(𝑛, R) (that is, the group of𝑛 ×𝑛 real,
+invertible matrices) consists of two connected components: the one with matrices
+of positive determinant and the other of negative determinant. In particular, it is not
+connected. Show that in contrast, GL(𝑛, C) is connected.
+Q3. Show that the topologist’s sine curve is connected but not path-connected.
+2.4 Colles
+C1. Separable space.
+Recallthatatopologicalspace 𝑋 iscalledseparableifithasacountabledensesubset.
+Show that a topological space𝑋 with a countable basis is separable.
+Now considerR with basisB = {(𝑎,𝑏 ] ∈ R ; 𝑎 < 𝑏}. Show thatB is indeed a basis
+for some topologyOon R. Show thatOis separable, but it does not have a countable
+basis. Show thatO is not coming from a metric topology (i.e. not metrizable).
+C2. Fundamental system of neighborhoods.
+Recall what is a neighborhood of a point𝑥 or a subset𝐴 in some topological space
+𝑋. A fundamental system of neighborhoods of𝑥 (or of a subset𝐴) is a collectionP
+of neighborhood of𝑥 (or of the subset𝐴) such that every neighborhood of𝑥 (or of
+𝐴) contains some element ofP.
+Showthatinametricspace 𝑋,withany 𝑟𝑛 tendingto 0,𝐵(𝑥,𝑟𝑛)isafundamentalsys-
+tem of neighborhoods of𝑥. But if𝐴 is a subset and𝑉𝜖 (𝐴) = {𝑥 ∈ 𝑋 ; 𝑑 (𝑥,𝐴 ) <𝜖 },
+13
+
+--- Page 14 ---
+𝑉𝜖 (𝐴) is not necessarily a fundamental system of neighborhoods of𝐴. For example,
+consider𝐴 = {𝑥𝑦 = 1,𝑥 > 0} ⊂ R2 and𝑈 = {𝑥,𝑦 > 0} ⊂ R2.
+C3. Hausdorff condition.
+Recall what is a Hausdorff space, or𝑇2 space. Show that a metric space is always
+Hausdorff.
+Show that every Zariski open set ofA𝑛 (R) (or R𝑛) is open dense for the usual topol-
+ogy ofR𝑛. Show that the Zariski topology ofA𝑛 (R) is not Hausdorff for any𝑛> 0.
+The first Colle problem of this week has an example of a non-metrizable Hausdorff
+space.
+C4. Normal space.
+A topological space𝑋 is called normal if for any closed set𝐹 contained in an open
+set𝑉, there is some open set𝑈 such that𝐹 ⊂ 𝑈 ⊂ 𝑈 ⊂ 𝑉. Show that this is
+equivalent to saying that𝑋 is Hausdorff, and that any closed sets𝐹,𝐹 ′ of 𝑋 has
+disjoint neighborhoods. Show that a metric space is normal (you can first show that
+the function𝑓 :𝑥 →𝑑 (𝑥,𝐹 ) is continuous if𝐹 is closed).
+Continuing in this direction one can learn about the Urysohn extension theorems.
+C5. Product topology.
+(…)
+C6. Mixed barbecue.
+Consider the set[0, 1] ⊂ R and two other elements{0−, 0+} not in [0, 1]. Let𝑋 =
+{0−, 0+} ∪ ( 0, 1], and consider B (𝑥) = {(𝑥 − 1
+𝑛,𝑥 + 1
+𝑛 ) ∩ ( 0, 1] ; 𝑛 ∈ Z>0} for
+𝑥 ∈ ( 0, 1] and B (0±) = {{0±} ∪ ( 0, 1
+𝑛 ) ; 𝑛 ∈ Z>0}. Show thatB = ∪𝑥 ∈𝑋B (𝑥) is a
+basis for some topology on𝑋. Show that this topology is not Hausdorff. Show that
+0+ does not have a fundamental system of closed neighborhoods.
+C7. Universal property.
+Let 𝑋 be a topological space and𝑌 a subset of𝑋 with the natural inclusion map
+𝜄 :𝑌 → 𝑋. Show that the subspace topology on𝑌 is such that for any topological
+space𝑍 and 𝑓 : 𝑍 →𝑌, the map𝑓 is continuous if and only if𝜄 ◦ 𝑓 : 𝑍 → 𝑋 is
+continuous.
+14
+
+--- Page 15 ---
+3
+Compactness
+3.1 Warm-ups
+Q1. Show that {0, 1}[0,1] with the usual product topology is not sequentially com-
+pact.
+Q2. We say that a family of sets has the finite intersection property (FIP) if every
+finite subfamily has non-empty intersection. Show that the compactness of a space
+𝑋 isequivalenttothefollowing:everyfamily F ofclosedsubsetsin 𝑋 withthefinite
+intersection property hasÑ
+𝐹 ∈ F𝐹 ≠ ∅.
+Q3. Suppose that𝐴,𝐵 are disjoint closed sets in a metric space(𝑋,𝑑 ) and that𝐴 is
+compact. Show that𝑑 (𝐴,𝐵 ) > 0.
+Q4. Supposet (𝑋,𝑑 ) is a metric space with no isolated points. Prove that𝑋 is com-
+pact if and only if𝑑 (𝐴,𝐵 ) > 0 for any pair of closed disjoint subsets𝐴,𝐵 of𝑋.
+Q5. Consider C and a point at infinity{∞}. We denote this space bybC = C ∪ {∞}
+and define a topology on it by declaring that, for𝑈 ⊂ bC:
+• if ∞ ∉𝑈, then𝑈 is open if and only if it is open in the usual topology ofC;
+• if ∞ ∈ 𝑈, then𝑈 is open if and only if the complement of𝑈 ∩ C in C is compact
+in C.
+Show that the spacebC with the above-defined topology is compact.
+This is called the Alexandrov one-point compactification procedure, andbC is called
+the Riemann sphere (or the extended complex plane). It is advisable to search for a
+short picture or video before solving this exercise.
+15
+
+--- Page 16 ---
+3.2 Main exercise 1: the Hausdorff distance
+Let (𝑋,𝑑 ) be a metric space. We want to define a distance between any two (in fact,
+compact and we will see why below) subsets𝐴,𝐵 of𝑋.
+Q1. Show that the naive definition𝑑 (𝐴,𝐵 ) = inf𝑎∈𝐴,𝑏 ∈𝐵𝑑 (𝑎,𝑏 ) is not a distance in
+general.
+We now introduce the𝜖-neighborhood of a set𝐴 ⊂ 𝑋 defined as𝑈𝜖 (𝐴) = {𝑥 ∈
+𝑋 ; 𝑑 (𝑥,𝐴 ) <𝜖 }. Recall that the distance between a point𝑥 and a set𝐴 is𝑑 (𝑥,𝐴 ) =
+inf𝑎∈𝐴𝑑 (𝑥,𝑎 ).
+Q2. Show that for𝑟1,𝑟 2 > 0 and any𝐴 ⊂ 𝑋, we have𝑈𝑟1 (𝑈𝑟2 (𝐴)) ⊂ 𝑈𝑟1+𝑟2 (𝐴), but
+the converse is not true in general.
+We now define the Hausdorff distance between subsets𝐴,𝐵 ⊂ 𝑋 as 𝑑 (𝐴,𝐵 ) =
+inf{𝑟 >0 ; 𝐴 ⊂𝑈𝑟 (𝐵),𝐵 ⊂𝑈𝑟 (𝐴)}.
+Q3. Show that the Hausdorff distance is a pseudo-distance, i.e. it satisfies all the
+conditions for a distance except that𝑑 (𝐴,𝐵 ) = 0 does not necessarily imply that
+𝐴 =𝐵.
+Q4.Infact,showthatforall 𝐴 ⊂ 𝑋,𝑑 (𝐴,𝐴) = 0.If 𝐴,𝐵 areclosed,then 𝑑 (𝐴,𝐵 ) = 0
+implies𝐴 =𝐵.
+Q5. Show that if we restrict to the collectionK (𝑋) of compact subsets𝐴 ⊂ 𝑋, then
+the Hausdorff distance is an honest distance onK (𝑋).
+3.3 Main exercise 2: the de Bruijn-Erdős theorem
+An unoriented graph𝐺 is a pair(𝑉,𝐸 ) with a set of vertices𝑉 and a set of edges
+𝐸 ⊂ 𝑉 ×𝑉. We allow multi-sets, i.e. we allow several edges between two vertices
+𝑥,𝑦 ∈𝑉.
+A graph is finite if its set of edges𝐸 is finite.
+A subgraph e𝐺 = (e𝑉, e𝐸) ⊂ 𝐺 is such thate𝑉 =𝑉 and e𝐸 ⊂ 𝐸. Here we impose that
+the set of vertices are the same and we only “delete” edges.
+A coloring of𝐺 by𝑘 colors is a map𝑓 : 𝑉 → { 1,...,𝑘 } such that for any edge
+(𝑥,𝑦 ) ∈ 𝑉, 𝑓 (𝑥) ≠ 𝑓 (𝑦), i.e. any edge in𝐺 has extremities of different colors.
+16
+
+--- Page 17 ---
+Q1. Endow {1,...,𝑘 } with the discrete topology. Show that{1,...,𝑘 } is compact
+in this topology.
+Q2. Use Tychonoff’s theorem to show that the set of maps from𝑉 → { 1,...,𝑘 } is
+compact. We denote this set by𝑋.
+Foranysubset 𝐹 ⊂ 𝐸,wedefine 𝑋𝐹 = {𝑓 :𝑉 → { 1,...,𝑘 } ; 𝑓 is a coloring of(𝑉,𝐹 )}.
+Q3. If𝐹 = {(𝑥,𝑦 )} has only one edge, show that𝑋𝐹 is closed. You can write this as
+a finite union of closed sets.
+Q4. Show that for any𝐹 ⊂ 𝐸, show that𝑋𝐹 is closed. You can write this as an
+intersection of the closed sets defined in the previous question.
+We now suppose that we have a graph𝐺 such that any finite subgraph of𝐺 is 𝑘-
+colorable, i.e.𝑋𝐹 ≠ ∅ if𝐹 is finite.
+Consider thus the following collection of non-empty closed setsF = {𝑋𝐹 ; 𝐹 ⊂
+𝐸 is finite}.
+Q5. Show that any finite intersection of elements inF is non-empty.
+Q6. Use the compactness of𝑋 to show that the intersection of all elements inF is
+non-empty.
+Q7. Prove the theorem of de Bruijn-Erdős: if any finite subgraph of a graph𝐺 is𝑘-
+colorable, then𝐺 is colorable. This worksevenin the case where𝐺 has uncountably
+many vertices.
+3.4 A little more: metric space exercises
+Q1.Let𝑋 beacompactmetricspaceand {𝑢𝑛}𝑛≥0asequenceof 𝑋 with𝑑 (𝑢𝑛,𝑢𝑛+1) →
+0. Show that the set of accumulation points of{𝑢𝑛} is compact, then show that it is
+connected.
+Q2. Suppose 𝑋,𝑌 are metric spaces and𝑓 : 𝑋 →𝑌. Show that𝑓 is continuous if
+and only if the restriction of𝑓 to any compact set𝐾 ⊂ 𝑋 is continuous.
+Q3. Let (𝑋,𝑑 ) be a metric space and𝑓 : 𝑋 → 𝑋 be an isometry, i.e.𝑑 (𝑥,𝑦 ) =
+𝑑 (𝑓 (𝑥), 𝑓(𝑦)) for all𝑥,𝑦 ∈ 𝑋. Show that if𝑋 is compact, then𝑓 is bijective and is
+a homeomorphism. You can choose𝑎 ∉ 𝑓 (𝑋) and look at𝑑 (𝑓𝑛 (𝑎), 𝑓𝑚 (𝑎)).
+17
+
+--- Page 18 ---
+3.5 Colles
+C1. Simple connectedness.
+Consider the plane R2. A plane domain is an open, path connected subset ofR2.
+A plane domain is called simply connected if its complement is connected. If the
+complementofaplanedomainconsistsof 𝑛connectedcomponents,then 𝐺 iscalled
+𝑛-tuply connected.
+Show that a component𝐹 of the complement of a plane domain𝐺 is closed. Show
+that the complement of𝐹 is a simply connected domain. Show that the boundary
+of a𝑛-tuply connected domain consists of𝑛 connected components. (For the last
+question, you need the following lemma: […])
+Show that a𝑛-tuply connected domain can only be continuously mapped to another
+𝑛-tuply connected domain. Is the converse true (that there must exist a homeomor-
+phism between two𝑛-tuply connected domains)? Also Google Ahlfors’ five islands
+theorem.
+C2. Review of a proof.
+Recallthedefinitionofpath-connectedness.Recallthedefinitionofthedeletedcomb
+space,andrecalltheproofofitsnonpath-connectedness.Howmanypath-connected
+components there are in the deleted comb space?
+What if we now allow a path to be continuously parametrized by a function𝑓 :
+[0, ∞) → 𝑋? Does the same proof still hold? What about the other proof proposed
+in class with compactness?
+C3. Local properties.
+Let 𝑋 be a Hausdorff space. Show that𝑋 is locally compact, i.e. every point of𝑋
+has a compact basis of neighborhood, if and only if every point of𝑋 has a compact
+neighborhood.
+C4. ExamA, exo1
+C5. ExamB, exo2
+C6. Dimension and compactness.
+Show that the unit ball of any normedR-vector space is compact if and only if the
+dimension of this vector space is finite.
+C7. Dilatation of a compact.
+18
+
+--- Page 19 ---
+Let𝑋 be a compact subspace of some normed vector space (think ofR𝑛). Suppose
+that 𝑓 :𝑋 →𝑋 is a dilatation, i.e.∀𝑥,𝑦 ∈ 𝑋, |𝑓 (𝑦) − 𝑓 (𝑥)| ≥ | 𝑦 −𝑥|.
+Show that𝑓 is an isometry (hint: show that for all𝑎 ∈ 𝑋, the sequence𝑓𝑛 (𝑎) comes
+back infinitely often near𝑎). Show that𝑓 :𝑋 →𝑋 is a bijection.
+Show that a surjective1-Lipschitz function𝑔 :𝑋 →𝑋 is an isometry.
+C8. Fixed point theorem in a compact space.
+Let𝐾 be a compact subspace of some normed vector space (think ofR𝑛). Suppose
+that 𝑓 :𝐾 →𝐾 is strictly contracting, i.e.∀𝑥,𝑦 ∈𝐾,𝑥 ≠𝑦, |𝑓 (𝑦) − 𝑓 (𝑥)| < |𝑦 −𝑥|.
+Show that𝑓 has a unique fixed point in𝐾. You can consider the function𝑔 : 𝑥 ↦→
+|𝑓 (𝑥) − 𝑥|. Show that for all𝑎 ∈ 𝐾, the sequence𝑓𝑛 (𝑎) converges to this unique
+fixed point.
+C9. Two subsequential limits.
+Let 𝐾 be a compact subspace of some normed vector space (think ofR𝑛). Show
+that a sequence of𝐾 converges in𝐾 if and only if this sequence has one unique
+subsequential limit.
+Let 𝑓 : 𝐾 → 𝐾 be a continuous map and consider the sequence𝑓𝑛 (𝑥) for some
+𝑥 ∈ 𝐾. Show that if this sequence has exactly two subsequential limits𝑧0,𝑧 1, then
+for any neighborhoods𝑉0,𝑉1 of respectively𝑧0,𝑧 1, the sequence is eventually in
+𝑉0 ∪𝑉1.
+Show that𝑓 (𝑧0) = 𝑧1, 𝑓(𝑧1) = 𝑧0 and that the subsequences𝑓 2𝑘 (𝑥) and 𝑓 2𝑘+1 (𝑥)
+converge, one to𝑧0 and the other to𝑧1.
+19
+
+--- Page 20 ---
+
+
+--- Page 21 ---
+4
+Completeness and Baire Category
+4.1 Warm-ups
+Q1. Show that in the product topology on Î
+𝑖 ∈𝐼𝑋𝑖, the projection maps 𝑝𝑘 :Î
+𝑖 ∈𝐼𝑋𝑖 →𝑋𝑘 are all open (i.e. they map open sets to open sets). Show that they are
+not closed in general.
+Show that the converse to the statement on openness is not true: if𝑊 ⊂ Î
+𝑖 ∈𝐼𝑋𝑖
+such that all𝑝𝑖 (𝑊) are open, it does not imply that𝑊 is open.
+To find counter-examples, you can considerR2 with some points removed.
+Q2. Suppose 𝐸 = R𝑛 with the usual topology. If𝐾 is a compact of𝐸 and 𝐹 is a
+closed set of𝐸, show that there exists𝑥 ∈𝐾 and𝑦 ∈𝐹 such that𝑑 (𝐾,𝐹 ) =𝑑 (𝑥,𝑦 ).
+Show that this is not true if we replace𝐸 by𝑙∞. You can consider the set𝐹 = {( 1 +
+2−𝑛)𝑒𝑛}𝑛≥0, where𝑒𝑛 is the sequence with1 at position𝑛 and 0 elsewhere.
+Q3. We use the Baire category theorem to construct a dense family of functions
+𝑓 : R → R which are continuous but nowhere derivable. You are allowed to find
+hints on the internet for this exercise.
+Q4. Take two metric spaces𝐸,𝐹 and 𝑓 : 𝐸 → 𝐹 an injective function. Show that
+𝑓 is continuous if and only if for any compact𝐾 ⊂ 𝐸, 𝑓 (𝐸) is compact in𝐹. Show
+that this is not necessarily true if𝑓 is not injective.
+21
+
+--- Page 22 ---
+4.2 Main exercise 1: two convergence arguments
+Thefirstisthe“diagonalsequencetrick”.Take 𝑓𝑛 (𝑚) asequenceoffunctionsonthe
+positive integers that is uniformly bounded, i.e.∃𝐶, ∀𝑛,𝑚, |𝑓𝑛 (𝑚)| ≤ 𝐶.
+Q1.Showthatthesequence {𝑓𝑛 (1)}𝑛≥0hasaconvergentsubsequence {𝑓𝑛1 (𝑖) (1)}𝑖 ≥0.
+Q2. Show that you can find successively subsequences{𝑓𝑛𝑘 (𝑖) (𝑚)}𝑖 ≥0 such that
+𝑓𝑛𝑘+1 (𝑖) is a subsequence of𝑓𝑛𝑘 (𝑖) and that𝑓𝑛𝑘 (𝑖) (𝑘) converges as𝑖 → ∞.
+Q3. Show that there is a subsequence𝑓𝑛𝑖 (𝑚) so that for each𝑚, 𝑓𝑛𝑖 (𝑚) converges
+as𝑖 → ∞. You can consider the sequence𝑛𝑘 (𝑘).
+The second is the “𝜖/3 trick”. We review the proof that the uniform limit of a se-
+quence of continuous functions is continuous. Let𝐶 [𝑎,𝑏 ] be the continuous real
+functions on [𝑎,𝑏 ] with the metric𝑑 (𝑓,𝑔 ) = sup𝑥 ∈ [𝑎,𝑏 ] |𝑓 (𝑥) − 𝑔(𝑥)|, induced by
+the norm ||𝑓 || ∞ =𝑑 (𝑓, 0).
+Q4. Let 𝑓𝑛 be a Cauchy sequence for the|| · || ∞ norm. Show that for each𝑥 ∈ [𝑎,𝑏 ],
+𝑓𝑛 (𝑥) converges to some𝑓 (𝑥) ∈ R.
+Suppose that𝑓 is the limit of a sequence of continuous functions𝑓𝑛. To show conti-
+nuity of𝑓, we fix𝑥 ∈ [𝑎,𝑏 ] and𝜖 >0 and in the following exercise, we find𝛿 >0
+such that|𝑥 −𝑦| <𝛿 implies |𝑓 (𝑥) − 𝑓 (𝑦)| <𝜖 .
+Q5. Show that you can pick𝑛 so that ||𝑓𝑛 − 𝑓 || ∞ < 𝜖/3. Show that you can pick
+𝛿 >0 so that|𝑥 −𝑦| <𝛿 implies |𝑓𝑛 (𝑥) − 𝑓𝑛 (𝑦)| <𝜖 /3. Show that𝑓 is continuous.
+Q6. Show that𝑓𝑛 → 𝑓 in𝐶 [𝑎,𝑏 ], so that𝐶 [𝑎,𝑏 ] is complete.
+4.3 Main exercise 2: Banach’s fixed point theorem
+Let (𝑋,𝑑 ) beanon-emptycompletemetricspaceandsupposethatamap 𝑓 :𝑋 →𝑋
+is strictly contracting, i.e.
+∃0< 𝑘 <1, ∀𝑥,𝑦 ∈ 𝑋,𝑑 (𝑓 (𝑥), 𝑓(𝑦)) ≤ 𝑘𝑑 (𝑥,𝑦 ).
+Q1. Show that𝑓 has a unique fixed point (i.e.𝑥 ∈ 𝑋 such that𝑓 (𝑥) =𝑥) in𝑋.
+The above exercise is Banach’s fixed point theorem. Below is a classical application
+of this theorem.
+22
+
+--- Page 23 ---
+Let (𝐸, | · |) be a complete normed vector space over a fieldK and 𝑓 : 𝐸 → 𝐸 is a
+continuous linear map.
+Q2. Show that there exists𝐾 >0 such that∀𝑥,𝑦 ∈𝐸, |𝑓 (𝑥) − 𝑓 (𝑦)| ≤ 𝐾 |𝑥 −𝑦|.
+Q3. Show that for any given𝜆 ∈ 𝐸, |𝜆| > 𝐾, the map with fixed𝑎 ∈ 𝐸 defined by
+𝑔𝑎 (𝑥) = 𝑎−𝑓 (𝑥 )
+𝜆 is contracting. Use Banach’s fixed point theorem to deduce that𝑔𝑎
+has a unique fixed point𝐽𝑎 ∈𝐸.
+Q4. Show that|𝐽 (𝑎) −𝐽 (𝑏)| ≤ 1
+|𝜆| −𝐾 |𝑎 −𝑏|.
+Q5. Conclude the following. For any continuous linear map𝑓 :𝐸 →𝐸, there exists
+𝐾 >0suchthatforany 𝜆 ∈𝐸, |𝜆| >𝐾 ,forany 𝑎 ∈𝐸,theequation 𝑓 (𝑥) −𝜆𝑥 =𝑎 on
+the variable𝑥 ∈𝐸 has a unique solution𝐽 (𝑎), and the map𝑎 →𝐽 (𝑎) is continuous.
+4.4 A little more: metric space exercises
+Q1. The following exercise is a baby version of the Arzelà-Ascoli theorem.
+Let 𝑀 ≥ 0 and {𝑓𝑛}𝑛≥0 a sequence of functions on[0, 1], of class C1, such that
+|𝑓 (𝑥)| + | 𝑓 ′ (𝑥)| ≤ 𝑀 for all𝑥 ∈ [ 0, 1]. We want to show that there is a subsequence
+of {𝑓𝑛} that converges uniformly on[0, 1].
+1. Use the diagonal argument to show that there is a subsequence of{𝑓𝑛} that con-
+verges pointwise on rational numbers of[0, 1].
+2. Denote the previous subsequence as{𝑔𝑛}. Use the𝜖/3 argument to show that
+{𝑔𝑛} coverges pointwise on all points of[0, 1].
+3. Denote the (pointwise) limit in the previous question as𝑔. Use again the𝜖/3
+argument to show that𝑔 is actually the uniform limit of{𝑔𝑛} on [0, 1].
+Q2. Let 𝐸 be a compact metric space and𝑓 : 𝐸 → 𝐸 be a continuous map with
+𝑑 (𝑓 (𝑥), 𝑓(𝑦)) ≥ 𝑑 (𝑥,𝑦 ) for all𝑥,𝑦 ∈𝐸.
+1. Show that𝑓 is actually an isometry, i.e.𝑑 (𝑓 (𝑥), 𝑓(𝑦)) =𝑑 (𝑥,𝑦 ) for all𝑥,𝑦 ∈𝐸.
+2. Show that the𝑓 above is actually bijective. You can consider subsequences of
+(𝑥𝑛,𝑦𝑛) = (𝑓𝑛 (𝑥), 𝑓𝑛 (𝑦)).
+3. Finally, show that if𝑔 : 𝐸 → 𝐸 is continuous bijective and𝑑 (𝑔(𝑥),𝑔 (𝑦)) ≤
+𝑑 (𝑥,𝑦 ) for all𝑥,𝑦 ∈𝐸, then𝑔 is again an isometry.
+23
+
+--- Page 24 ---
+Q3. Use the Baire category theorem to show that if a sequence of continuous func-
+tions 𝑓𝑛 : [0, 1] → R converges pointwise to𝑓 : [0, 1] → R, then 𝑓 cannot be
+everywhere discontinuous.
+Q4. Show that a normed vector space is complet if and only if all absolutely conver-
+gent series are convergent.
+4.5 Colles
+C1. Sequence and metric space.
+ShowthatthelimitofasequenceinaHausdorffspaceisunique.Showthatinametric
+space, the limit points of a sequence are the subsequential limits. What happens if
+the space is not a metric space?
+C2. Sequence, metric space and continuity.
+Show that for𝑓 : 𝑋 →𝑌 between metric spaces, the function is continuous if and
+only if for any convergent sequence in𝑋, its image by𝑓 is a convergent sequence
+in𝑌. Which parts of the proof use the metric space structure? Can you relax some
+assumptions?
+C3. Connectedness and continuous function.
+Show that a space𝑋 is connected if and only if all continuous functions𝑓 : 𝑋 →
+{0, 1} with the discrete topology at the target space are constant.
+Considertwoconnectedmetricspaces 𝐴,𝐵 ,andlet 𝑋,𝑌 bepropersubsetsofrespec-
+tively𝐴,𝐵 . Show that𝐶 = (𝐴 ×𝐵) \ (𝑋 ×𝑌 ) is a connected subset of𝐴 ×𝐵.
+C4. Connectedness and frontier.
+Let𝐸 be a connected metric space and𝐹 a closed set of𝐸. Show that if the frontier
+of𝐹 is connected, then𝐹 is connected. You can first show that the restriction of a
+continuous function is continuous. Give a counterexample in the case where𝐹 is not
+supposed closed.
+C5. Chained space.
+We say that a metric space𝑋 is𝜖-chained if for all𝑎,𝑏 ∈ 𝑋, we can find a finite
+sequenceofpoints 𝑥𝑖 ∈ 𝑋 with𝑥0 =𝑎,𝑥𝑛 =𝑏 and |𝑥𝑖 −𝑥𝑖+1| <𝜖 forall 0 ≤𝑖 ≤𝑛−1.
+We say that𝑋 is well-chained if𝑋 is𝜖-chained for all𝜖 >0.
+24
+
+--- Page 25 ---
+Show that if𝑋 is connected, then𝑋 is well-chained. Show that if𝑋 is compact and
+well-chained, then𝑋 is connected. Find an example of a well-chained space which
+is not connected.
+C6. Fixed point and connectedness.
+Let 𝑋 be a metric space. Suppose that all continuous functions𝑓 : 𝑋 → 𝑋 have a
+fixed point. Show that𝑋 is connected.
+Nowsupposethat 𝑋 iscompactandconnected.Isittruethatallfunctions 𝑓 :𝑋 →𝑋
+has a fixed point?
+C7. Exactly one accumulation point.
+Let 𝑓 : R𝑛 → R𝑛 becontinuous,andsupposethatsomesequence 𝑓𝑛 (𝑥0) hasexactly
+one accumulation point. Show that this sequence converges.
+C8. Isometry and compacity (and Lebesgue number).
+Consider a non-empty compact space𝐾 ⊂ R𝑛 and𝜖 > 0. We say that𝐴 ⊂ 𝐾 is𝜖-
+separated if for all𝑥,𝑦 ∈ 𝐴,𝑥 ≠𝑦 implies |𝑥 −𝑦| >𝜖 . Show that there is some finite
+interger𝑀 (𝜖) such that all subsets𝐴 ⊂ 𝐾 that is𝜖-separated has at most cardinal
+𝑀 (𝜖).
+Suppose that𝑓 :𝐾 →𝐾 is an isometry. Show that𝑓 is surjective.
+C9. Neighborhood of a dense set.
+Is it true that any neighborhood of a dense set in𝑋 covers𝑋? You can consider the
+example of∪𝐵(𝑝
+𝑞, 1
+𝑞𝑘 ) for 𝑝
+𝑞 ∈ Q and𝑘 large enough.
+C10. Sum of closed sets.
+Let𝐸 = R𝑛 and𝐴,𝐵 ⊂ 𝐸. If𝐴 is compact and𝐵 closed, show that𝐴 +𝐵 is closed.
+If𝐴,𝐵 are closed, show that𝐴 +𝐵 is not necessarily closed.
+25
+
+--- Page 26 ---
+
+
+--- Page 27 ---
+5
+Constructions of Topology
+Nearly all the exercises are taken from the lecture notes of Paulin.
+Q1. Let𝑋 be a topological space. Show that the following are equivalent:
+1. 𝑋 has the discret topology;
+2. 𝑋 has the weak (final) topology induced by the family of{𝑥}𝑥 ∈𝑋;
+3. The canonical map from the disjoint sumÝ
+𝑥 ∈𝑋{𝑥} to𝑋 is a homeomorphism.
+Q2. Suppose that if𝑋𝑖 are topological spaces with𝑋𝑖 ⊂ 𝑋𝑖+1 with 𝑋 = ∪∞
+𝑖=1𝑋𝑖.
+Suppose that for each𝑖, 𝑋𝑖 is closed in𝑋𝑖+1 and that the topology of𝑋𝑖 is the sub-
+space topology induced by the topology on𝑋𝑖+1. Then for each𝑖, the topology on
+𝑋𝑖 coincides with the subspace topology induced by the weak (final) topology on𝑋,
+where the weak topology on𝑋 is induced by the family𝑋𝑖. Furthermore, show that
+each𝑋𝑖 is closed in𝑋.
+Q3. Let𝑋 be a topological space and𝜋 :𝑋 →𝑌 a quotient map. Let𝑌 be equipped
+with the quotient topology induced by𝜋.
+1. Show that if𝑋 is connected, then𝑌 is connected.
+2. Show that if𝑋 is path connected, then𝑌 is path connected.
+3. Show that if𝜋 is an open map and𝑋 is locally connected (resp. path connected),
+then𝑌 is connected (resp. path connected).
+Q4. (Equivalence relation generated by a binary relation) Let𝑋 be a set andR a
+relation on𝑋 × 𝑋, not necessarily an equivalence relation. In general, it is just a
+27
+
+--- Page 28 ---
+subset ofR ⊂ 𝑋 ×𝑋 where𝑥R𝑦 if and only if(𝑥,𝑦 ) ∈ R . Notice that𝑥R𝑦 does not
+imply𝑦R𝑥 in general.
+Show that the following definition is well-posed: there exists a unique, smallest
+equivalence relation ∼ containing R (in the sense of subsets of𝑋 ×𝑋), called the
+equivalence relation generated by the relationR. You can first show that the inter-
+section of a family of equivalence relations is still an equivalence relation.
+Q5. (Quotient distance of a pseudo-distance) Recall that a pseudo-distance𝑑 is al-
+most a distance without the requirement that𝑑 (𝑥,𝑦 ) = 0 implies𝑥 = 𝑦. A pseudo-
+distance space(𝑋,𝑑 ) also has a topology with the basis of open balls𝐵(𝑥,𝜖 ) in the
+pseudo-distance𝑑.
+Wecandefineanequivalencerelation ∼bythat𝑥 ∼𝑦ifandonlyif 𝑑 (𝑥,𝑦 ) = 0.Show
+that this is indeed an equivalence relation, and that the quotient space𝑋/∼ can be
+equipped with a distance𝑑′ such that𝑑′ ( [𝑥], [𝑦]) =𝑑 (𝑥,𝑦 ) for any𝑥,𝑦 . Check that
+the above definition of𝑑′ is well-posed.
+Showthatthetopologicalspaces (𝑋/∼,𝑑 ′) (asametricspace)and 𝑋/∼asaquotient
+space are the same. Show that if𝐹 is any Hausdorff space and𝑓 : 𝑋 → 𝐹 is
+continuous, then 𝑓 factorizes through𝑋/∼, i.e. there exists𝑓 ′ : 𝑋/∼→ 𝐹 such
+that 𝑓 = 𝑓 ′ ◦𝜋. We say that𝑋/∼ is the largest Hausdorff quotient of(𝑋,𝑑 ).
+Q6.Showthatarealorcomplextopologicalvectorspaceislocallyconvexifandonly
+if its topology is defined by a family of semi-norms. Show that in a real or complex
+topological vector space, the origin0 has a countable basis of convex neighborhood
+if and only if the topology is defined by a countable family of semi-norms.
+Q7.Let𝜋 : R2 → T2bethecanonicalprojectionand 𝛼 ∈ R∪{∞}.Let 𝐷 beastraight
+line of slope𝛼 in R2. Show that if𝛼 ∈ Q ∪ {∞}, then𝜋(𝐷) is homeomorphic to a
+circle. Show that if𝛼 ∉ Q ∪ {∞}, then𝜋(𝐷) is dense inT2 and𝜋 restricted to𝐷 is
+a continuous bijection between𝐷 and𝜋(𝐷) (but is it a homeomorphism?).
+Q8. Let𝜋 : R2 → T2 be the canonical projection and𝛼 ∈ R ∪ {∞}. Let ∼ be an
+equivalence relation onT2 such that𝑥′ ∼ 𝑦′ in T2 if and only if there are points
+𝑥,𝑦 ∈ R2 and a straight line{𝑥,𝑦 } ⊂ 𝐷 ⊂ R2 of slope𝛼 such that𝜋(𝑥) = 𝑥′ and
+𝜋(𝑦) = 𝑦′. Show that∼ is indeed an equivalence relation. Show that the quotient
+space T2/∼ is Hausdorff if and only if𝛼 ∈ Q, in which case show that the quotient
+space is homeomorphic to a circle. If𝛼 ∉ Q, show that the quotient spaceT2/∼
+comes with a trivial topology.
+Q9. (The cone) Consider the cone space𝐶𝑋 over a topological space𝑋 defined in
+the course. Show that the map from𝑋 to𝐶𝑋 defined as𝑥 ↦→ [( 𝑥, 0)] is a homeo-
+morphism onto its image, so that𝑋 can be identified as a subset of𝐶𝑋. Verify that
+if 𝑓 : 𝑋 →𝑌 is continuous, then𝐶𝑓 :𝐶𝑋 →𝐶𝑌 defined by[(𝑥,𝑡 )] ↦→ [( 𝑓 (𝑥),𝑡 )]
+is also continuous.
+28
+
+--- Page 29 ---
+Q10. (The suspension) Consider the sphereS𝑛 = {𝑥2
+1 +𝑥2
+2 + · · · +𝑥2
+𝑛+1 = 1} ⊂ R𝑛+1.
+Show that the suspension𝑆(S𝑛) is homeomorphic toS𝑛+1.
+Q11. (The crushing) Show that if𝐴 ⊂ 𝑋 is open (or closed), then the projection
+𝑋 → 𝑋/⟨𝐴⟩ restricted to𝑋 −𝐴 is a homeomorphism. Show that𝐶𝑋 /⟨𝑋⟩ and𝑆𝑋
+are homeomorphic (here we identify𝑋 with𝜋(𝑋 × {0}) ⊂ 𝐶𝑋).
+Q12. Let 𝑋 be a compact Hausdorff space. Show that the cone space𝐶𝑋 is home-
+omorphic to the one-point compactification of𝑋 × [ 0, 1). If𝐴 ⊂ 𝑋 is closed, show
+that𝑋/⟨𝐴⟩ is homeomorphic to the one-point compactification of𝑋 \𝐴.
+Q13.(The𝑛-dimensionaltorus)Recallthe 𝑛-dimensionaltorusdefinedinthecourse
+and the map
+𝜙 : [(𝑡1,...,𝑡 𝑛)] ↦→ ( 𝑒𝑖2𝜋𝑡1,...,𝑒 𝑖2𝜋𝑡𝑛 ).
+1. Show that𝜙 is continuous.
+2. Show thatT𝑛 is Hausdorff.
+3. Show that𝜙 is a homeomorphism.
+Q14. Let𝐸 be a topological vector space overK. Let𝐶 be a convex neighborhood
+of 0 and define the gauge function|| · || 𝐶 : 𝐸 → [ 0, ∞) by the formula||𝑥||𝐶 =
+inf𝑡> 0{ 1
+𝑡𝑥 ∈ 𝐶}. If {𝐶𝛼}𝛼∈ A is a family of convex subsets in𝐸 such that their
+intersection is a convex neighborhood of0, then show that
+|| · || ∩𝛼∈A𝐶𝛼 = sup
+𝛼∈ A
+|| · || 𝐶𝛼.
+Q15. Let 𝐸,𝐹,𝐺 be topological vector spaces over a normed fieldK. For all𝑓 ∈
+L (𝐸,𝐹 ), we can define the right composition by𝑓 from L (𝐹,𝐺 ) to L (𝐸,𝐺 ) by
+𝑔 ↦→ 𝑔 ◦ 𝑓. Show that the operator norm of the right composition by𝑓 is less or
+equal to the operator norm of𝑓. Show that the same conclusion holds for the left
+composition.
+Showthatthemapfrom 𝐸 to L (K,𝐸 ) definedby 𝑥 ↦→ {𝜑𝑥 :𝑡 ↦→𝑡𝑥 } isanisometric
+linear isomorphism.
+Q16. Show that if𝐸 is an infinite dimensional topological vector space, then the
+strong topology and the weak topology on𝐸 are not the same. Calculate the interior
+of the open unit ball of𝐸 in the weak topology. Calculate the closure of the unit
+sphere of𝐸 in the weak topology.
+Q17. Show that the weak-star topology is always Hausdorff.
+29
+
+--- Page 30 ---
+Q18. Let𝐸 be a normed topological vector space overR and𝐷 ⊂ 𝐸. Let𝐸 ∗ be the
+topological dual of𝐸, with the initial topology induced by the family of linear forms
+{𝜑𝑥 :𝐸 ∗ → R}𝑥 ∈𝐷. Show that this topology is coarser than the weak-star topology
+on 𝐸 ∗. Show that if𝐷 is dense in𝐸, then on all bounded sets in𝐸 ∗ (for the dual
+norm), the restriction of the above-defined topology and the weak-star topology are
+the same.
+5.1 Colles
+C1. Semi-norm topology.
+C2. Gauge function of a convex set.
+C3. Zariski-compact does not imply Zariski-closed.
+C4. One-point compactification.
+See Exercise 3.1.Q5 of Week 3.
+C5. Completion.
+Suppose that (𝑀,𝑑 ) is an incomplete metric space. Consider all Cauchy sequences
+{𝑥𝑛} with the equivalence relation that{𝑥𝑛} ∼ {𝑦𝑛} if lim𝑛→∞𝑑 (𝑥𝑛,𝑦𝑛) = 0. Let e𝑀
+be the family of equivalence classes of Cauchy sequences, with the distance induced
+by lim𝑛→∞𝑑 (𝑥𝑛,𝑦𝑛). Show thate𝑀 is complete, and that𝑀 is dense ine𝑀 under the
+inclusion map𝑥 ∈ 𝑀 ↦→ (𝑥,𝑥,... ) ∈ e𝑀.
+C6. Baire category theorem.
+RecallthestatementoftheBairecategorytheoreminacompletemetricspace.Show
+that the theorem is also true in a locally compact Hausdorff space.
+C7. Dense convex set.
+Showthatadenseconvexsetin R𝑛 is R𝑛.UsetheWeierstrasstheoremonthedensity
+of polynomial functions to show that this is wrong in infinite dimension.
+C8. Open balls in a Banach space.
+Supposethat 𝑋 = R𝑛.Supposethat Ωisopenboundedandnon-emptyin 𝑋,andthat
+for all𝑥,𝑦 ∈ Ω, there exists some open ball contained inΩ containing𝑥,𝑦 . Show
+that Ω is itself an open ball ofR𝑛. Find a counter-example whenΩ is not supposed
+bounded. Same exercise when𝑋 is any Banach space.
+30
+
+--- Page 31 ---
+C9. Example of Banach space I.
+C10. Example of Banach space II.
+C11. Example of a non-Banach space.
+Consider the space𝐿𝑝 ( [0, 1]) for 0< 𝑝 <1, i.e.
+C12. Equivalent of continuity and boundedness for linear transformations.
+Let𝑇 be a linear transformation between two normed linear spaces. The following
+are equivalent:
+1. 𝑇 is continuous at one point;
+2. 𝑇 is continuous at all points;
+3. 𝑇 is bounded.
+C13. Choice of a norm.
+Let𝑄 be a polynome ofR[𝑋]. Construct a norm overR[𝑋] such that the sequence
+{𝑋𝑛}𝑛≥0 converges to𝑄 in this norm.
+C14. Continuity of the composition.
+Consider the space𝐸 = 𝐶0 ( [𝑎,𝑏 ], R) with the || · || ∞ norm. Let𝜑 : R → R be
+continuous. Show that the map𝑓 ∈𝐸 ↦→𝜑 ◦ 𝑓 ∈𝐸 is continuous.
+C15. Not Baire.
+Let𝐸 be a normed vector space that is not Baire. Show that𝐸 is a countable union
+of nowhere dense closed sets.
+C16. Normed vector space proposition.
+C17. Quotient norm.
+C18. Connected frontier.
+Suppose that (𝐸,𝑑 ) is a connected metric space. Let𝐹 be closed in𝐸 such that𝜕𝐹
+is connected. Show that𝐹 is connected.
+31
+
+--- Page 32 ---
+
+
+--- Page 33 ---
+6
+More Colles exercises
+C1. Complement of a compact set.
+Show that the complement of a compact set in an infinite dimensional vector space
+is path-connected. Is this true for a finite dimensional vector space?
+C2. Global extremum. (HSH)
+Suppose that 𝑓 : R𝑛 → R is continuous with𝑛 ≥ 2. We suppose that𝑓 −1(𝑎) is
+compact for all𝑎 ∈ R. Show that𝑓 has a global extremum (either supremum or
+infimum). What happens when𝑛 = 1?
+C3. Hyperplan and closedness. (LZY)
+Let𝐸 be a normed vector space and𝐻 a hyperplane, that is𝐻 is of codimension1in
+𝐸. Show that𝐻 is the kernel of some linear form𝜑 :𝐸 → R. Show that𝐻 is closed
+if and only if𝜑 is continuous.
+Proof. The first question is a classic in linear algebra.
+One direction for the second question is clear using pullback of continuous map.
+For the other direction, suppose that𝐻 is closed and𝜑 is not continuous:𝜑 is thus
+not bounded, and we can find a sequence of|𝑥𝑛| = 1 such that |𝜑(𝑥𝑛)| → ∞ . Let
+𝑢 ∈ 𝐸 and define𝑢𝑛 ∈ 𝐻 by projecting𝑢 onto 𝐻 in the direction𝑥𝑛: concretely,
+define𝑢𝑛 = 𝑢 − 𝜑 (𝑢)
+𝜑 (𝑥𝑛 )𝑥𝑛 (check that𝜑(𝑢𝑛) = 0). Then |𝑢 −𝑢𝑛| = |𝜑 (𝑢) |
+|𝜑 (𝑥𝑛 ) | → 0,
+so that𝑢𝑛 converges to𝑢. Since𝐻 is supposed closed, we get that𝑢 ∈ 𝐻 so that
+𝜑(𝑢) = 0. But then this shows that𝜑 ≡ 0, which contradicts the assumption that𝜑
+is not continuous.
+C4. Hyperplan and complement.
+33
+
+--- Page 34 ---
+Let 𝐸 be a normed vector space and𝐻 a hyperplane. Show that𝐸 \ 𝐻 is path-
+connected if and only if𝐻 is closed.
+Proof. Let𝜑 be a linear form on𝐸 with𝐻 = ker𝜑. Then𝐻 − = 𝜑−1 (R<0),𝐻+ =
+𝜑−1(R>0) are convex, so path-connected. By the exercise above,𝐻 is closed if and
+only if𝜑 is continuous.
+If𝐻 is closed, there is no continuous path from𝐻 − to𝐻+ by the intermediate value
+theorem. Now suppose that𝐻 is not closed, so that𝜑 is not continuous. In this case,
+𝐻 =𝐸 (since𝐻 is a linear space that is strictly larger than𝐻 when𝐻 is not closed),
+and𝐻 is dense in𝐸. This is somewhat surprising since we are proving that𝐸 \𝐻 is
+path-connected. It suffices to continuously join two elements−𝑒 ∈ 𝐻 − and𝑒 ∈ 𝐻+,
+say with𝜑(𝑒) = 1. But𝜑−1 (1) = 𝑒 +𝐻 is dense in𝐸, so there exists a sequence
+{𝑥𝑛} ∈ 𝑒 +𝐻 whichconvergesto −𝑒,andwecansupposethat 𝑥1 =𝑒.Nowwedefine
+the path𝛾 : [0, 1] → 𝐸 in the following way:𝛾 connects𝑥𝑘+1 to𝑥𝑘 using a straight
+segment from time 1
+𝑘+1 to 1
+𝑘, and𝛾(0) = −𝑒. If we can show that𝛾 is continuous
+at 0, we are done since𝛾 is continuous on [0, 1] and 𝛾( [0, 1]) ∈ 𝐸 \𝐻 because
+𝜑(𝛾(𝑡)) = 1 for all𝑡 ∈ ( 0, 1] and𝜑(𝛾(0)) = −1.
+We now show that𝛾 is continuous at0: but this is bascially just the assumption that
+{𝑥𝑛} converges to−𝑒 (and some convexity argument). This completes the proof.
+C5. Easy consequence of the open mapping theorem.
+C6. Easy consequence of the Banach-Steinhaus theorem.
+C7. Easy consequence of the Banach-Schauder theorem.
+C8. Baire category exercise I.
+Let 𝑓 : R+ → R be a continuous map. Suppose that for all𝑥 ≥ 0, the sequence
+{𝑓 (𝑛𝑥)}𝑛≥0 converges to0. Show thatlim𝑥→∞ 𝑓 (𝑥) = 0.
+This exercise is sometimes known as Croft’s lemma.
+C9. Baire category exercise II.
+Let𝐸 be aR-vector space of dimension1 ≤ 𝑛 <∞, and suppose that{𝐹𝑘 }𝑘 ∈N is a
+sequence of𝑝-dimensional subvector spaces of𝐸.
+Show that∪𝑘 ∈N𝐹𝑘 ≠𝐸. Show that there exists some subspace𝑊 of𝐸 such that for
+all𝑘 ∈ N,𝑊 ⊕𝐹𝑘 =𝐸.
+C10. Baire category exercise III.
+Let 𝑓 : R+ → Rbe a continuous map. Suppose that for all𝜆 ≥ 0, lim𝑥→∞ 𝑓 (𝑥 +𝜆) −
+𝑓 (𝑥) = 0. Show that for all[𝑎,𝑏 ] ⊂ R+, this convergence is uniform in𝜆 ∈ [𝑎,𝑏 ].
+34
+
+--- Page 35 ---
+C11. Baire category exercise IV.
+Consider the spaceℓ𝑞 with 1<𝑞 < ∞. Thenℓ𝑞 ≠ ∪1<𝑝<𝑞ℓ𝑝.
+C12. Quotient topology.
+Check the equivalence of three definitions of the quotient topology.
+C13. Théorème de l’arbre et de l’écorse.
+Show this theorem from the course, but with the functional method.
+35
+
+--- Page 36 ---
+
+
+--- Page 37 ---
+7
+Revision exercises
+Here is a list of classical exercises from French oral exams. They are exclusively
+metric space exercises taken from the book “Les maths en tête” of Xavier Gourdon.
+7.1 Compactness
+In a metric space topology course one usually starts with compactness…
+Let (𝐸,𝑑 ) beametricspaceand 𝑓 :𝐸 → Racontinuousmap.Supposethat
+𝑓 restricted to some compact set𝐾 ⊂ 𝐸 is injective and∀𝑥 ∈ 𝐾, ∃𝜖 > 0,
+such that𝑓 restricted to𝐵(𝑥,𝜖 ) is injective.
+Show that𝑓 is injective on some open setΩ containing𝐾.
+You can try to “enlarge”𝐾 a little by consider its1
+𝑛-flattening, and use an argument
+by contradiction.
+The following exercise is known as the Riesz theorem: the closed unit ball of an
+infinite dimensional normed vector space𝐸 is not compact.
+Let𝐸 be a real normed vector space of infinite dimension. Then the closed
+unit ball of𝐸 cannot be covered by finitely many open balls of radius1.
+37
+
+--- Page 38 ---
+Ifitcanbecoveredbyopenunitballswithcenter {𝑥𝑖 }1≤𝑖 ≤𝑛,consider 𝐹 = span(𝑥1,...,𝑥 𝑛)
+and use some element𝑦 ∈ 𝐸 \𝐹 to construct some𝑥0 in the unit sphere exactly at
+distance 1 to𝐹.
+Finally, a classical theorem that we didn’t have time to discuss in the main course. It
+is known under the name of the extension theorem, attributed to Tietze or Urysohn.
+If (𝐸,𝑑 ) is a metric space and 𝐴 ⊂ 𝐸 is a closed set with a function
+𝑓 : 𝐴 → R which is continuous and bounded. Then there exists some
+continuous function 𝑔 : 𝐸 → R, coinciding with 𝑓 on 𝐴, such that
+sup𝑥 ∈𝐸𝑔(𝑥) = sup𝑥 ∈𝐴 𝑓 (𝑥) and inf𝑥 ∈𝐸𝑔(𝑥) = inf𝑥 ∈𝐴 𝑓 (𝑥).
+You can always suppose thatsup𝑥 ∈𝐴 𝑓 (𝑥) = 2 and inf𝑥 ∈𝐴 𝑓 (𝑥) = 1, then consider
+the expression 1
+𝑑 (𝑥,𝐴 ) inf𝑦 ∈𝐴(𝑓 (𝑦)𝑑 (𝑥,𝑦 )) for𝑥 ∉ 𝐴.
+7.2 Connectedness
+Problems about connectedness are usually simple (because the definition is simple
+enough), and often go by contradiction.
+Suppose that (𝐸,𝑑 ) is a metric space, and that all applications𝑓 : 𝐸 → 𝐸
+has a fixed point. Show that𝐸 is connected.
+You can argue by contradiction and construct a special function.
+Remember that in a connected set, a locally constant function is globally constant.
+(GXR)
+Let 𝐾 ⊂ [ 0, 1]2 be closed. Suppose that for all𝑥 ∈ [ 0, 1], the set𝐾𝑥 =
+{𝑦 ∈ [ 0, 1] ; (𝑥,𝑦 ) ∈ 𝐾 } is a non-trivial interval. Show that𝐾 is connected.
+Furthermore, show that there exists𝑥 ∈ [ 0, 1] such that𝑥 ∈𝐾𝑥.
+38
+
+--- Page 39 ---
+You can show that all continuous maps𝑓 from𝐾 to {0, 1} is constant. Indeed, it is
+already constant if we fix the parameter𝑥, i.e. 𝑓 (𝑥, ·) : 𝐾𝑥 → { 0, 1} is constant,
+denoted𝑔(𝑥). You just need to show that𝑔 is locally constant.
+The intermediate value theorem is a classical exercise about connectedness.
+1. Let 𝑓 : [0, 1] → [ 0, 1] be a non-decreasing function (not necessarily
+continuous). Show that𝑓 has a fixed point.
+2. Let 𝑓 : [0, 1] → [ 0, 1] beacontinuousfunction(notnecessarilyincreas-
+ing). Show that𝑓 has a fixed point.
+3. Let 𝑓,𝑔 : [0, 1] → [ 0, 1] two continuous functions with𝑓 ◦𝑔 =𝑔 ◦ 𝑓.
+Show that for some𝑎 ∈ [ 0, 1] we have𝑓 (𝑎) =𝑔(𝑎).
+4. Let 𝑓 : R → R be a continuous map and suppose that𝑓 ◦ 𝑓 has a fixed
+point. Show that𝑓 has a fixed point.
+There are other ways to a fixed point theorem: especially in a complete space we
+have Banach’s fixed point theorem (see exercises in previous weeks).
+7.3 Completeness
+Since nobody has done this exercise, it is very crucial to know the statement.
+Show that a normed vector space is complet if and only if all absolutely
+convergent series are convergent.
+The trick is to use Cauchyness to construct a sequence that decreases exponentially
+fast, which ensures the absolute convergence.
+You can also show the following result with Baire category theorem (see below).
+Show that a normed vector space𝐸 with an infinite countable basis cannot
+be complet.
+39
+
+--- Page 40 ---
+Takeanormalizedbasis {𝑒𝑛}𝑛≥1of𝐸 with ||𝑒𝑛|| = 1.Consider 𝐹𝑛 = span{𝑒1,...,𝑒 𝑛},
+and define𝜆1 = 1/3 and𝜆𝑛+1 = 1
+3𝑑 (𝜆𝑛𝑒𝑛,𝐹𝑛−1). Show thatÍ𝜆𝑛𝑒𝑛 converges ab-
+solutely but cannot converge.
+7.4 Baire category theorem
+The following exercises are about the Baire category theorem.
+Show that a normed vector space𝐸 with an infinite countable basis cannot
+be complet.
+Take a basis{𝑒𝑛}𝑛≥1. You can consider𝐹𝑛 = span{𝑒1,...,𝑒 𝑛} and use the Baire
+category theorem.
+We now show that a derivative is continuous on a dense set.
+Let (𝐸,𝑑 ), (𝐹,𝛿 ) be two metric spaces with𝐸 complete. Suppose that a
+sequence of continuous functions𝑓𝑛 : 𝐸 → 𝐹 converges pointwise to a
+function 𝑓 :𝐸 →𝐹.
+1. For all𝜖 >0 and𝑛 ∈ N, define
+𝐹𝑛,𝜖 = {𝑥 ∈𝐸 ; ∀𝑝 ≥𝑛,𝛿 (𝑓𝑝 (𝑥), 𝑓𝑛 (𝑥)) ≤ 𝜖 }.
+UseBairetoshowthat Ω𝜖,theunionoftheinteriorsofall 𝐹𝑛,𝜖 for𝑛 ∈ N,
+is dense in𝐸.
+2. Show that for all𝑥0 ∈ Ω𝜖, there is some neighborhood𝑉 of𝑥0 such that
+for all𝑥 ∈𝑉,𝛿(𝑓 (𝑥0), 𝑓(𝑥)) ≤ 3𝜖.
+3. Show that the set of continuity of𝑓 is a dense.
+4. Showthatthesetofcontinuityofthederivative 𝑓 ′ : R → Rofaderivable
+function 𝑓 is dense inR.
+40
+
+--- Page 41 ---
+8
+Solutions to revision exercises
+8.1 Compactness
+Let (𝐸,𝑑 ) beametricspaceand 𝑓 :𝐸 → Racontinuousmap.Supposethat
+𝑓 restricted to some compact set𝐾 ⊂ 𝐸 is injective and∀𝑥 ∈ 𝐾, ∃𝜖 > 0,
+such that𝑓 restricted to𝐵(𝑥,𝜖 ) is injective.
+Show that𝑓 is injective on some open setΩ containing𝐾.
+Proof. Consider the1/𝑛-flattening (or1/𝑛-neighborhood of𝐾), defined as
+𝐾𝑛 = {𝑥 ∈𝐸 ; 𝑑 (𝑥,𝐾 ) < 1/𝑛}.
+For each integer𝑛 ≥ 1,𝐾𝑛 is an open set containing𝐾: we show that𝑓 is injective
+on some𝐾𝑛 for large enough𝑛.
+Suppose by contradiction that𝑓 is not injective for all𝑛 ≥ 1. That is, for all𝑛 ∈ N,
+there exists𝑥𝑛,𝑦𝑛 ∈ 𝐾𝑛 with𝑥𝑛 ≠ 𝑦𝑛 such that𝑓 (𝑥𝑛) = 𝑓 (𝑦𝑛). Then there exists
+𝑥′
+𝑛,𝑦 ′
+𝑛 ∈𝐾 such that𝑑 (𝑥𝑛,𝑥 ′
+𝑛) < 1/𝑛 and𝑑 (𝑦𝑛,𝑦 ′
+𝑛) < 1/𝑛. Since𝐾 ×𝐾 is compact,
+there is a convergence subsequence of(𝑥𝜑 (𝑛),𝑦 𝜑 (𝑛) ) towards some (𝑥,𝑦 ) ∈ 𝐾 2.
+Also,𝑥𝜑 (𝑛) →𝑥,𝑦𝜑 (𝑛) →𝑦 by the triangle inequality.
+Therefore by continuity of𝑓, we have that𝑓 (𝑥) = 𝑓 (𝑦) since 𝑓 (𝑥𝜑 (𝑛) ) = 𝑓 (𝑦𝜑 (𝑛) ),
+andwegetthat 𝑥 =𝑦 since 𝑓 isinjectiveon 𝐾.Butthenforthiscommonpoint 𝑥 =𝑦,
+𝐵(𝑥,𝜖 ) cannot be injective for any𝜖 > 0 since there is always some𝑥𝜑𝑛 ≠ 𝑦𝜑𝑛 in
+this ball with𝑓 (𝑥𝜑𝑛 ) = 𝑓 (𝑦𝜑𝑛 ).
+41
+
+--- Page 42 ---
+Let𝐸 be a real normed vector space of infinite dimension. Then the closed
+unit ball of𝐸 cannot be covered by finitely many open balls of radius1.
+Proof. Suppose that the closed unit ball of𝐸 can be covered by open unit balls
+with center {𝑥𝑖 }1≤𝑖 ≤𝑛. Consider𝐹 = span(𝑥1,...,𝑥 𝑛), which is finite-dimensional.
+Therefore, there exists some𝑦 ∈ 𝐸 \𝐹, and denote by𝑥 ∈ 𝐹 such that𝑑 (𝑦,𝐸 ) =
+𝑑 (𝑦,𝑥 ). The existence of𝑥 is obtained by considering𝐵(𝑦, |𝑦|) ∩ 𝐸, which is a
+bounded closed set in the finite dimensional normed vector space𝐸.
+Set𝑥0 = 𝑦−𝑥
+|𝑦−𝑥 | in the unit sphere of𝐸 exactly at distance1 to 𝐹. This is because
+𝑑 (𝑥0,𝐹 ) ≤ | 𝑥0| = 1 and for any𝑧 ∈𝐹,𝑑 (𝑥0,𝑧 ) ≥ 𝑑 (𝑥,𝐹 )
+|𝑥−𝑦 | ≥ 1.
+But then𝑥0 cannot be in any𝐵(𝑥𝑖, 1) since its distance to𝐹 is 1.
+In particular, we proved that𝐸 is not compact.
+If (𝐸,𝑑 ) is a metric space and 𝐴 ⊂ 𝐸 is a closed set with a function
+𝑓 : 𝐴 → R which is continuous and bounded. Then there exists some
+continuous function 𝑔 : 𝐸 → R, coinciding with 𝑓 on 𝐴, such that
+sup𝑥 ∈𝐸𝑔(𝑥) = sup𝑥 ∈𝐴 𝑓 (𝑥) and inf𝑥 ∈𝐸𝑔(𝑥) = inf𝑥 ∈𝐴 𝑓 (𝑥).
+Proof. Suppose thatsup𝑥 ∈𝐴 𝑓 (𝑥) = 2 and inf𝑥 ∈𝐴 𝑓 (𝑥) = 1, then consider the func-
+tion𝑔(𝑥) = 1
+𝑑 (𝑥,𝐴 ) inf𝑦 ∈𝐴(𝑓 (𝑦)𝑑 (𝑥,𝑦 )) for𝑥 ∉ 𝐴, and𝑔(𝑥) = 𝑓 (𝑥) for𝑥 ∈ 𝐴.
+The only non-trivial point to verify is that𝑔 is continuous.
+• If𝑥 is in the interior of𝐴, this is ok since𝑔 = 𝑓.
+• If𝑥 is in the complement of𝐴, this is ok by considering the variation of𝑔 on
+𝐵(𝑥,𝑑 (𝑥,𝐴 )/2) and use triangular inequality.
+• Suppose now𝑥 is on the boundary of𝐴 and let𝜖 >0. Since𝑓 is continuous at𝑦,
+thereexists𝑟 >0suchthatforall 𝑦 ∈ 𝐵(𝑥,𝑟 ) ∩𝐴, |𝑔(𝑦) −𝑔(𝑥)| = |𝑓 (𝑦) −𝑓 (𝑥)| <
+𝜖. Now suppose that𝑧 ∈ 𝐸 \𝐴 and |𝑧 −𝑥| <𝑟 /4, and show that|𝑔(𝑧) −𝑔(𝑥)| =
+|𝑔(𝑧) − 𝑓 (𝑥)| <𝜖 : this will show the continuity of𝑔 at𝑥.
+First,consider 𝐶 =𝐵(𝑧,𝑟 ) ∩𝐴andshowthatthe inf for𝑔(𝑧) istakeninside 𝐶,i.e.
+inf𝑦 ∈𝐴(𝑓 (𝑦)𝑑 (𝑧,𝑦 )) = inf𝑦 ∈𝐶 (𝑓 (𝑦)𝑑 (𝑧,𝑦 )).Thisisbecause inf𝑦 ∈𝐴(𝑓 (𝑦)𝑑 (𝑧,𝑦 )) ≤
+𝑓 (𝑥)𝑑 (𝑧,𝑥 ) = 𝑟
+4𝑓 (𝑥) ≤ 𝑟
+2, and if 𝑦 ∈ 𝐴 \ 𝐶, 𝑓 (𝑦)𝑑 (𝑧,𝑦 ) ≥ 𝑑 (𝑧,𝑦 ) ≥
+𝑑 (𝑥,𝑦 ) −𝑑 (𝑧,𝑥 ) = 3𝑟
+4 .
+42
+
+--- Page 43 ---
+Now on𝐶, (𝑓 (𝑥) −𝜖)𝑑 (𝑧,𝐴 ) ≤ inf𝑦 ∈𝐶 (𝑓 (𝑦)𝑑 (𝑧,𝑦 )) ≤ ( 𝑓 (𝑥) +𝜖)𝑑 (𝑧,𝐴 ), so we
+get𝑔(𝑥) −𝜖 ≤𝑔(𝑧) ≤ 𝑔(𝑥) +𝜖 for all𝑧 ∈ 𝐸 \𝐴 with |𝑧 −𝑥| ≤ 𝑟/4. This proves
+the continuity of𝑔 at the boundary of𝐴.
+8.2 Connectedness
+Suppose that (𝐸,𝑑 ) is a metric space, and that all maps𝑓 :𝐸 →𝐸 have a
+fixed point. Show that𝐸 is connected.
+Proof. We argue by contradiction: suppose that𝑈,𝑉 is a separation of𝐸 into non-
+empty disjoint open sets. Then there are𝑢 ∈𝑈,𝑣 ∈𝑉 and the map𝑓 (𝑈) = {𝑣} and
+𝑓 (𝑉) = {𝑢} is continuous, but has no fixed point.
+Let 𝐾 ⊂ [ 0, 1]2 be closed. Suppose that for all𝑥 ∈ [ 0, 1], the set𝐾𝑥 =
+{𝑦 ∈ [ 0, 1] ; (𝑥,𝑦 ) ∈ 𝐾 } is a non-trivial interval. Show that𝐾 is connected.
+Furthermore, show that there exists𝑥 ∈ [ 0, 1] such that𝑥 ∈𝐾𝑥.
+Proof. We show that all continuous maps𝑓 from𝐾 to {0, 1} is constant. Indeed, it
+is already constant if we fix the parameter𝑥, i.e.𝑓 (𝑥, ·) : 𝐾𝑥 → { 0, 1} is constant,
+denoted𝑔(𝑥). We now show that𝑔 is locally constant.
+Suppose otherwise, so that there exists𝑥𝑛 ∈ [ 0, 1] converging to𝑥 ∈ [ 0, 1] and
+𝑔(𝑥𝑛) ≠ 𝑔(𝑥) for all𝑥𝑛. For all𝑥𝑛, take𝑦𝑛 ∈ 𝐾𝑥𝑛. The set𝐾 is compact, so that
+there exists a subsequence(𝑥𝜑 (𝑛),𝑦 𝜑 (𝑛) ) converging to (𝑥,𝑦 ) ∈ 𝐾. By continuity
+of 𝑓 on𝐾,𝑔(𝑥) = 𝑓 (𝑥,𝑦 ) = lim𝑛→∞ 𝑓 (𝑥𝜑 (𝑛),𝑦 𝜑 (𝑛) ) = lim𝑛→∞𝑔(𝑥𝜑 (𝑛) ), but this
+contradicts with𝑔(𝑥) ≠𝑔(𝑥𝑛) for all𝑥𝑛.
+The second part is a classical connectedness result.
+43
+
+--- Page 44 ---
+1. Let 𝑓 : [0, 1] → [ 0, 1] be a non-decreasing function (not necessarily
+continuous). Show that𝑓 has a fixed point.
+2. Let 𝑓 : [0, 1] → [ 0, 1] beacontinuousfunction(notnecessarilyincreas-
+ing). Show that𝑓 has a fixed point.
+3. Let 𝑓,𝑔 : [0, 1] → [ 0, 1] two continuous functions with𝑓 ◦𝑔 =𝑔 ◦ 𝑓.
+Show that for some𝑎 ∈ [ 0, 1] we have𝑓 (𝑎) =𝑔(𝑎).
+4. Let 𝑓 : R → R be a continuous map and suppose that𝑓 ◦ 𝑓 has a fixed
+point. Show that𝑓 has a fixed point.
+Proof. • Let 𝐴 = {𝑥 ∈ [ 0, 1] ; 𝑥 ≤ 𝑓 (𝑥)}. The set𝐴 contains 0, and let𝑎 be its
+supremum. Then for all𝑥 ∈ 𝐴,𝑥 ≤ 𝑓 (𝑥) ≤ 𝑓 (𝑎) since 𝑓 is non-decreasing, so
+𝑎 ≤ 𝑓 (𝑎). Therefore also𝑓 (𝑎) ≤ 𝑓 (𝑓 (𝑎)), so 𝑓 (𝑎) ∈ 𝐴, and 𝑓 (𝑎) ≤ 𝑎. This
+shows that𝑓 (𝑎) =𝑎.
+• This is classical by considering the function𝑔(𝑥) = 𝑓 (𝑥) −𝑥.
+• Bythepreviousquestion, 𝑓 hasanon-trivialsetoffixedpoints 𝐸.Then 𝑔(𝑓 (𝑥)) =
+𝑔(𝑥) = 𝑓 (𝑔(𝑥)) for any𝑥 ∈ 𝐸, so𝑔(𝐸) ⊂ 𝐸. Let𝑚 = inf𝐸 and𝑀 = sup𝐸, so
+the continuous function𝑓 −𝑔 changes sign on[𝑚,𝑀 ] and we use the previous
+question to conclude.
+• This is quite easy: if𝑓 (𝑥) >𝑥 for all𝑥 ∈ R, 𝑓 (𝑓 (𝑥)) > 𝑓(𝑥) >𝑥 so 𝑓 ◦ 𝑓 cannot
+have any fixed point.
+8.3 Completeness
+Show that a normed vector space is complet if and only if all absolutely
+convergent series are convergent.
+Proof. First, suppose that in a normed vector space𝐸, all absolutely convergent se-
+ries are convergent. Let{𝑥𝑛}𝑛≥1 be a Cauchy sequence and show that it converges.
+Infact,itisenoughtoshowthatithasaconvergentsubsequence(andbyCauchyness
+the origianl sequence converges to the same limit). Consider thus the series defined
+by𝑎1 = 𝑥1,𝑎 2 = 𝑥𝜑 (2) −𝑥1,𝑎 3 = 𝑥𝜑 (3) −𝑥𝜑 (2) etc. for a subsequence𝑥𝜑 (𝑛), so
+that the partial sum of this series is exactly𝑥𝜑 (𝑛). To show that the series is con-
+vergent, it is enough to choose the subsequence, i.e.𝜑 in such a way that the series
+absolutely convergent. By Cauchyness, we can always choose𝜑(𝑛) so that for all
+𝑝 ≥ 𝜑(𝑛), |𝑥𝑝 −𝑥𝜑 (𝑛) | ≤ 2−𝑛. This implies absolute convergence so we are done.
+44
+
+--- Page 45 ---
+Conversely, suppose that the normed vector space𝐸 is complet and let𝑆𝑛 = 𝑎1 +
+· · · +𝑎𝑛 be an absolutely convergent series. We should show that𝑆𝑛 converges. But
+𝑆𝑛 is a Cauchy sequence by absolute convergence, so it converges.
+Show that a normed vector space𝐸 with an infinite countable basis cannot
+be complet.
+Proof. Take a normalized basis {𝑒𝑛}𝑛≥1 of 𝐸 with ||𝑒𝑛|| = 1. Consider 𝐹𝑛 =
+span{𝑒1,...,𝑒 𝑛}, and define𝜆1 = 1/3 and𝜆𝑛+1 = 1
+3𝑑 (𝜆𝑛𝑒𝑛,𝐹𝑛−1). We now how
+that Í𝜆𝑛𝑒𝑛 converges absolutely but does not converge.
+Indeed, it is quite easy to see that|𝜆𝑛| ≤ 3−𝑛 by recurrence, so that the series is
+absolutely convergent. To see that it does not converge, suppose that it converges to
+𝑥,and 𝑥 mustbeinacertain 𝐹𝑛 forsomelargeenough 𝑛.Therefore, 𝑦 =𝑥−Í𝑛
+𝑖=1𝜆𝑛𝑒𝑛
+is also in𝐹𝑛, and3𝜆𝑛+2 ≤ 𝑑 (𝜆𝑛+1𝑒𝑛+1,𝐹𝑛) ≤ | 𝜆𝑛+1𝑒𝑛+1 −𝑦| ≤ Í∞
+𝑖=𝑛+2𝜆𝑘 ≤ 3
+2𝜆𝑛+2.
+This is absurd since𝜆𝑛 > 0 for all𝑛, since𝑒𝑛 ∉𝐹𝑛−1.
+The following is a slight extension of Banach’s fixed point theorem in complete
+spaces.
+Suppose that (𝐸,𝑑 ) is a compact metric space and𝑓 : 𝐸 → 𝐸 is such that
+𝑑 (𝑓 (𝑥), 𝑓(𝑦)) < 𝑑(𝑥,𝑦 ) for all𝑥,𝑦 ∈𝐸. Show that𝑓 has a fixed point.
+Proof. If the inequality comes with a factor𝑑 (𝑓 (𝑥), 𝑓(𝑦)) < 𝐿𝑑(𝑥,𝑦 ) with𝐿 <1,
+this is the classical Banach’s fixed point theorem in complete spaces.
+In our case, consider the continuous map𝑥 ↦→ 𝑑 (𝑥, 𝑓(𝑥)) from𝐸 to R. This maps
+takes its minimum at some point𝛼 ∈ 𝐸: consider𝑓 (𝛼), then𝑑 (𝑓 (𝛼), 𝑓(𝑓 (𝛼))) <
+𝑑 (𝛼, 𝑓(𝛼)) if𝛼 ≠ 𝑓 (𝛼). Therefore𝛼 is a fixed point of𝑓.
+It is easy to show then that the fixed point is unique.
+45
+
+--- Page 46 ---
+8.4 Baire category theorem
+Show that a normed vector space𝐸 with an infinite countable basis cannot
+be complet.
+Proof. Takeabasis {𝑒𝑛}𝑛≥1 andconsider 𝐹𝑛 = span{𝑒1,...,𝑒 𝑛}.Since 𝐸 isinfinite
+dimensional, 𝐹𝑛 is of empty interior, and their union is𝐸, which is of non-trivial
+empty interior. If𝐸 were complet, the the Baire category theorem tells us that one
+of the𝐹𝑛 is of non-empty interior, which is a contradiction.
+Let (𝐸,𝑑 ), (𝐹,𝛿 ) be two metric spaces with𝐸 complete. Suppose that a
+sequence of continuous functions𝑓𝑛 : 𝐸 → 𝐹 converges pointwise to a
+function 𝑓 :𝐸 →𝐹.
+1. For all𝜖 >0 and𝑛 ∈ N, define
+𝐹𝑛,𝜖 = {𝑥 ∈𝐸 ; ∀𝑝 ≥𝑛,𝛿 (𝑓𝑝 (𝑥), 𝑓𝑛 (𝑥)) ≤ 𝜖 }.
+UseBairetoshowthat Ω𝜖,theunionoftheinteriorsofall 𝐹𝑛,𝜖 for𝑛 ∈ N,
+is dense in𝐸.
+2. Show that for all𝑥0 ∈ Ω𝜖, there is some neighborhood𝑉 of𝑥0 such that
+for all𝑥 ∈𝑉,𝛿(𝑓 (𝑥0), 𝑓(𝑥)) ≤ 3𝜖.
+3. Show that the set of continuity of𝑓 is dense.
+4. Showthatthesetofcontinuityofthederivative 𝑓 ′ : R → Rofaderivable
+function 𝑓 is dense inR.
+Proof. 1. First notice that each𝐹𝑛,𝜖 is closed by continuity of𝑓. Indeed, for each
+fixed𝑝 ≥ 𝑛, the set{𝑥 ∈ 𝐸 ; 𝛿(𝑓𝑝 (𝑥), 𝑓𝑛 (𝑥)) ≤ 𝜖 } is closed by continuity and
+𝐹𝑛,𝜖 is their intersection. Also, notice that the union of all𝐹𝑛,𝜖 is 𝐸 since 𝑓𝑛
+converges simply.
+Nowconsiderthecomplementoftheunionoftheinteriorsof 𝐹𝑛,𝜖 in𝐸:wedenote
+thisby 𝐺,whichisclosed.Theintersectionof 𝐺 with𝐹𝑛,𝜖 isclosedandofempty
+interior, and their union is𝐺. By Baire category theorem,𝐺 is of empty interior
+and we are done.
+2. By the first question, there is some𝑥0 ∈ Ω𝜖. For each𝑥0, by definition it is in the
+interior of each𝐹𝑛,𝜖 , so that
+3. Define Ω = ∩𝑛∈NΩ1/𝑛.
+46
+
+--- Page 47 ---
+8.5 More exercises from the web
+W2. Nilpotence.
+Let𝑁 ∈ 𝑀𝑛 (C).Showthat 𝑁 isnilpotentifandonlyif 0isadherentto {𝑃−1𝑁𝑃,𝑃 ∈
+GL𝑛 (C)}. Hint: use the upper-triangular representation and the continuity of the
+characteristic polynomial.
+W4. Untitled.
+Let𝐴 ∈ 𝑀𝑛 (R). Define the function𝐴∗ : R𝑛 → R𝑛 by
+∀𝑣 ∈ R𝑛, ∀1 ≤ 𝑗 ≤𝑛, [𝐴∗𝑣]𝑗 = min{𝑣𝑖 +𝐴𝑖𝑗 ; 1 ≤𝑖 ≤𝑛}.
+Show that𝐴∗ is Lipschitz, then show that for all𝜆 ∈ ( 0, 1), there exists a unique
+𝑣𝜆 ∈ R𝑛 such that𝑣𝜆 = 𝐴∗ (𝜆𝑣𝜆).
+W5. Show thatR2 is not a countable union ofC1 curves. Hint: use Baire.
+8.6 More exercises from textbooks
+T1. Topological monotonicity.
+Thisexerciseistakenfromthebook“EllipticPartialDifferentialEquationsandQua-
+siconformal Mappings in the Plane” by Astala, Iwaniec, and Martin.
+Show that a map𝑢 : R → R is monotonic if and only if the inverse image of each
+point𝑢−1 ({𝑥}) is connected.
+A mapping𝑓 : 𝑋 →𝑌 between two compact metric spaces is called topologically
+monotone if𝑓 is continuous, onto and𝑓 −1 (𝑎) is connected in𝑋 for all𝑎 ∈𝑌. Prove
+the following theorem of Whyburn: if𝑓 is topologically monotone, then for each
+closed and connected subset𝐴 ⊂ 𝑌, the inverse image𝑓 −1 (𝐴) ⊂ 𝑋 is closed and
+connected.
+Suppose now that𝑓𝑗 is a sequence of topologically monotone mappings converging
+uniformly to𝑓 :𝑋 →𝑌. Then𝑓 is monotone.
+T2.
+47
