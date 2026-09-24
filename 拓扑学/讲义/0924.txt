@@ -9,3 +9,13 @@
 拓扑基。拓扑基只需取并，不用取交。第一个定义PPT。第二个定义PPT。任意的开集，可以找到一族B_beta in cal B，使得 O=cup_beta B_beta。
 
 证明。从第二个定义的（2）出发，对于任意的x in O，存在一个 B_x in cal B，使得 x in B_x subset O。那么O=cup_x in O B_x。
+
+连续函数有什么用。只需连续函数就可以构造很多很好的拓扑空间。连续函数可以用来复合拓扑空间。连续函数用来构造同构的拓扑空间。
+
+在(X,O)中，X有子集A，我想把O限制在A中。小空间上有集合O_A={U cap A, U in O}。证明 O_A 是拓扑。
+
+有一个函数f:X to Y。Y的拓扑是 O_Y：f:X to (Y,O_Y)。在 O_X 上存在一个最小的 X，使得 f 是连续的。实际上，O_X={f^-1(u),u in O_Y}。但这么构造不会让O_X更复杂。
+
+例子。j: A to (X,O_X)。在 X 里找个开集U，j^-1(u)=u cap A mapsto 拓扑基。任意的R中开集U，U可以写作一堆有理数组成的开区间的并。
+
+g(E,O_E) to F。思考题。
