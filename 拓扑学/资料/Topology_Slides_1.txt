@@ -1,0 +1,345 @@
+--- Page 1 ---
+Week 1: Topological Spaces and Continuous Functions
+Yichao Huang
+Beijing Institute of Technology
+1
+
+--- Page 2 ---
+Review: topology of R
+
+--- Page 3 ---
+Countable and uncountable sets
+Let A, B be two sets.
+We say that ∣A∣ ≤ ∣B∣ if there exists an injection f ∶ A → B.
+We say ∣A∣ = ∣B∣ if there exists a bijection between A and B.
+It is useful to have the following theorem of Schröder-Bernstein:
+∣A∣ = ∣B∣ if and only if ∣A∣ ≤ ∣B∣ and ∣B∣ ≤ ∣A∣.
+A set A is countable if ∣A∣ ≤ ∣N∣. A set A is infinite if ∣N∣ ≤ ∣A∣.
+Fact: ∣R∣ = ∣P(N)∣, which is strictly bigger than ∣N∣.
+2
+
+--- Page 4 ---
+Open sets and neighborhood of R
+A set U ⊂ R is called open if for any x ∈ U, there is an open interval contained
+in U that contains x, i.e. (x − δ, x + δ) ⊂ U with δ > 0.
+Notice that ∅ and R are open. An open set is necessarily a union of open intervals,
+as we can take the union of each (x − δ, x + δ) above for all x ∈ U.
+A set U ⊂ R is a neighborhood of x ∈ R, if there is an open interval contained
+in U that contains x.
+Therefore, a set U ⊂ R is open if and only if it is a neighborhood for all x ∈ U.
+Finally a set F ⊂ R is closed if and only if its complement F c is open in R.
+3
+
+--- Page 5 ---
+Intersection, union and real sequences
+An arbitrary union of open sets in R is open.
+A finite intersection of open sets in R is open.
+But ⋂n≥0(−1/n, 1/n) = {0}, which is not open.
+Example: the set of rational numbers Q ⊂ R is not open, nor closed.
+A sequence of real numbers xn converges to some x ∈ R if and only if for every
+neighborhood Vx of x, for all suﬀiciently large n (i.e. ∃N > 0, ∀n ≥ N), xn ∈ Vx .
+A set F ⊂ R is closed if and only if every limit of every convergent sequence in F
+belongs to F .
+4
+
+--- Page 6 ---
+Interior, isolated, boundary and accumulation points in R
+Let A ⊂ R be a subset of R. Then x ∈ A is called
+1. an interior point of A if there exists δ > 0 such that (x − δ, x + δ) ⊂ A;
+2. an isolated point of A if there exists δ > 0 such that x is the only point of A
+belonging to (x − δ, x + δ);
+3. a boundary point of A if for every δ > 0, the interval (x − δ, x + δ) intersects
+both A and Ac ;
+4. an accumulation point of A if for every δ > 0, the interval (x − δ, x + δ) contains
+some other point of A other than x.
+Important: rephrase these definitions in terms of neighborhoods.
+5
+
+--- Page 7 ---
+Connectedness and compactness R
+A set of real numbers is connected if and only if it is an interval.
+Therefore, a connected set in R is the same as path connected, or convex.
+However the true definition (with only open sets) is that a connected set A cannot
+be written as the disjoint sum of two non-empty open sets in A.
+A set of real numbers is compact if and only if it is closed and bounded
+(Heine-Borel). Or if and only if every sequence has a convergent subsequence
+(Bolzano-Weierstrass).
+However the true definition (with only open sets) is that a set is compact if and
+only if every open cover has a finite subcover.
+6
+
+--- Page 8 ---
+Example: a new definition of
+continuity
+
+--- Page 9 ---
+Preimage of a function
+Consider a map between sets f ∶ E → F . For any subset Y ⊂ F , the preimage of Y
+by the map f is defined as
+f −1(Y ) = {x ∈ E ; f (x) ∈ Y }.
+It is a subset of E and this is well-defined for any map.
+Notice that for the direct image f (⋃ Ai ) = ⋃ f (Ai ), f (⋂ Ai ) ⊂ ⋂ f (Ai ), but for the
+preimage, f −1(⋃ Bi ) = ⋃ f −1(Bi ), f −1(⋂ Bi )= ⋂ f −1(Bi ).
+7
+
+--- Page 10 ---
+The ϵ − δ definition of the continuity revisited
+Recall the ϵ − δ definition for a function f ∶ R → R. The continuity of the function f
+at a point a with y = f (a) is defined as
+∀ϵ > 0, ∃δ > 0, ∀∣x − a∣ < δ, ∣f (x) − f (a)∣ < ϵ.
+Let us rewrite this in terms of preimage:
+∀ϵ > 0, ∃δ > 0, (a − δ, a + δ) ⊂ f −1((f (a) − ϵ, f (a) + ϵ)).
+That is, the preimage of any neighborhood of y = f (a) is a neighborhood of a.
+In fact, the continuity above is equivalent to the very general statement:
+The preimage of any open set by f is an open set.
+We only need to know about open sets to define continuity.
+8
+
+--- Page 11 ---
+Theory: topological spaces and
+continuous functions
+
+--- Page 12 ---
+Topological spaces
+A topological space is a set X equipped with a collection O of open sets O ⊂ X.
+That is, a set O ⊂ X is called open if and only if O ∈ O. We require that:
+1. Trivial sets are open: ∅, X ∈ O;
+2. Closure under finite intersection : if U, V ∈ O then U ∩ V ∈ O;
+3. Closure under arbitrary union : if A ⊂ O then ⋃O∈A O ∈ O.
+Informally speaking, finite intersection of open sets is open and any union of open
+sets is open.
+9
+
+--- Page 13 ---
+Open and closed sets
+A topology on X is simply the declaration of open sets (X, O).
+A set F is called closed (“fermé” in French) if its complement is open, i.e. if X − F
+is open or X − F ∈ O. You should check that
+1. Trivial sets are closed;
+2. Closure under finite union ;
+3. Closure under arbitrary intersection .
+Equivalently, you can specify a topology by giving all the closed sets, but the
+convention is to use open sets.
+10
+
+--- Page 14 ---
+Example: two basic topologies
+Given a set X, there are always two possible topologies:
+1. Trivial topology: the topology where only ∅ and X are open;
+2. Discrete topology : the topology where every subset of X is open.
+Two topologies are the same if all the open sets are the same, O = O′.
+A topology O′ is finer than O if O ⊂ O′. We also say that O is coarser than O′.
+Two topologies might not be necessarily comparable.
+Then the finest topology is the discrete topology, and the least fine (=smallest)
+topology is the trivial topology (also called indiscrete topology ).
+We often omit O and write only X instead of (X, O) for a topological space.
+11
+
+--- Page 15 ---
+Basis of a topology
+For R, it is rather hard to define a generic open set. Instead, we implicitly used the
+following definition (you should verify that this defines indeed a topology):
+A basis B of a topology is a collection of sets such that
+1. X = ⋃B∈B B;
+2. If x ∈ X, B1, B2 ∈ B such that x ∈ B1 and x ∈ B2, then there exists
+B3 ∈ B such that x ∈ B3 ⊂ B1 ∩ B2.
+Then we say that a set O is open if it is a union of elements in B (called
+generated by B, i.e. for all x ∈ O, there is some B ∈ B such that x ∈ B ⊂ O).
+For example, a basis for the usual topology on Rn is given by the collection of open
+balls B(x , ϵ) for x ∈ Rn and ϵ > 0.
+In general, the topology O generated by a list of properties is the smallest topology
+for which these properties hold.
+12
+
+--- Page 16 ---
+Basis criterion
+Equivalently, a family B of subsets of X is a basis for the topology O iff
+1. Every element in B is in O;
+2. For every open set O in O and point x ∈ O, there is some basic open set
+B ∈ B such that x ∈ B ⊂ O.
+Proof.
+/Leftrightline ⇒ Every element in B can be written as a union with one element (itself): thus
+the first point. For the second point, if x ∈ O and O is union of elements in B, then
+x ∈ B for some B ∈ B.
+⇐ /Leftrightline Take O ∈ O, x ∈ O and denote by Bx ∈ B such that x ∈ Bx ⊂ O by the second
+point. Then O is the union of all such Bx , and this also applies to the open set
+O = X. Now take B1, B2 ∈ B ⊂ O: then B1 ∩ B2 is open and the second point yields
+some B3 ∈ B such that x ∈ B3 ⊂ B1 ∩ B2.
+13
+
+--- Page 17 ---
+Continuous functions
+We have the following generalized definition of continuity:
+A function f ∶ X → Y between two topological spaces is called continuous if
+f −1(U) is open in X for any open set U ⊂ Y .
+That is, the preimage by a continuous function of an open set is an open set.
+Intuitively, this says “ f (x) is close to f (a) whenever x is close to a” .
+1. Composition of continuous functions is continuous.
+2. It suﬀices to verify the preimage condition on a basis B of Y .
+For example, to check that f ∶ X → R is continuous, it suﬀices to show that
+f −1(a, b) is open for all (a, b) ∈ R.
+14
+
+--- Page 18 ---
+Homeomorphism
+Homeomorphic spaces are topologically the same.
+A bijection between spaces, f ∶ X → Y is a homeomorphism if and only if f
+and f −1 are continuous.
+In other words, O is open if and only if f (O) is open.
+A bijective continuous map is not always a homeomorphism. Example:
+f ∶ N → {0} ∪ {1/1, 1/2, 1/3, . . .}, f (0) = 0, f (n) = 1/n, n ≥ 1.
+However, bijective continuous map between compact Hausdorff spaces (defined
+later in this course) is always a homeomorphism.
+15
+
+--- Page 19 ---
+Example: R and (0, 1)
+The overall size of a space is not something topologically invariant.
+The real numbers R and homeomorphic to the open interval (0, 1).
+Hint: consider tan ∶ (−π/2, π/2) → R.
+One of the main goals of topology is to classify topological invariants, e.g. objects
+that are stable under homeomorphisms.
+16
+
+--- Page 20 ---
+Closure, interior and boundary
+We can already define a lot of notions with only open and closed sets.
+1. Closure. The closure A of A ⊂ X is the smallest closed set containing A.
+2. Interior. The interior ˚A of A ⊂ X is the largest open set contained in A.
+3. Boundary. The boundary ∂A of A ⊂ X is the difference A − ˚A.
+4. Density. We say A ⊂ X is dense if and only if A = X.
+A point x ∈ X lies on the boundary if and only if every neighborhood of x
+intersects both A and X − A. For example, the boundary of Q in R is R.
+A topological space with a countable dense subset is called separable.
+17
+
+--- Page 21 ---
+Limit points and isolated points
+We should generally replace the idea of convergence sequences by neighborhoods,
+since in general there is no metric to measure the distance to the (possible) limit.
+We say that x is the limit of a sequence {xn}n≥0 if every neighborhood of x
+meets all but a finite subset of {xn}n≥0.
+We say that x is a limit point of A if every neighborhood of x meets A − {x}.
+Verify that in a metric space, this means that x is limit point if and only if there
+exists a sequence an ∈ A such that an → x.
+Exercise: the closure A of A is the union of A and its limit points.
+A point x ∈ A is isolated if it has a neighborhood V such that V ∩ A = {x}.
+Exercise: every point of a closed set A is either a limit point or an isolated point.
+18
+
+--- Page 22 ---
+Example: derived sets
+The set of limit points A′ of a closed set A ⊂ R is called the derived set of A, i.e. we
+throw away the isolated points.
+The Cantor set K does not contain any interval yet K′ = K. However, a countable
+closed set A ∈ [0, 1] always contain an isolated point (by Baire), so that A′ ≠ A.
+On the other hand, a countable closed set A ⊂ [0, 1] always has an isolated point,
+so that A′ ≠ A (this we shall not prove). This led Cantor to the invention of
+ordinals and much of the set theory, but we will not discuss this in this course.
+19
+
+--- Page 23 ---
+Example: sequences are not enough
+Let X = R equipped with the topology T that closed sets are R and countable sets
+of R. Take the ball B = B(0, 1) ⊂ X.
+Then the closure of B is the smallest closed sets containing B, so B = R.
+But there is no sequence in B that converges to 2 ∈ B, since every sequence in B is
+already closed!
+Therefore, pay attention to the definition of limit points ! We will see later that the
+sequential definition is very different from the neighborhood formalism.
+20
+
+--- Page 24 ---
+Hausdorff spaces
+We say X is Hausdorff if any pair of distinct points have disjoint neighborhoods.
+It is important to notice that the limit of a sequence (if there is one) in a Hausdorff
+space is unique. This is not true e.g. for the trivial topology.
+This is usually called the T 2 axiom. It implies the T 1 axiom that points are closed.
+For example, if X is infinite with the cofinite topology, then X is T 1, but not T 2.
+The product of Hausdorff spaces is Hausdorff.
+The subspace of a Hausdorff space is Hausdorff.
+You should try to prove the above propositions.
+21
+
+--- Page 25 ---
+Functions and topology
+Let C(X, Y ) be the set of all continuous functions f ∶ X → Y . We write
+C(X) = C(X, R) for the set of continuous real-valued functions. Then C(X) is an
+algebra, i.e. it is closed under the sum f + g and the product f g, and contains 1.
+In fact, if we take Y = {0, 1} with a suitable topology, then the space C(X, Y )
+uniquely determines the topology on X:
+Consider Y with the topology that {1} is open and {0} is not. Then A ⊂ X
+is open if and only if 111A is continuous.
+22
+
+--- Page 26 ---
+Neighborhood and limit
+A neighborhood of x ∈ X is just an open set V ⊂ X such that x ∈ V . Sometimes the
+set of neighborhood of x is denoted V(x).
+We say that a sequence xn converges to x if for any neighborhood V of x, xn ∈ V for
+all large enough n, i.e. ∀V ∈ V(x), ∃N ∈ N, ∀n ≥ N, xn ∈ V .
+Consider the cofinite topology : A ⊂ X is closed if and only if ∣A∣ < ∞ or A = X.
+If xn is a sequence in X, then xn → x for any x ∈ X! There is no uniqueness of limit
+in this topology.
+23
+
+--- Page 27 ---
+Example: the lower-limit topology
+Consider the topology Rl on R generated by the intervals [a, b), i.e. the latter form
+a basis of open sets. In this topology, xn → x if and only if xn converges to x in the
+usual sense and xn ≥ x for all large enough n.
+A function f ∶ Rl → R is continuous if and only if f (xn) → f (x) whenever xn → x
+from above. The identity map i ∶ Rl → R is continuous, but i ∶ R → Rl is not.
+The Rl is also called the lower-limit or uphill topology . It is easier to “go down
+from above” than to “climb up from below” . This lack of symmetry is not
+consistent with a metric: if fact Rl is not metrizable.
+24
+
+--- Page 28 ---
+Example: the product topology
+Let X and Y be topological spaces.
+The product topology on X × Y is generated by sets of the form U × V with
+U open in X and V open in Y .
+Notice that there are more open sets in X × Y than just those written as U × V .
+1. The product topology is the smallest topology such that the projections
+X × Y → X, X × Y → Y are continuous.
+2. A function f ∶ Z → X × Y such that f (z) = (f1(z), f2(z)) is continuous if and
+only if each of its coordinates f1 and f2 is continuous.
+Example: with the usual I = [0, 1] ⊂ R, the product topology on I2 is the usual one.
+25
+
+--- Page 29 ---
+Example: topology on the square
+A set X with a total ordering can be made topological Xo by taking the intervals
+(a, b) = {x ∈ X ; a < x < b} as a basis.
+The lexicographical ordered square I2
+o has a weirder topology. If (a, b) ∈ I2
+o with
+0 < b < 1, then for any b ∈ (b′, b′′) ⊂ (0, 1), the vertical segment {a} × (b′, b′′) is
+open in I2
+o . So an open subset in the interior of I2 in the usual sense is open for I2
+o .
+Things are harder on the boundary: consider a neighborhood of (a, 1) in I2
+o . If
+0 < a < 1, then it must contain some {a′} × S, where S is a vertical segment. So a
+small neighborhood of (a, 1) in I2
+o is not open in the usual sense.
+Indeed, in a dictionary, if w = Czech is the last word in the section C, then any
+neighborhood of w contains some word beginning with D.
+26
+
+--- Page 30 ---
+Example: the subspace topology
+If A ⊂ X and X is a topological space, the subspace topology on A is defined by
+OA = {U ∩ A ; U ∈ OX}.
+This is the unique topology such that f ∶ Z → A is continuous if and only if ι ○ f is
+continuous, where ι ∶ A → X is the inclusion map .
+We will see later that this is the topology induced by the inclusion ι ∶ A → X, i.e.
+the coarsest topology on A making ι continuous.
+1. What is the subspace topology of [0, 1] ⊂ R?
+2. What is the subspace topology of R ∪ i R ⊂ C?
+3. What is the subspace topology of the square I2 as a subspace of the ordered
+plane R2
+o? Answer: it is not the ordered square I2
+o .
+27
