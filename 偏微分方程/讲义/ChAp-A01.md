@@ -19,7 +19,7 @@ $$
 两边对 $t$ 从 $a$ 到 $b$ 积分，利用曲线积分的定义与微积分基本定理，
 
 $$
-\int_{\boldsymbol\gamma}\nabla\varphi\cdot\mathrm d\boldsymbol r=\int_a^b\nabla\varphi\bigl(\boldsymbol\gamma(t)\bigr)\cdot\boldsymbol\gamma'(t)\,\mathrm dt=\int_a^b\frac{\mathrm d}{\mathrm dt}\varphi\bigl(\boldsymbol\gamma(t)\bigr)\,\mathrm dt=\varphi\bigl(\boldsymbol\gamma(b)\bigr)-\varphi\bigl(\boldsymbol\gamma(a)\bigr)=\varphi(q)-\varphi(p).\qquad\blacksquare
+\int_{\boldsymbol\gamma}\nabla\varphi\cdot\mathrm d\boldsymbol r=\int_a^b\nabla\varphi\bigl(\boldsymbol\gamma(t)\bigr)\cdot\boldsymbol\gamma'(t)\,\mathrm dt=\int_a^b\frac{\mathrm d}{\mathrm dt}\varphi\bigl(\boldsymbol\gamma(t)\bigr)\,\mathrm dt=\varphi\bigl(\boldsymbol\gamma(b)\bigr)-\varphi\bigl(\boldsymbol\gamma(a)\bigr)=\varphi(q)-\varphi(p).\qquad\boxed{\sigma_\omega\sigma}
 $$
 
 梯度定理揭示了两个核心性质：
@@ -56,7 +56,7 @@ $$
 \int_{\boldsymbol\gamma}y\,\mathrm dx+x\,\mathrm dy=xy\Big|_{(5,0)}^{(-4,3)}=(-4\cdot3)-(5\cdot0)=-12.
 $$
 
-梯度定理将曲线积分转化为端点求值，大幅简化计算。$\blacksquare$
+梯度定理将曲线积分转化为端点求值，大幅简化计算。$\boxed{\sigma_\omega\sigma}$
 
 **例题 A.0.3**（克服点电荷电场做功）：计算将电荷 $q$ 从 $\boldsymbol a$ 移动到 $\boldsymbol b$ 时，克服 $n$ 个点电荷 $Q_i$ 产生的静电场所做的功。
 
@@ -127,7 +127,7 @@ $$
 \frac{\partial\varphi}{\partial x_i}(\boldsymbol x)=\boldsymbol F(\boldsymbol x)\cdot\boldsymbol e_i=F_i(\boldsymbol x),
 $$
 
-故 $\nabla\varphi(\boldsymbol x)=(F_1(\boldsymbol x),\dots,F_n(\boldsymbol x))=\boldsymbol F(\boldsymbol x)$。这样我们找到了一个标量函数 $\varphi$，其梯度等于与路径无关的向量场 $\boldsymbol F$。$\blacksquare$
+故 $\nabla\varphi(\boldsymbol x)=(F_1(\boldsymbol x),\dots,F_n(\boldsymbol x))=\boldsymbol F(\boldsymbol x)$。这样我们找到了一个标量函数 $\varphi$，其梯度等于与路径无关的向量场 $\boldsymbol F$。$\boxed{\sigma_\omega\sigma}$
 
 梯度定理及其逆定理共同表明：
 

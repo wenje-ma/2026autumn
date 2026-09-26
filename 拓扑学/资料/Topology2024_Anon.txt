@@ -66,7 +66,7 @@ hibiting a continuous function𝑓 : (𝑋, O) → ( 𝑋, O′).
 6. Exhibit a sequence that converges both to0 and 1 in (𝑋, O).
 7. Show that there are only three continuous functions from(𝑋, O) to itself.
 Q2. Let 𝑓 :𝑋 →𝑌 be a function and suppose that𝑌 is endowed with a topologyO.
-Show that if𝑓 −1(O) = {𝑓 −1 (𝑂) ⊂ 𝑋 ; 𝑂 ∈ O} , then𝑓 −1(O) is a topology on𝑋.
+Show that if𝑓 -1(O) = {𝑓 -1 (𝑂) ⊂ 𝑋 ; 𝑂 ∈ O} , then𝑓 -1(O) is a topology on𝑋.
 Show that this is the coarsest topology on𝑋 that makes the function𝑓 continuous.
 The above topology is called the initial topology on𝑋 induced by𝑓.
 Q3. Show that given a family of topologies{(𝑋, O𝛼)}𝛼∈ A, their intersection, in
@@ -166,7 +166,7 @@ a concrete construction of this topology using finite intersections?
 --- Page 9 ---
 C6. Initial topology.
 Show that if𝑓 : 𝑋 → (𝑌, O) is a map into a topological space𝑌, then the family of
-sets 𝑓 −1 (𝑂) with𝑂 ∈ O defines a topology on𝑋. Show that it is the most coarse
+sets 𝑓 -1 (𝑂) with𝑂 ∈ O defines a topology on𝑋. Show that it is the most coarse
 topology on𝑋 making 𝑓 continuous: this is call the initial topology. Study the case
 where 𝑓 is an inclusion map, for example𝑓 : R → R2 with the Euclidean topology
 on R2. Can you do the other way and pushforward a topology on𝑋 to define the
@@ -176,8 +176,8 @@ Let 𝑋 be a set. Show that the following is a topology: all non-trivial open s
 complement of some finite subset of𝑋. This is called the cofinite topology on𝑋.
 Show that the sequence{1, 2, 3, 4,... } in the cofinite topology onR converges to
 every point inR. Can you define the cocountable topology on𝑋? Now take𝑋 = R
-equippedwiththecocountabletopology,andconsider (−1, 1) ⊂ R.Showthat 𝐵 = R.
-Show that no sequence in(−1, 1) converges to2 ∈ R.
+equippedwiththecocountabletopology,andconsider (-1, 1) ⊂ R.Showthat 𝐵 = R.
+Show that no sequence in(-1, 1) converges to2 ∈ R.
 C8. Zariski topology.
 Let K be a field,𝑛 ∈ N a non-negative integer, andA𝑛 (K) = K𝑛. A Zariski-closed
 set ofA𝑛 (K) is such that
@@ -226,11 +226,11 @@ A1. Show that𝑈 ⊂ Z is open if and only if for any𝑥 ∈ 𝑈, there is so
 A2. Show that this defines a topology onZ, i.e. verify the axioms for a topology.
 ThistopologyisknownastheFurstenbergtopologyon Zortheevenlyspacedinteger
 topology.
-A3. Show that a non-empty finite set inZ cannot be open. In particular,Z \ {−1, 1}
+A3. Show that a non-empty finite set inZ cannot be open. In particular,Z \ {-1, 1}
 is not closed.
 A4. Show that𝑆(𝑎,𝑏 ) is both open and closed (for𝑎 ≠ 0).
 A5. Show that the union over prime numbersÐ
-𝑝∈P𝑆(𝑝, 0) is Z \ {−1, 1}.
+𝑝∈P𝑆(𝑝, 0) is Z \ {-1, 1}.
 A6. Show that there are infinitely many prime numbers.
 This is Furstenberg’s topological proof on the infiniteness of prime numbers.
 Part B: the Golomb topology and the Kirch topology onZ>0
@@ -305,8 +305,8 @@ Continuing in this direction one can learn about the Urysohn extension theorems.
 C5. Product topology.
 (…)
 C6. Mixed barbecue.
-Consider the set[0, 1] ⊂ R and two other elements{0−, 0+} not in [0, 1]. Let𝑋 =
-{0−, 0+} ∪ ( 0, 1], and consider B (𝑥) = {(𝑥 − 1
+Consider the set[0, 1] ⊂ R and two other elements{0-, 0+} not in [0, 1]. Let𝑋 =
+{0-, 0+} ∪ ( 0, 1], and consider B (𝑥) = {(𝑥 - 1
 𝑛,𝑥 + 1
 𝑛 ) ∩ ( 0, 1] ; 𝑛 ∈ Z>0} for
 𝑥 ∈ ( 0, 1] and B (0±) = {{0±} ∪ ( 0, 1
@@ -444,15 +444,15 @@ C7. Dilatation of a compact.
 
 --- Page 19 ---
 Let𝑋 be a compact subspace of some normed vector space (think ofR𝑛). Suppose
-that 𝑓 :𝑋 →𝑋 is a dilatation, i.e.∀𝑥,𝑦 ∈ 𝑋, |𝑓 (𝑦) − 𝑓 (𝑥)| ≥ | 𝑦 −𝑥|.
+that 𝑓 :𝑋 →𝑋 is a dilatation, i.e.∀𝑥,𝑦 ∈ 𝑋, |𝑓 (𝑦) - 𝑓 (𝑥)| ≥ | 𝑦 -𝑥|.
 Show that𝑓 is an isometry (hint: show that for all𝑎 ∈ 𝑋, the sequence𝑓𝑛 (𝑎) comes
 back infinitely often near𝑎). Show that𝑓 :𝑋 →𝑋 is a bijection.
 Show that a surjective1-Lipschitz function𝑔 :𝑋 →𝑋 is an isometry.
 C8. Fixed point theorem in a compact space.
 Let𝐾 be a compact subspace of some normed vector space (think ofR𝑛). Suppose
-that 𝑓 :𝐾 →𝐾 is strictly contracting, i.e.∀𝑥,𝑦 ∈𝐾,𝑥 ≠𝑦, |𝑓 (𝑦) − 𝑓 (𝑥)| < |𝑦 −𝑥|.
+that 𝑓 :𝐾 →𝐾 is strictly contracting, i.e.∀𝑥,𝑦 ∈𝐾,𝑥 ≠𝑦, |𝑓 (𝑦) - 𝑓 (𝑥)| < |𝑦 -𝑥|.
 Show that𝑓 has a unique fixed point in𝐾. You can consider the function𝑔 : 𝑥 ↦→
-|𝑓 (𝑥) − 𝑥|. Show that for all𝑎 ∈ 𝐾, the sequence𝑓𝑛 (𝑎) converges to this unique
+|𝑓 (𝑥) - 𝑥|. Show that for all𝑎 ∈ 𝐾, the sequence𝑓𝑛 (𝑎) converges to this unique
 fixed point.
 C9. Two subsequential limits.
 Let 𝐾 be a compact subspace of some normed vector space (think ofR𝑛). Show
@@ -484,7 +484,7 @@ To find counter-examples, you can considerR2 with some points removed.
 Q2. Suppose 𝐸 = R𝑛 with the usual topology. If𝐾 is a compact of𝐸 and 𝐹 is a
 closed set of𝐸, show that there exists𝑥 ∈𝐾 and𝑦 ∈𝐹 such that𝑑 (𝐾,𝐹 ) =𝑑 (𝑥,𝑦 ).
 Show that this is not true if we replace𝐸 by𝑙∞. You can consider the set𝐹 = {( 1 +
-2−𝑛)𝑒𝑛}𝑛≥0, where𝑒𝑛 is the sequence with1 at position𝑛 and 0 elsewhere.
+2-𝑛)𝑒𝑛}𝑛≥0, where𝑒𝑛 is the sequence with1 at position𝑛 and 0 elsewhere.
 Q3. We use the Baire category theorem to construct a dense family of functions
 𝑓 : R → R which are continuous but nowhere derivable. You are allowed to find
 hints on the internet for this exercise.
@@ -504,15 +504,15 @@ Q3. Show that there is a subsequence𝑓𝑛𝑖 (𝑚) so that for each𝑚, �
 as𝑖 → ∞. You can consider the sequence𝑛𝑘 (𝑘).
 The second is the “𝜖/3 trick”. We review the proof that the uniform limit of a se-
 quence of continuous functions is continuous. Let𝐶 [𝑎,𝑏 ] be the continuous real
-functions on [𝑎,𝑏 ] with the metric𝑑 (𝑓,𝑔 ) = sup𝑥 ∈ [𝑎,𝑏 ] |𝑓 (𝑥) − 𝑔(𝑥)|, induced by
+functions on [𝑎,𝑏 ] with the metric𝑑 (𝑓,𝑔 ) = sup𝑥 ∈ [𝑎,𝑏 ] |𝑓 (𝑥) - 𝑔(𝑥)|, induced by
 the norm ||𝑓 || ∞ =𝑑 (𝑓, 0).
 Q4. Let 𝑓𝑛 be a Cauchy sequence for the|| · || ∞ norm. Show that for each𝑥 ∈ [𝑎,𝑏 ],
 𝑓𝑛 (𝑥) converges to some𝑓 (𝑥) ∈ R.
 Suppose that𝑓 is the limit of a sequence of continuous functions𝑓𝑛. To show conti-
 nuity of𝑓, we fix𝑥 ∈ [𝑎,𝑏 ] and𝜖 >0 and in the following exercise, we find𝛿 >0
-such that|𝑥 −𝑦| <𝛿 implies |𝑓 (𝑥) − 𝑓 (𝑦)| <𝜖 .
-Q5. Show that you can pick𝑛 so that ||𝑓𝑛 − 𝑓 || ∞ < 𝜖/3. Show that you can pick
-𝛿 >0 so that|𝑥 −𝑦| <𝛿 implies |𝑓𝑛 (𝑥) − 𝑓𝑛 (𝑦)| <𝜖 /3. Show that𝑓 is continuous.
+such that|𝑥 -𝑦| <𝛿 implies |𝑓 (𝑥) - 𝑓 (𝑦)| <𝜖 .
+Q5. Show that you can pick𝑛 so that ||𝑓𝑛 - 𝑓 || ∞ < 𝜖/3. Show that you can pick
+𝛿 >0 so that|𝑥 -𝑦| <𝛿 implies |𝑓𝑛 (𝑥) - 𝑓𝑛 (𝑦)| <𝜖 /3. Show that𝑓 is continuous.
 Q6. Show that𝑓𝑛 → 𝑓 in𝐶 [𝑎,𝑏 ], so that𝐶 [𝑎,𝑏 ] is complete.
 4.3 Main exercise 2: Banach’s fixed point theorem
 Let (𝑋,𝑑 ) beanon-emptycompletemetricspaceandsupposethatamap 𝑓 :𝑋 →𝑋
@@ -526,15 +526,15 @@ of this theorem.
 --- Page 23 ---
 Let (𝐸, | · |) be a complete normed vector space over a fieldK and 𝑓 : 𝐸 → 𝐸 is a
 continuous linear map.
-Q2. Show that there exists𝐾 >0 such that∀𝑥,𝑦 ∈𝐸, |𝑓 (𝑥) − 𝑓 (𝑦)| ≤ 𝐾 |𝑥 −𝑦|.
+Q2. Show that there exists𝐾 >0 such that∀𝑥,𝑦 ∈𝐸, |𝑓 (𝑥) - 𝑓 (𝑦)| ≤ 𝐾 |𝑥 -𝑦|.
 Q3. Show that for any given𝜆 ∈ 𝐸, |𝜆| > 𝐾, the map with fixed𝑎 ∈ 𝐸 defined by
-𝑔𝑎 (𝑥) = 𝑎−𝑓 (𝑥 )
+𝑔𝑎 (𝑥) = 𝑎-𝑓 (𝑥 )
 𝜆 is contracting. Use Banach’s fixed point theorem to deduce that𝑔𝑎
 has a unique fixed point𝐽𝑎 ∈𝐸.
-Q4. Show that|𝐽 (𝑎) −𝐽 (𝑏)| ≤ 1
-|𝜆| −𝐾 |𝑎 −𝑏|.
+Q4. Show that|𝐽 (𝑎) -𝐽 (𝑏)| ≤ 1
+|𝜆| -𝐾 |𝑎 -𝑏|.
 Q5. Conclude the following. For any continuous linear map𝑓 :𝐸 →𝐸, there exists
-𝐾 >0suchthatforany 𝜆 ∈𝐸, |𝜆| >𝐾 ,forany 𝑎 ∈𝐸,theequation 𝑓 (𝑥) −𝜆𝑥 =𝑎 on
+𝐾 >0suchthatforany 𝜆 ∈𝐸, |𝜆| >𝐾 ,forany 𝑎 ∈𝐸,theequation 𝑓 (𝑥) -𝜆𝑥 =𝑎 on
 the variable𝑥 ∈𝐸 has a unique solution𝐽 (𝑎), and the map𝑎 →𝐽 (𝑎) is continuous.
 4.4 A little more: metric space exercises
 Q1. The following exercise is a baby version of the Arzelà-Ascoli theorem.
@@ -584,7 +584,7 @@ continuous function is continuous. Give a counterexample in the case where𝐹 i
 supposed closed.
 C5. Chained space.
 We say that a metric space𝑋 is𝜖-chained if for all𝑎,𝑏 ∈ 𝑋, we can find a finite
-sequenceofpoints 𝑥𝑖 ∈ 𝑋 with𝑥0 =𝑎,𝑥𝑛 =𝑏 and |𝑥𝑖 −𝑥𝑖+1| <𝜖 forall 0 ≤𝑖 ≤𝑛−1.
+sequenceofpoints 𝑥𝑖 ∈ 𝑋 with𝑥0 =𝑎,𝑥𝑛 =𝑏 and |𝑥𝑖 -𝑥𝑖+1| <𝜖 forall 0 ≤𝑖 ≤𝑛-1.
 We say that𝑋 is well-chained if𝑋 is𝜖-chained for all𝜖 >0.
 24
 
@@ -602,7 +602,7 @@ Let 𝑓 : R𝑛 → R𝑛 becontinuous,andsupposethatsomesequence 𝑓𝑛 (�
 one accumulation point. Show that this sequence converges.
 C8. Isometry and compacity (and Lebesgue number).
 Consider a non-empty compact space𝐾 ⊂ R𝑛 and𝜖 > 0. We say that𝐴 ⊂ 𝐾 is𝜖-
-separated if for all𝑥,𝑦 ∈ 𝐴,𝑥 ≠𝑦 implies |𝑥 −𝑦| >𝜖 . Show that there is some finite
+separated if for all𝑥,𝑦 ∈ 𝐴,𝑥 ≠𝑦 implies |𝑥 -𝑦| >𝜖 . Show that there is some finite
 interger𝑀 (𝜖) such that all subsets𝐴 ⊂ 𝐾 that is𝜖-separated has at most cardinal
 𝑀 (𝜖).
 Suppose that𝑓 :𝐾 →𝐾 is an isometry. Show that𝑓 is surjective.
@@ -694,7 +694,7 @@ Q10. (The suspension) Consider the sphereS𝑛 = {𝑥2
 𝑛+1 = 1} ⊂ R𝑛+1.
 Show that the suspension𝑆(S𝑛) is homeomorphic toS𝑛+1.
 Q11. (The crushing) Show that if𝐴 ⊂ 𝑋 is open (or closed), then the projection
-𝑋 → 𝑋/⟨𝐴⟩ restricted to𝑋 −𝐴 is a homeomorphism. Show that𝐶𝑋 /⟨𝑋⟩ and𝑆𝑋
+𝑋 → 𝑋/⟨𝐴⟩ restricted to𝑋 -𝐴 is a homeomorphism. Show that𝐶𝑋 /⟨𝑋⟩ and𝑆𝑋
 are homeomorphic (here we identify𝑋 with𝜋(𝑋 × {0}) ⊂ 𝐶𝑋).
 Q12. Let 𝑋 be a compact Hausdorff space. Show that the cone space𝐶𝑋 is home-
 omorphic to the one-point compactification of𝑋 × [ 0, 1). If𝐴 ⊂ 𝑋 is closed, show
@@ -796,7 +796,7 @@ C1. Complement of a compact set.
 Show that the complement of a compact set in an infinite dimensional vector space
 is path-connected. Is this true for a finite dimensional vector space?
 C2. Global extremum. (HSH)
-Suppose that 𝑓 : R𝑛 → R is continuous with𝑛 ≥ 2. We suppose that𝑓 −1(𝑎) is
+Suppose that 𝑓 : R𝑛 → R is continuous with𝑛 ≥ 2. We suppose that𝑓 -1(𝑎) is
 compact for all𝑎 ∈ R. Show that𝑓 has a global extremum (either supremum or
 infimum). What happens when𝑛 = 1?
 C3. Hyperplan and closedness. (LZY)
@@ -808,8 +808,8 @@ One direction for the second question is clear using pullback of continuous map.
 For the other direction, suppose that𝐻 is closed and𝜑 is not continuous:𝜑 is thus
 not bounded, and we can find a sequence of|𝑥𝑛| = 1 such that |𝜑(𝑥𝑛)| → ∞ . Let
 𝑢 ∈ 𝐸 and define𝑢𝑛 ∈ 𝐻 by projecting𝑢 onto 𝐻 in the direction𝑥𝑛: concretely,
-define𝑢𝑛 = 𝑢 − 𝜑 (𝑢)
-𝜑 (𝑥𝑛 )𝑥𝑛 (check that𝜑(𝑢𝑛) = 0). Then |𝑢 −𝑢𝑛| = |𝜑 (𝑢) |
+define𝑢𝑛 = 𝑢 - 𝜑 (𝑢)
+𝜑 (𝑥𝑛 )𝑥𝑛 (check that𝜑(𝑢𝑛) = 0). Then |𝑢 -𝑢𝑛| = |𝜑 (𝑢) |
 |𝜑 (𝑥𝑛 ) | → 0,
 so that𝑢𝑛 converges to𝑢. Since𝐻 is supposed closed, we get that𝑢 ∈ 𝐻 so that
 𝜑(𝑢) = 0. But then this shows that𝜑 ≡ 0, which contradicts the assumption that𝜑
@@ -820,24 +820,24 @@ C4. Hyperplan and complement.
 --- Page 34 ---
 Let 𝐸 be a normed vector space and𝐻 a hyperplane. Show that𝐸 \ 𝐻 is path-
 connected if and only if𝐻 is closed.
-Proof. Let𝜑 be a linear form on𝐸 with𝐻 = ker𝜑. Then𝐻 − = 𝜑−1 (R<0),𝐻+ =
-𝜑−1(R>0) are convex, so path-connected. By the exercise above,𝐻 is closed if and
+Proof. Let𝜑 be a linear form on𝐸 with𝐻 = ker𝜑. Then𝐻 - = 𝜑-1 (R<0),𝐻+ =
+𝜑-1(R>0) are convex, so path-connected. By the exercise above,𝐻 is closed if and
 only if𝜑 is continuous.
-If𝐻 is closed, there is no continuous path from𝐻 − to𝐻+ by the intermediate value
+If𝐻 is closed, there is no continuous path from𝐻 - to𝐻+ by the intermediate value
 theorem. Now suppose that𝐻 is not closed, so that𝜑 is not continuous. In this case,
 𝐻 =𝐸 (since𝐻 is a linear space that is strictly larger than𝐻 when𝐻 is not closed),
 and𝐻 is dense in𝐸. This is somewhat surprising since we are proving that𝐸 \𝐻 is
-path-connected. It suffices to continuously join two elements−𝑒 ∈ 𝐻 − and𝑒 ∈ 𝐻+,
-say with𝜑(𝑒) = 1. But𝜑−1 (1) = 𝑒 +𝐻 is dense in𝐸, so there exists a sequence
-{𝑥𝑛} ∈ 𝑒 +𝐻 whichconvergesto −𝑒,andwecansupposethat 𝑥1 =𝑒.Nowwedefine
+path-connected. It suffices to continuously join two elements-𝑒 ∈ 𝐻 - and𝑒 ∈ 𝐻+,
+say with𝜑(𝑒) = 1. But𝜑-1 (1) = 𝑒 +𝐻 is dense in𝐸, so there exists a sequence
+{𝑥𝑛} ∈ 𝑒 +𝐻 whichconvergesto -𝑒,andwecansupposethat 𝑥1 =𝑒.Nowwedefine
 the path𝛾 : [0, 1] → 𝐸 in the following way:𝛾 connects𝑥𝑘+1 to𝑥𝑘 using a straight
 segment from time 1
 𝑘+1 to 1
-𝑘, and𝛾(0) = −𝑒. If we can show that𝛾 is continuous
+𝑘, and𝛾(0) = -𝑒. If we can show that𝛾 is continuous
 at 0, we are done since𝛾 is continuous on [0, 1] and 𝛾( [0, 1]) ∈ 𝐸 \𝐻 because
-𝜑(𝛾(𝑡)) = 1 for all𝑡 ∈ ( 0, 1] and𝜑(𝛾(0)) = −1.
+𝜑(𝛾(𝑡)) = 1 for all𝑡 ∈ ( 0, 1] and𝜑(𝛾(0)) = -1.
 We now show that𝛾 is continuous at0: but this is bascially just the assumption that
-{𝑥𝑛} converges to−𝑒 (and some convexity argument). This completes the proof.
+{𝑥𝑛} converges to-𝑒 (and some convexity argument). This completes the proof.
 C5. Easy consequence of the open mapping theorem.
 C6. Easy consequence of the Banach-Steinhaus theorem.
 C7. Easy consequence of the Banach-Schauder theorem.
@@ -851,7 +851,7 @@ sequence of𝑝-dimensional subvector spaces of𝐸.
 Show that∪𝑘 ∈N𝐹𝑘 ≠𝐸. Show that there exists some subspace𝑊 of𝐸 such that for
 all𝑘 ∈ N,𝑊 ⊕𝐹𝑘 =𝐸.
 C10. Baire category exercise III.
-Let 𝑓 : R+ → Rbe a continuous map. Suppose that for all𝜆 ≥ 0, lim𝑥→∞ 𝑓 (𝑥 +𝜆) −
+Let 𝑓 : R+ → Rbe a continuous map. Suppose that for all𝜆 ≥ 0, lim𝑥→∞ 𝑓 (𝑥 +𝜆) -
 𝑓 (𝑥) = 0. Show that for all[𝑎,𝑏 ] ⊂ R+, this convergence is uniform in𝜆 ∈ [𝑎,𝑏 ].
 34
 
@@ -942,7 +942,7 @@ be complet.
 --- Page 40 ---
 Takeanormalizedbasis {𝑒𝑛}𝑛≥1of𝐸 with ||𝑒𝑛|| = 1.Consider 𝐹𝑛 = span{𝑒1,...,𝑒 𝑛},
 and define𝜆1 = 1/3 and𝜆𝑛+1 = 1
-3𝑑 (𝜆𝑛𝑒𝑛,𝐹𝑛−1). Show thatÍ𝜆𝑛𝑒𝑛 converges ab-
+3𝑑 (𝜆𝑛𝑒𝑛,𝐹𝑛-1). Show thatÍ𝜆𝑛𝑒𝑛 converges ab-
 solutely but cannot converge.
 7.4 Baire category theorem
 The following exercises are about the Baire category theorem.
@@ -1000,10 +1000,10 @@ with center {𝑥𝑖 }1≤𝑖 ≤𝑛. Consider𝐹 = span(𝑥1,...,𝑥 𝑛
 Therefore, there exists some𝑦 ∈ 𝐸 \𝐹, and denote by𝑥 ∈ 𝐹 such that𝑑 (𝑦,𝐸 ) =
 𝑑 (𝑦,𝑥 ). The existence of𝑥 is obtained by considering𝐵(𝑦, |𝑦|) ∩ 𝐸, which is a
 bounded closed set in the finite dimensional normed vector space𝐸.
-Set𝑥0 = 𝑦−𝑥
-|𝑦−𝑥 | in the unit sphere of𝐸 exactly at distance1 to 𝐹. This is because
+Set𝑥0 = 𝑦-𝑥
+|𝑦-𝑥 | in the unit sphere of𝐸 exactly at distance1 to 𝐹. This is because
 𝑑 (𝑥0,𝐹 ) ≤ | 𝑥0| = 1 and for any𝑧 ∈𝐹,𝑑 (𝑥0,𝑧 ) ≥ 𝑑 (𝑥,𝐹 )
-|𝑥−𝑦 | ≥ 1.
+|𝑥-𝑦 | ≥ 1.
 But then𝑥0 cannot be in any𝐵(𝑥𝑖, 1) since its distance to𝐹 is 1.
 In particular, we proved that𝐸 is not compact.
 If (𝐸,𝑑 ) is a metric space and 𝐴 ⊂ 𝐸 is a closed set with a function
@@ -1018,21 +1018,21 @@ The only non-trivial point to verify is that𝑔 is continuous.
 • If𝑥 is in the complement of𝐴, this is ok by considering the variation of𝑔 on
 𝐵(𝑥,𝑑 (𝑥,𝐴 )/2) and use triangular inequality.
 • Suppose now𝑥 is on the boundary of𝐴 and let𝜖 >0. Since𝑓 is continuous at𝑦,
-thereexists𝑟 >0suchthatforall 𝑦 ∈ 𝐵(𝑥,𝑟 ) ∩𝐴, |𝑔(𝑦) −𝑔(𝑥)| = |𝑓 (𝑦) −𝑓 (𝑥)| <
-𝜖. Now suppose that𝑧 ∈ 𝐸 \𝐴 and |𝑧 −𝑥| <𝑟 /4, and show that|𝑔(𝑧) −𝑔(𝑥)| =
-|𝑔(𝑧) − 𝑓 (𝑥)| <𝜖 : this will show the continuity of𝑔 at𝑥.
+thereexists𝑟 >0suchthatforall 𝑦 ∈ 𝐵(𝑥,𝑟 ) ∩𝐴, |𝑔(𝑦) -𝑔(𝑥)| = |𝑓 (𝑦) -𝑓 (𝑥)| <
+𝜖. Now suppose that𝑧 ∈ 𝐸 \𝐴 and |𝑧 -𝑥| <𝑟 /4, and show that|𝑔(𝑧) -𝑔(𝑥)| =
+|𝑔(𝑧) - 𝑓 (𝑥)| <𝜖 : this will show the continuity of𝑔 at𝑥.
 First,consider 𝐶 =𝐵(𝑧,𝑟 ) ∩𝐴andshowthatthe inf for𝑔(𝑧) istakeninside 𝐶,i.e.
 inf𝑦 ∈𝐴(𝑓 (𝑦)𝑑 (𝑧,𝑦 )) = inf𝑦 ∈𝐶 (𝑓 (𝑦)𝑑 (𝑧,𝑦 )).Thisisbecause inf𝑦 ∈𝐴(𝑓 (𝑦)𝑑 (𝑧,𝑦 )) ≤
 𝑓 (𝑥)𝑑 (𝑧,𝑥 ) = 𝑟
 4𝑓 (𝑥) ≤ 𝑟
 2, and if 𝑦 ∈ 𝐴 \ 𝐶, 𝑓 (𝑦)𝑑 (𝑧,𝑦 ) ≥ 𝑑 (𝑧,𝑦 ) ≥
-𝑑 (𝑥,𝑦 ) −𝑑 (𝑧,𝑥 ) = 3𝑟
+𝑑 (𝑥,𝑦 ) -𝑑 (𝑧,𝑥 ) = 3𝑟
 4 .
 42
 
 --- Page 43 ---
-Now on𝐶, (𝑓 (𝑥) −𝜖)𝑑 (𝑧,𝐴 ) ≤ inf𝑦 ∈𝐶 (𝑓 (𝑦)𝑑 (𝑧,𝑦 )) ≤ ( 𝑓 (𝑥) +𝜖)𝑑 (𝑧,𝐴 ), so we
-get𝑔(𝑥) −𝜖 ≤𝑔(𝑧) ≤ 𝑔(𝑥) +𝜖 for all𝑧 ∈ 𝐸 \𝐴 with |𝑧 −𝑥| ≤ 𝑟/4. This proves
+Now on𝐶, (𝑓 (𝑥) -𝜖)𝑑 (𝑧,𝐴 ) ≤ inf𝑦 ∈𝐶 (𝑓 (𝑦)𝑑 (𝑧,𝑦 )) ≤ ( 𝑓 (𝑥) +𝜖)𝑑 (𝑧,𝐴 ), so we
+get𝑔(𝑥) -𝜖 ≤𝑔(𝑧) ≤ 𝑔(𝑥) +𝜖 for all𝑧 ∈ 𝐸 \𝐴 with |𝑧 -𝑥| ≤ 𝑟/4. This proves
 the continuity of𝑔 at the boundary of𝐴.
 8.2 Connectedness
 Suppose that (𝐸,𝑑 ) is a metric space, and that all maps𝑓 :𝐸 →𝐸 have a
@@ -1067,10 +1067,10 @@ Proof. • Let 𝐴 = {𝑥 ∈ [ 0, 1] ; 𝑥 ≤ 𝑓 (𝑥)}. The set𝐴 con
 supremum. Then for all𝑥 ∈ 𝐴,𝑥 ≤ 𝑓 (𝑥) ≤ 𝑓 (𝑎) since 𝑓 is non-decreasing, so
 𝑎 ≤ 𝑓 (𝑎). Therefore also𝑓 (𝑎) ≤ 𝑓 (𝑓 (𝑎)), so 𝑓 (𝑎) ∈ 𝐴, and 𝑓 (𝑎) ≤ 𝑎. This
 shows that𝑓 (𝑎) =𝑎.
-• This is classical by considering the function𝑔(𝑥) = 𝑓 (𝑥) −𝑥.
+• This is classical by considering the function𝑔(𝑥) = 𝑓 (𝑥) -𝑥.
 • Bythepreviousquestion, 𝑓 hasanon-trivialsetoffixedpoints 𝐸.Then 𝑔(𝑓 (𝑥)) =
 𝑔(𝑥) = 𝑓 (𝑔(𝑥)) for any𝑥 ∈ 𝐸, so𝑔(𝐸) ⊂ 𝐸. Let𝑚 = inf𝐸 and𝑀 = sup𝐸, so
-the continuous function𝑓 −𝑔 changes sign on[𝑚,𝑀 ] and we use the previous
+the continuous function𝑓 -𝑔 changes sign on[𝑚,𝑀 ] and we use the previous
 question to conclude.
 • This is quite easy: if𝑓 (𝑥) >𝑥 for all𝑥 ∈ R, 𝑓 (𝑓 (𝑥)) > 𝑓(𝑥) >𝑥 so 𝑓 ◦ 𝑓 cannot
 have any fixed point.
@@ -1081,11 +1081,11 @@ Proof. First, suppose that in a normed vector space𝐸, all absolutely converge
 ries are convergent. Let{𝑥𝑛}𝑛≥1 be a Cauchy sequence and show that it converges.
 Infact,itisenoughtoshowthatithasaconvergentsubsequence(andbyCauchyness
 the origianl sequence converges to the same limit). Consider thus the series defined
-by𝑎1 = 𝑥1,𝑎 2 = 𝑥𝜑 (2) −𝑥1,𝑎 3 = 𝑥𝜑 (3) −𝑥𝜑 (2) etc. for a subsequence𝑥𝜑 (𝑛), so
+by𝑎1 = 𝑥1,𝑎 2 = 𝑥𝜑 (2) -𝑥1,𝑎 3 = 𝑥𝜑 (3) -𝑥𝜑 (2) etc. for a subsequence𝑥𝜑 (𝑛), so
 that the partial sum of this series is exactly𝑥𝜑 (𝑛). To show that the series is con-
 vergent, it is enough to choose the subsequence, i.e.𝜑 in such a way that the series
 absolutely convergent. By Cauchyness, we can always choose𝜑(𝑛) so that for all
-𝑝 ≥ 𝜑(𝑛), |𝑥𝑝 −𝑥𝜑 (𝑛) | ≤ 2−𝑛. This implies absolute convergence so we are done.
+𝑝 ≥ 𝜑(𝑛), |𝑥𝑝 -𝑥𝜑 (𝑛) | ≤ 2-𝑛. This implies absolute convergence so we are done.
 44
 
 --- Page 45 ---
@@ -1096,16 +1096,16 @@ Show that a normed vector space𝐸 with an infinite countable basis cannot
 be complet.
 Proof. Take a normalized basis {𝑒𝑛}𝑛≥1 of 𝐸 with ||𝑒𝑛|| = 1. Consider 𝐹𝑛 =
 span{𝑒1,...,𝑒 𝑛}, and define𝜆1 = 1/3 and𝜆𝑛+1 = 1
-3𝑑 (𝜆𝑛𝑒𝑛,𝐹𝑛−1). We now how
+3𝑑 (𝜆𝑛𝑒𝑛,𝐹𝑛-1). We now how
 that Í𝜆𝑛𝑒𝑛 converges absolutely but does not converge.
-Indeed, it is quite easy to see that|𝜆𝑛| ≤ 3−𝑛 by recurrence, so that the series is
+Indeed, it is quite easy to see that|𝜆𝑛| ≤ 3-𝑛 by recurrence, so that the series is
 absolutely convergent. To see that it does not converge, suppose that it converges to
-𝑥,and 𝑥 mustbeinacertain 𝐹𝑛 forsomelargeenough 𝑛.Therefore, 𝑦 =𝑥−Í𝑛
+𝑥,and 𝑥 mustbeinacertain 𝐹𝑛 forsomelargeenough 𝑛.Therefore, 𝑦 =𝑥-Í𝑛
 𝑖=1𝜆𝑛𝑒𝑛
-is also in𝐹𝑛, and3𝜆𝑛+2 ≤ 𝑑 (𝜆𝑛+1𝑒𝑛+1,𝐹𝑛) ≤ | 𝜆𝑛+1𝑒𝑛+1 −𝑦| ≤ Í∞
+is also in𝐹𝑛, and3𝜆𝑛+2 ≤ 𝑑 (𝜆𝑛+1𝑒𝑛+1,𝐹𝑛) ≤ | 𝜆𝑛+1𝑒𝑛+1 -𝑦| ≤ Í∞
 𝑖=𝑛+2𝜆𝑘 ≤ 3
 2𝜆𝑛+2.
-This is absurd since𝜆𝑛 > 0 for all𝑛, since𝑒𝑛 ∉𝐹𝑛−1.
+This is absurd since𝜆𝑛 > 0 for all𝑛, since𝑒𝑛 ∉𝐹𝑛-1.
 The following is a slight extension of Banach’s fixed point theorem in complete
 spaces.
 Suppose that (𝐸,𝑑 ) is a compact metric space and𝑓 : 𝐸 → 𝐸 is such that
@@ -1154,7 +1154,7 @@ interior of each𝐹𝑛,𝜖 , so that
 --- Page 47 ---
 8.5 More exercises from the web
 W2. Nilpotence.
-Let𝑁 ∈ 𝑀𝑛 (C).Showthat 𝑁 isnilpotentifandonlyif 0isadherentto {𝑃−1𝑁𝑃,𝑃 ∈
+Let𝑁 ∈ 𝑀𝑛 (C).Showthat 𝑁 isnilpotentifandonlyif 0isadherentto {𝑃-1𝑁𝑃,𝑃 ∈
 GL𝑛 (C)}. Hint: use the upper-triangular representation and the continuity of the
 characteristic polynomial.
 W4. Untitled.
@@ -1168,11 +1168,11 @@ T1. Topological monotonicity.
 Thisexerciseistakenfromthebook“EllipticPartialDifferentialEquationsandQua-
 siconformal Mappings in the Plane” by Astala, Iwaniec, and Martin.
 Show that a map𝑢 : R → R is monotonic if and only if the inverse image of each
-point𝑢−1 ({𝑥}) is connected.
+point𝑢-1 ({𝑥}) is connected.
 A mapping𝑓 : 𝑋 →𝑌 between two compact metric spaces is called topologically
-monotone if𝑓 is continuous, onto and𝑓 −1 (𝑎) is connected in𝑋 for all𝑎 ∈𝑌. Prove
+monotone if𝑓 is continuous, onto and𝑓 -1 (𝑎) is connected in𝑋 for all𝑎 ∈𝑌. Prove
 the following theorem of Whyburn: if𝑓 is topologically monotone, then for each
-closed and connected subset𝐴 ⊂ 𝑌, the inverse image𝑓 −1 (𝐴) ⊂ 𝑋 is closed and
+closed and connected subset𝐴 ⊂ 𝑌, the inverse image𝑓 -1 (𝐴) ⊂ 𝑋 is closed and
 connected.
 Suppose now that𝑓𝑗 is a sequence of topologically monotone mappings converging
 uniformly to𝑓 :𝑋 →𝑌. Then𝑓 is monotone.

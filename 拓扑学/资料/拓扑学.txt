@@ -94,7 +94,7 @@ set.
 A whenever x∈ A. The smallest such set is unique, and we call it
 N ={0, 1, 2, 3,...}.
 • Axiom VII (The Axiom of Choice): For any set A there is a function
-c :P(A)−{∅}→ A, such that c(B)∈B for all B⊂A.
+c :P(A)-{∅}→ A, such that c(B)∈B for all B⊂A.
 Discussion of the Axioms. Axiom I. (Extension). To have a well–
 deﬁned domain of discourse, the elements of sets are also sets.
 There is a subtle point in Axiom I: what does the conclusion, A = B,
@@ -102,7 +102,7 @@ mean anyway? In fact the idea of equality is a notion in logic rather than
 set theory. It means that for any logical sentence P (x), P (A) has the same
 answer as P (B). For example, if A =B, and A∈Y , then B∈Y .
 Axiom II. (Speciﬁcation). Examples: A∩B ={x∈ A : x∈ B}.
-A−B ={x∈A : x̸∈B}. R− Q = irrationals; Q− R =∅.
+A-B ={x∈A : x̸∈B}. R- Q = irrationals; Q- R =∅.
 {x∈ Z :∃y∈ Z,y +y =x} = even numbers.
 {x∈ Z : x/n∈ Z∀n> 0} ={0}.
 {x∈ Z : x2 < 0} =∅.
@@ -142,7 +142,7 @@ k
 )
 +
 ( n
-k−1
+k-1
 )
 .
 Axiom VI. (Inﬁnity) . We have now built up the natural numbers via set
@@ -179,16 +179,16 @@ A function can be injective and/or surjective. It is bijective if both.
 Composition of maps: f◦g. If f : A→ B is bijective, then there is a
 unique map g :B→A such that g◦f(x) =x∀x∈A.
 Examples: f(n) = n2 is injective on N, but not on Z. It is surjective in
-neither case. The function sin : R→ [−1, 1] is surjective but not injective.
-Its restriction, sin : [ −π/2,π/ 2]→ [0, 1], is bijective. Its restriction, sin :
-[0, 1]→ [−1, 1], is injective but not surjective.
+neither case. The function sin : R→ [-1, 1] is surjective but not injective.
+Its restriction, sin : [ -π/2,π/ 2]→ [0, 1], is bijective. Its restriction, sin :
+[0, 1]→ [-1, 1], is injective but not surjective.
 Set theory as a programming language. The point of the deﬁnitions of
 N and (a,b ) is not so much that they are natural or canonical, but that they
 work. In other words set theory provides a very simple language in which
 the rest of mathematics can be implemented.
 There is a natural bijection between A×A and A2.
 There is a natural bijection between P(A) and 2A.
-P(X) as an algebra. If we deﬁne A·B =A∩B and A +B = (A∪B)−
+P(X) as an algebra. If we deﬁne A·B =A∩B and A +B = (A∪B)-
 (A∩B), then P(X) becomes a ring. The identity elements are ∅ and X.
 This rings is nothing but the ring of map f :X→ Z/2.
 Note that A +A = 0. Thus this ring is also an algebra over the ﬁeld F2.
@@ -202,22 +202,22 @@ Is this map a ring homomorphism?
 In general,f(A∩B)̸=f(A)∩f(B). We only havef(A∩B)⊂f(A)∩f(B).
 However, if f is injective, then equality holds. We always have, however,
 f(A∪B) =f(A)∪f(B).
-If f : A→ B is a function, for any subset X⊂ B we deﬁne f−1(X) =
-{a∈A : f(a)∈X}. Thus we havef−1 :P(B)→P (A). This map preserves
-intersection and unions: e.g. f−1(X∩Y ) =f−1(X)∩f−1(Y ).
-Abusing notation, one also writes f−1(b) for f−1({b}).
+If f : A→ B is a function, for any subset X⊂ B we deﬁne f-1(X) =
+{a∈A : f(a)∈X}. Thus we havef-1 :P(B)→P (A). This map preserves
+intersection and unions: e.g. f-1(X∩Y ) =f-1(X)∩f-1(Y ).
+Abusing notation, one also writes f-1(b) for f-1({b}).
 6
 
 --- Page 7 ---
-The ubiquity off −1. The fact that f−1 preserves set-theoretic operations
-means that a good theory of maps often turns on properties of f−1 rather
+The ubiquity off -1. The fact that f-1 preserves set-theoretic operations
+means that a good theory of maps often turns on properties of f-1 rather
 than f.
 For example, we will see that a continuous function can be deﬁned as
-one such that f−1(U) is open for every open set U. Similarly a measurable
-function is one such that f−1(U) is measurable for every open set U.
+one such that f-1(U) is open for every open set U. Similarly a measurable
+function is one such that f-1(U) is measurable for every open set U.
 Another reason for this ubiquity is that functions naturally pull back. In
 particular, the indicator functions satisfy
-χA◦f =f∗(χA) =χf−1(A).
+χA◦f =f∗(χA) =χf-1(A).
 This pullback operation preserves the algebra structure of the space of
 functions. In diﬀerential topology, we ﬁnd that forms pullback as well, that
 d(f∗ω) =f∗(dω), etc.
@@ -247,7 +247,7 @@ Theorem 2.4 (Pigeon-hole principle) If A is ﬁnite, then any injective
 map f :A→A is surjective.
 Proof. By induction on|A| =n.
 Application: for any prime p and a̸= 0, there is an integer b such that
-ab = 1 modp. (I.e. b = 1/a). Proof: The map b↦→ab is 1− 1 on Z/p, so it
+ab = 1 modp. (I.e. b = 1/a). Proof: The map b↦→ab is 1- 1 on Z/p, so it
 is onto. Example: 1 /10 = 12 mod 17; in fact 10∗ 12 = 120 = 7∗ 17 + 1.
 Inﬁnite sets. A set is inﬁnite iﬀ it is not ﬁnite.
 Theorem 2.5 N is inﬁnite.
@@ -255,7 +255,7 @@ Proof. Otherwise, there would for some n be an injective map N ↪→ n,
 and hence an injective map n + 1 ↪→ n. This contradicts the pigeon–hole
 principle.
 Axiom VII (The Axiom of Choice). For any set A there is a function
-c :P(A)−{∅}→ A, such that c(B)∈B for all B⊂A.
+c :P(A)-{∅}→ A, such that c(B)∈B for all B⊂A.
 In concrete cases it is possible to ﬁnd explicit choice functions. For the
 natural numbers, we can let c(A) = min(A). For the rational numbers, we
 can take this ‘simplest’ rational number x = p/q in A, say with q minimal,
@@ -265,7 +265,7 @@ Theorem 2.6 A is inﬁnite iﬀ there is an injective map f : N→A.
 Proof. IfA is ﬁnite then any subset of A is ﬁnite, so there is no injection of
 N intoA.
 Now assume A is inﬁnite; we will construct f. Pick some a∈ A. Then
-deﬁne, by induction, f(0) =a and f(n + 1) =c(A−{f(0),...,f (n)}). The
+deﬁne, by induction, f(0) =a and f(n + 1) =c(A-{f(0),...,f (n)}). The
 resulting map is injective by construction.
 8
 
@@ -302,13 +302,13 @@ Let us say|A|≤| B| if
 (1) there is an injection f :A↪→B; or
 (2) there is a surjection g :B ↠A, or A =∅.
 Theorem 2.7 (1) and (2) are equivalent.
-Proof. Given the inclusion f we obtain from f−1 a surjection from f(A)
+Proof. Given the inclusion f we obtain from f-1 a surjection from f(A)
 back to A, which we can extend to the rest of B as a constant map so long
 9
 
 --- Page 10 ---
 as A̸=∅. Conversely, using the Axiom of Choice, we take f to be a section
-of g, i.e. set f(a) =c(g−1({a})).
+of g, i.e. set f(a) =c(g-1({a})).
 Theorem 2.8 (Schr¨ oder-Bernstein)If |A| ≤ |B| and |B| ≤ |A| then
 |A| =|B|.
 Proof. We will assumeA andB are disjoint — this can always be achieved,
@@ -351,7 +351,7 @@ Examples.
 1. The set of things that can be described in words is countable. Thus
 most real numbers have no names.
 2. The integers Z can be constructed from 2× N; they satisfy|Z| =|N|.
-3. The rationals Q are Q = Z× Z∗/∼, where (a,b )∼ (c,d ) ifad−bc = 0.
+3. The rationals Q are Q = Z× Z∗/∼, where (a,b )∼ (c,d ) ifad-bc = 0.
 The Q is countable.
 4. The ring of polynomials Z[x] is countable.
 Corollary 2.12 Most real numbers are transcendental.
@@ -364,7 +364,7 @@ in base 2 by
 xA =x0.x1x2x3... =
 ∑
 n∈A
-2−n,
+2-n,
 where xn = 1 if n∈ A and zero otherwise. Conversely, a real number x is
 uniquely determined by the set
 Ax ={y∈ Q : y <x}⊂ Q.
@@ -407,7 +407,7 @@ More informally, any union of open sets is again open, and the intersection
 of any ﬁnite collection of open sets is again open.
 Usually we will refer to ( X,T ) simply as a space (as opposed to a set),
 and denote it by X.
-Closed sets. A set F is closed ( ferm´ e) if its complement U = X−F is
+Closed sets. A set F is closed ( ferm´ e) if its complement U = X-F is
 open. The axioms above show the collection of closed sets in preserved by
 arbitrary intersections and ﬁnite unions. One can also specify a topology by
 giving the collection of all closed sets.
@@ -418,7 +418,7 @@ x∈B⊂U.
 In other words, there should be some space around each point, like on
 the wide open range.
 If you are not so familiar with general metric spaces, you can always
-think about Rn with d(x,y ) =|x−y|. To distinguish metrics and topology,
+think about Rn with d(x,y ) =|x-y|. To distinguish metrics and topology,
 consider the Manhattan metric on Rn: d(0, (x,y )) =|x| +|y|. This gives the
 same topological space.
 Exercise. The Paris metric on R2 is deﬁned by d(x,y ) is the minimum
@@ -457,7 +457,7 @@ To be more precise, we deﬁne U0 = (0.5, 0.6) as the set of numbers that have
 a robust 5 as their ﬁrst digit after the decimal point. We have excluded 0 .5
 and 0.599999... , since these are not robust — a small perturbation gets rid
 of the 5.
-Then we deﬁne Un ={x∈ (0, 1) : {10nx}∈ U0}. Here {x} =x− [x] is
+Then we deﬁne Un ={x∈ (0, 1) : {10nx}∈ U0}. Here {x} =x- [x] is
 the fractional part of x. These are the numbers with a robust 5 in the nth
 decimal place.
 Finally we deﬁne U =⋃Un.
@@ -465,26 +465,26 @@ Then U1 contains the new interval (0 .05, 0.06), (0.15, 0.16), (0.25, 0.26),
 etc. as well as the intervals like (0.55, 0.56) that are already contained in U0.
 Each Un+1 contains many new intervals like this. The complement of U in
 [0, 1] is a Cantor set.
-Continuous functions. A function f : X→ Y is continuous if f−1(U) is
+Continuous functions. A function f : X→ Y is continuous if f-1(U) is
 open for all open sets U⊂Y .
 Intuitively, continuity means:
 f(x) is close to f(a) whenever x is close enough to a.
 To say ‘f(x) is close to f(a)’ is to say that f(x) lies in a neighborhood V of
-f(a). Let U = f−1(V ). Then f(x) is ‘close to f(a)’ iﬀ x∈ U. When f is
+f(a). Let U = f-1(V ). Then f(x) is ‘close to f(a)’ iﬀ x∈ U. When f is
 continuous, U is a neighborhood of a, and when x is in the neighborhood U
 of a, it is ‘close enough to a’ that f(x)∈V .
 Theorem 3.1 The composition of two continuous maps is continuous.
 14
 
 --- Page 15 ---
-Theorem 3.2 A map f : X→ Y is continuous iﬀ f−1(B) is open for all
+Theorem 3.2 A map f : X→ Y is continuous iﬀ f-1(B) is open for all
 element B in a basis for the topology on Y .
-Proof. For any open set U =⋃Bi, the preimage f−1(U) =⋃f−1(Bi) is a
+Proof. For any open set U =⋃Bi, the preimage f-1(U) =⋃f-1(Bi) is a
 union of open sets, hence open.
 Example. To verify a map f : X→ R is continuous, it suﬃces to verify
-that f−1(a,b ) is open for all (a,b ).
+that f-1(a,b ) is open for all (a,b ).
 Homeomorphism. A bijection between spaces, f : X→ Y , is a homeo-
-morphism if both f andf−1 are continuous. This is the same as saying that
+morphism if both f andf-1 are continuous. This is the same as saying that
 U is open ⇐⇒ f(U) is open.
 Homeomorphic spaces are topologically the same.
 Warning: it is tempting to think that a bijective continuous map is al-
@@ -500,7 +500,7 @@ important example we note:
 The real numbers R are homeomorphic to the open interval (0, 1).
 A fancy way to see this is to ﬁrst note that all bounded intervals ( a,b ) are
 related by linear maps, and then note that
-tan : (−π/2,π/ 2)→ R
+tan : (-π/2,π/ 2)→ R
 is a homeomorphism. Many other functions will do the trick.
 Real-valued functions. We let C(X,Y ) denote the set of all continuous
 map f :X→Y . We let C(X) =C(X, R) denote the algebra of real–valued
@@ -560,8 +560,8 @@ the projections of X×Y to X and Y are continuous.
 (2) A function f :Z→X×Y , given by f(z) = (f1(z),f 2(z)), is contin-
 uous iﬀ each of its coordinates f1 and f2 are continuous.
 Proof. (2) It suﬃces to check continuity using the basic open sets U×V in
-X×Y . For these, f−1(U×V ) =f−1
-1 (U)∩f−1
+X×Y . For these, f-1(U×V ) =f-1
+1 (U)∩f-1
 2 (V ) is an intersection of two
 open sets, and hence open.
 Topologies on the square. The product topology on I×I coincides with
@@ -607,9 +607,9 @@ Closure. The closure A of a set A⊂X is simply the smallest closed set
 containingA. This exists because the intersection of closed sets is closed.
 Interior. Similarly, the interior of A, denoted int(A), is the largest open
 set contained in A.
-Boundary. The boundary of A is their diﬀerence: ∂A = A− intA. A
+Boundary. The boundary of A is their diﬀerence: ∂A = A- intA. A
 point x lies in the boundary of A iﬀ ever neighborhood of x meets both A
-and X−A.
+and X-A.
 Density. We sayA⊂X is dense if A =X.
 Example: the boundary of the open unit ball B in R2 isS1. The same is
 true of the closed unit ball. The boundary of the set of points A in the unit
@@ -619,12 +619,12 @@ Limit points. An essential notion in calculus is the idea of limit. But it is
 usually expressed in terms of sequences. How can it be expressed just using
 open sets?
 Answer: we say x is a limit point of A if every neighborhood of x meets
-A−{x}. In a metric space, this would imply that there is a sequence an∈A
+A-{x}. In a metric space, this would imply that there is a sequence an∈A
 with an̸=x for all n and an→x.
 Theorem 3.5 The closure of A is the union of A and its limit points.
 Proof. Supposex̸∈A. If x is not a limit point, then there is a neighborhood
 U ofX which does not meetA. Then A∩U =∅ as well, sox̸∈A. Conversely,
-if x̸∈A then U =X−A is an open neighborhood of x disjoint from A, so
+if x̸∈A then U =X-A is an open neighborhood of x disjoint from A, so
 x is not a limit point.
 18
 
@@ -667,7 +667,7 @@ able closed set Aα such that A(α)
 α ̸=∅.
 Cantor was motivated by a problem in Fourier series. A closed set A⊂
 [0, 2π] is a set of uniqueness if the only way a Fourier series ∑aneint can
-converge to zero at each point of [0 , 2π]−A is if all its coeﬃcients an are
+converge to zero at each point of [0 , 2π]-A is if all its coeﬃcients an are
 zero. Using derivations, Cantor showed any countable closed set is a set
 of uniqueness. On the other hand, the linear middle ξ Cantor set K(ξ) is
 sometimes a set of uniqueness, sometimes not — e.g. the case where 1 /ξ is
@@ -764,7 +764,7 @@ in the case X =AB, the topology of pointwise convergence.
 The Hilbert cube. Another nice example of an inﬁnite product is X =
 [0, 1]N. This is simply the space of all sequences ( xi) with 0 ≤ xi≤ 1. The
 topology is induced by a nice metric, e.g.
-d(x,y ) = max|xn−yn|/2n.
+d(x,y ) = max|xn-yn|/2n.
 Box topology. The box topology on X = ∏Xi is deﬁned by using all
 products of open sets, ∏Ui, to form a base for the topology.
 This topology is very strong (i.e. it has lots of open sets), so there are
@@ -774,7 +774,7 @@ product topology, but discontinuous in the box topology.
 (Proof: Each factor Di : [0, 1]→ [0, 1] is simply the identity map, which
 is continuous, so the product topology is ﬁne. But in the weak topology,
 for any x∈ [0, 1] we can ﬁnd a sequence of open sets Ui containing x and
-nesting down to it. Then D−1(∏Ui) =⋂Ui ={x} is not open, so D is not
+nesting down to it. Then D-1(∏Ui) =⋂Ui ={x} is not open, so D is not
 continuous.)
 Topological groups. A topological group is a set G equipped with contin-
 uous product and inverse maps, G×G→ G and G→ G, that satisfy the
@@ -797,7 +797,7 @@ neighborhoods. Since e is closed, so is x, so there is a neighborhood U of e
 disjoint from x.
 Now comes the key point: since multiplication is continuous, there is a
 smaller neighborhood V of U such that V·V ⊂ U. We may also assume
-V =V−1. It is then readily veriﬁed that V and xV are disjoint.
+V =V-1. It is then readily veriﬁed that V and xV are disjoint.
 4 Connected spaces
 A space X is connected if it cannot be written as the disjoint union of two
 nonempty open sets, X =U∪V .
@@ -817,7 +817,7 @@ The abstract fact is:
 Theorem 4.2 If f : X→ Y is continuous and X is connected, then f(X)
 is connected.
 Proof. Suppose to the contrary we can write f(X) = U∪V as the union
-of two nonempty, disjoint open sets. Then X = f−1(U)∪f−1(V ) does the
+of two nonempty, disjoint open sets. Then X = f-1(U)∪f-1(V ) does the
 same for X.
 23
 
@@ -848,7 +848,7 @@ Note that we do not require K to be open or closed.
 Exercise. A set A⊂ R is connected ⇐⇒ it is convex ⇐⇒ it is path
 connected.
 The topologist’s sine curve. The union of the graph of y = sin(1/x) over
-(0, 1] and the interval [−1, 1] along the y-axis is a classic example of a closed
+(0, 1] and the interval [-1, 1] along the y-axis is a classic example of a closed
 subset of R2 that is connected but not path connected.
 0.2 0.4 0.6 0.8 1.0
 -1.0
@@ -964,9 +964,9 @@ Two main results. As for connectedness, there are 2 basic results, one
 abstract, one concrete.
 Theorem 5.1 The continuous image of a compact space is compact.
 Proof. Suppose A is compact and f :A→X is continuous. Let B =f(A)
-and let ⋃Ui be an open cover of B. Then ⋃f−1(Ui) is an open cover of A.
-SinceA is compact, the coveringf−1(Ui) has a ﬁnite subcover, say (f−1(Uj) :
-j∈J),|J|<∞. Since Uj =f(f−1(Uj)), the sets (Uj : j∈J) cover B.
+and let ⋃Ui be an open cover of B. Then ⋃f-1(Ui) is an open cover of A.
+SinceA is compact, the coveringf-1(Ui) has a ﬁnite subcover, say (f-1(Uj) :
+j∈J),|J|<∞. Since Uj =f(f-1(Uj)), the sets (Uj : j∈J) cover B.
 In analysis one frequently discusses compactness in terms of sequences,
 but this does not suﬃce for general topological spaces. Thus it is interesting
 to prove compactness on the real line directly using the covering condition.
@@ -978,7 +978,7 @@ connected, we have will have 1 ∈ A, which is the Theorem. In fact it is
 obvious that A is open, since any cover that works for [0 ,x ] has x∈ Ui for
 some i; hence B(x,r )⊂Ui for some r >0, and hence the same cover works
 for [0,x +r/2]. The proof that A is closed is similar. Suppose x is a limit
-point of A. Of course x∈ B(x,r )⊂ Ui for some i. Moreover [0 ,x−r/2]
+point of A. Of course x∈ B(x,r )⊂ Ui for some i. Moreover [0 ,x-r/2]
 admits a ﬁnite cover. Now add Ui to this cover, and we have a ﬁnite cover
 of [0,x ].
 Of course the same result holds for any other interval. We will shortly
@@ -987,7 +987,7 @@ Theorem 5.3 A set K⊂ Rn is compact iﬀ it is closed and bounded.
 Compact Hausdorﬀ spaces. We now explain a few points about compact
 sets versus closed sets.
 Theorem 5.4 If X is compact, then any closed set A⊂X is also compact.
-Proof. Given any open cover of A, we can use U = X−A to extend it to
+Proof. Given any open cover of A, we can use U = X-A to extend it to
 any open cover of X. We then pass to a ﬁnite cover, discard U, and obtain
 a ﬁnite open cover of A.
 28
@@ -997,7 +997,7 @@ Here is a subtle point, whose proof is a beautiful application of compact-
 ness.
 Theorem 5.5 If X is a Hausdorﬀ space, then any compact set K⊂ X is
 closed.
-Proof. Suppose x∈ X−K. By the Hausdorﬀ condition, for every y∈
+Proof. Suppose x∈ X-K. By the Hausdorﬀ condition, for every y∈
 K there is are disjoint neighborhoods Uy and Vy of x and y respectively.
 Then K is covered by ⋃Vy. Pass to a ﬁnite subcover, say V1,...,V k with
 corresponding neighborhood U1,...,U k of x.
@@ -1047,7 +1047,7 @@ But the answer is no for Fn⊂ [0, 1]. More generally we have:
 Theorem 5.10 Suppose X is compact. Let F ⊂P(X) be a collection of
 closed sets such that F1∩··· Fk̸=∅ for all ﬁnite subsets {F1,...,F k}⊂F .
 Then⋂F̸ =∅.
-Proof. If⋂F =∅ then⋃U = X, whereU ={X−F : F∈F} . Then
+Proof. If⋂F =∅ then⋃U = X, whereU ={X-F : F∈F} . Then
 U has a ﬁnite subcover, with U1∪···∪ Uk = X. Taking complements, we
 obtain elements ofF such that F1∩···∩ Fk =∅.
 Example. From the ratios fn+1/fn of the Fibonacci numbers
@@ -1063,7 +1063,7 @@ We have⋂Fn ={(1 +
 Proof of Theorem 5.3. If K⊂ Rn, then it is closed because Rn is Haus-
 dorﬀ, and it is bounded because ⋃B(0,n ) has a ﬁnite subcover.
 Conversely, ifK is bounded then it is contained in a product of intervals
-[−M,M ]n, which is compact. Thus if K is also closed, it is a closed subset
+[-M,M ]n, which is compact. Thus if K is also closed, it is a closed subset
 of a compact space, and hence compact.
 Calculus. The following typical applications are crucial in science, eco-
 nomics, etc.
@@ -1146,7 +1146,7 @@ their basic raison d’ˆ etre.
 (Paradox: it is tempting to deﬁne R as the completion of Q, but then we
 need to ﬁrst deﬁne complete metric spaces — without reference to R!)
 One can also complete the rational numbers with respect to the m-adic
-valuation, where|mkq| =m−k for integers with gcd(m,q )<m . For example,
+valuation, where|mkq| =m-k for integers with gcd(m,q )<m . For example,
 Z10 consists of decimal numbers which are inﬁnite to the left. It is homeo-
 morphic to X N, where X ={0, 1, 2,..., 9}. For p prime, the completion Qp
 is a ﬁeld, but Q10 is not. If 5 n accumulates on x and 2n accumulates on y,
@@ -1156,10 +1156,10 @@ surable functions, such as L2[0, 1]. Indeed, a major program in analysis is
 to study completions of spaces of functions with respect to various norms or
 metrics. The space L2[0, 1] is the completion of C[0, 1] with respect to the
 norm
-∥f−g∥2 =
+∥f-g∥2 =
 ∫ 1
 0
-|f(x)−g(x)|2dx.
+|f(x)-g(x)|2dx.
 33
 
 --- Page 34 ---
@@ -1192,7 +1192,7 @@ can assumeU is a countable cover of X, by choosing for each basis element
 B a single element ofU that contains it (if one exists).
 We can now order the open sets as U1,U 2,... , and we want to show that
 Vn =⋃n
-1Ui is equal to X for some n. Equivalently, setting Fn = X−Vn,
+1Ui is equal to X for some n. Equivalently, setting Fn = X-Vn,
 it suﬃces to show that if we have a sequence of nonempty closed sets F1⊃
 F2⊃··· , then F =⋂Fi̸=∅. This is easy: just choose xi∈ X, and use
 sequential compactness to obtain a subsequence converging toy; theny∈F .
@@ -1212,7 +1212,7 @@ element ofU. Clearly ⋃
 s>0Vs = K. Since K is compact, we have K = Vr
 for some r >0. and then r = min(s1,...,s i) works.
 Corollary 6.5 Let f : K → R be continuous. Then for any ϵ > 0 there
-exists an r >0 such that d(x,y )<r =⇒ |f(x)−f(y)|<ϵ .
+exists an r >0 such that d(x,y )<r =⇒ |f(x)-f(y)|<ϵ .
 Proof. LetU be the covering of K by the preimages under f of all intervals
 of length ϵ in R, and apply the preceding result.
 Uniform limits. LetYX denote the set of all functions f :X→Y , and let
@@ -1221,7 +1221,7 @@ Suppose Y is a metric space. Then we can deﬁne a distance between
 functions by
 d(f,g ) = sup
 X
-|f(x)−g(x)|.
+|f(x)-g(x)|.
 This is not quite a metric, since it may be inﬁnite. We can rectify this by
 simply setting d(f,g ) = 1 if the supremum above is > 1. We say fn→ g
 uniformly if d(fn,g )→ 0. We call d the uniform metric.
@@ -1238,14 +1238,14 @@ since (fn) is a Cauchy sequence.
 Theorem 6.7 A uniform limit of continuous functions is continuous. In
 other words, C(X,Y ) is closed in YX.
 Proof. Supposefn∈C(X,Y ) converge uniformly tog :X→Y . Let V⊂Y
-be open. We must show that U =g−1(V ) is open. Suppose x∈g−1(V ), and
+be open. We must show that U =g-1(V ) is open. Suppose x∈g-1(V ), and
 y =g(x)∈V . Then B(y,r )⊂V for some r >0.
-Let Un = f−1
+Let Un = f-1
 n (B(y,r/ 2)). Clearly Un is open for all n. Choose N so
 d(fn,g )<r/ 2 for all n>N . Then if d(fn(x),y )<r/ 2, we haved(g(x),y )<
 r, and hence
-Un =f−1
-n (B(y,r/ 2))⊂g−1(B(y,r ))⊂U
+Un =f-1
+n (B(y,r/ 2))⊂g-1(B(y,r ))⊂U
 for all n > N. Moreover fn(x)→ g(x) = y, so x∈ Un for all n≫ 0. It
 follows that x∈Un⊂U for all n≫ 0, and thus U is open.
 Corollary 6.8 If Y is complete, then so is C(X,Y ).
@@ -1276,12 +1276,12 @@ map I→I2 can be made continuous.
 Exercise: there is no continuous bijectionf :I→I2. (Use connectivity.)
 To construct a Peano curve it suﬃces to show:
 Theorem 6.9 There exists a uniformly convergent sequence of functionsfn :
-I→I2 such that fn(I) enters every dyadic square of side 2−n.
+I→I2 such that fn(I) enters every dyadic square of side 2-n.
 One such construction (there are many!) is shown in Figure 2. Whenever
 we have a segment J such that one endpoint of f(J) passes through the
 center of a dyadic squareS, we can modifyf|J so that it also passes through
 the centers of the 4 adjacent subsquares. In doing so we never move f(x)
-a distance greater than diam( S) = 2−n. Since ∑ 2−n is ﬁnite, the sequence
+a distance greater than diam( S) = 2-n. Since ∑ 2-n is ﬁnite, the sequence
 converges uniformly. The sequence is shown in Figure 3.
 Products of metric spaces. Using sequential compactness, it is quite easy
 to see that the product of two compact metric spaces is compact. Namely, if
@@ -1292,7 +1292,7 @@ compact metric spaces, ∏∞
 1 Xi, is compact.
 We can now give a ‘new’ proof that [0 , 1] is compact: the product 2 N is
 obviously compact, and there is a surjective, continuous function f : 2 N→
-[0, 1] given by f(a0,a 1,a 2,... ) =∑ 2−i−1ai.
+[0, 1] given by f(a0,a 1,a 2,... ) =∑ 2-i-1ai.
 Characterization of compact metric spaces. As we have seen,K⊂ Rn
 is compact iﬀ it is closed and bounded. Here is a generalization. We say a
 metric space X is totally bounded if for every r >0, there is a covering of X
@@ -1317,9 +1317,9 @@ a Cauchy sequence. By completeness, this subsequence has a limit y, and
 hence X is (sequentially) compact.
 Functions on a compact space. Whenever K is compact, we can make
 C(K) =C(K, R) into a complete metric space by setting
-d(f,g ) =∥f−g∥ = sup
+d(f,g ) =∥f-g∥ = sup
 X
-|f(x)−g(x)|.
+|f(x)-g(x)|.
 This supremum is ﬁnite because X is compact.
 The Arzela–Ascoli theorem. As a vector space,C[0, 1] is inﬁnite–dimensional.
 Unlike Rn, its closed, bounded subsets are not compact. For example,
@@ -1338,11 +1338,11 @@ n(1) = n→∞ . We cannot
 make an example like this if we keep |f′| bounded!
 The reason for this is thatF (or equivalentlyF ) is totally bounded. Here
 is a proof. Let us say f,g ∈C([0, 1]) are close along the 1/n grid if
-|f(a/n)−g(a/n)|< 1/n
+|f(a/n)-g(a/n)|< 1/n
 fora = 0, 1,...,n . It is easy to ﬁnd a ﬁnite setGn⊂F such that everyf∈F
 is close to some gn∈Gn along the 1/n grid. But then, by the intermediate
 value theorem, we also have
-|f(x)−gn(x)|≤ 2/n
+|f(x)-gn(x)|≤ 2/n
 39
 
 --- Page 40 ---
@@ -1352,7 +1352,7 @@ Since C(K) is complete, so is F . Thus F is compact.
 Equicontinuity. More generally, if K is a compact metric space and F⊂
 C(K) is a family of continuous functions on K, we say F is equicontinuous
 if for all ϵ> 0 there exists a δ >0 such that
-d(x,y )<δ =⇒ |f(x)−f(y)|<ϵ
+d(x,y )<δ =⇒ |f(x)-f(y)|<ϵ
 for all f ∈ F . (In the example above, we can take δ = ϵ.) This property
 allows us to replace ‘close on a grid’ with ‘close throughout K’ as we did in
 the proof above. Thus the same argument shows:
@@ -1373,7 +1373,7 @@ is because, by Cauchy’s integral formula, we have
 ∫
 γ
 f(ζ)
-(z−ζ)2dζ
+(z-ζ)2dζ
 ⏐⏐⏐⏐≤ M
 d(z,∂U )·
 Baire category. Here is a ﬁnal remark about complete metric spaces. If
@@ -1393,7 +1393,7 @@ an increasing sequence of closed sets with X =⋃Fi, then one of them has
 nonempty interior.
 Example. (A challenging homework problem.) Find a sequence of open
 sets Ui⊂ R such that⋂Ui = Q.
-Answer: this is impossible! Let Q = {p1,p 2,...} and let Vi = Ui−
+Answer: this is impossible! Let Q = {p1,p 2,...} and let Vi = Ui-
 {p1,...,p i}. Since Ui contains Q, eachVi is a dense open set; but if⋂Ui = Q
 then⋂Vi =∅.
 Baire category is frequently useful in the construction of counterexam-
@@ -1402,7 +1402,7 @@ function f∈C[0, 1], one can show that a generic function is nowhere diﬀer-
 entiable.
 Example: Liouville numbers. We sayx∈ R is a Liouville number if x is
 irrational and, for any k, there are inﬁnitely many rational numbers with
-⏐⏐⏐⏐x− p
+⏐⏐⏐⏐x- p
 q
 ⏐⏐⏐⏐≤ 1
 qk·
@@ -1411,12 +1411,12 @@ ple, x =∑∞
 0 1/10n! is a Liouville number, since xm =∑m
 0 1/10n! = pm/qm
 with qm = 10m!, and
-|x−pm/qm|≤ 2· 10−(m+1)!≤ 10−km! = 1/qk
+|x-pm/qm|≤ 2· 10-(m+1)!≤ 10-km! = 1/qk
 m
 for all m large enough.
 If we set Uk =⋃B(p/q, 1/qk) then the set of Liouville numbers if given
 by⋂∞
-1 Uk−ratls, and thus:
+1 Uk-ratls, and thus:
 Theorem 6.15 A generic real number is a Liouville number.
 On the other hand, it is not hard to show that a number chosen at random
 in [0, 1] is not a Liouville number.
@@ -1461,12 +1461,12 @@ a sequence of closed sets As indexed by the numbers of the form s = p/2n,
 
 --- Page 43 ---
 2. We have As⊂ int(At) whenever s<t .
-3. We have As⊂X−B whenevers< 1.
+3. We have As⊂X-B whenevers< 1.
 Once this is done, we deﬁne f :X→ [0, 1] by
 f(x) = inf{s : x∈As}.
 From the conditions above we get f|A = 0, f|B = 1. For continuity, ﬁrst
 note that
-f−1((−∞,a )) ={x : f(x)<a} =
+f-1((-∞,a )) ={x : f(x)<a} =
 ⋃
 s<a
 As =
@@ -1474,13 +1474,13 @@ As =
 s<a
 int(As)
 is a union of open sets, hence open. Similarly
-f−1((b, +∞)) ={x : f(x)>a} =
+f-1((b, +∞)) ={x : f(x)>a} =
 ⋃
 s>b
-(X−As)
+(X-As)
 is also open. Since these two types of intervals generate the topology on the
 real numbers, f is continuous.
-Remark. Even though f|A = 0, we might not have f−1(0) = A, and
+Remark. Even though f|A = 0, we might not have f-1(0) = A, and
 similarly for B.
 Maximal ideals. An important consequence of Urysohn’s Lemma is that
 if K is a compact Hausdorﬀ space, then the functions in C(K) separate the
@@ -1499,7 +1499,7 @@ embedding.
 43
 
 --- Page 44 ---
-It is clear that φ is continuous. It is also 1− 1, since if x̸=y we can ﬁnd
+It is clear that φ is continuous. It is also 1- 1, since if x̸=y we can ﬁnd
 B,B′ as above with x∈B and y̸∈B′. (Thus if X were compact, we would
 be done.)
 We must show that φ : X→ φ(X) is an open map. For this, we must
@@ -1523,15 +1523,15 @@ a an interval [0, 1].
 Locally compact spaces. Let X be a Hausdorﬀ space. If X has a basis
 {B} such thatB is compact for all B, we sayX is locally compact. The one-
 point compactiﬁcation X∗ of X is deﬁned by adding the single point ∞ to
-X, and declaring that any set of the form (X−K)∪{∞} , with K compact,
+X, and declaring that any set of the form (X-K)∪{∞} , with K compact,
 is a neighborhood of inﬁnity.
 For example, the 1-point compactiﬁcation of R2 is the 2-sphere.
 Exercise: show X∗ is compact.
 Compactiﬁcation by ends. Another compactiﬁcation is given by X =
 X∪ϵ(X), where ϵ(X) is the space of ends of X, deﬁned in terms of the
-components ofX−K. Rather than giving a formal deﬁnition we just mention
+components ofX-K. Rather than giving a formal deﬁnition we just mention
 a few examples: (i) X∼= [0, 1] for X = R; (ii) X∼= Sn∼= X∗ for X = Rn,
-n> 1; (iii) X∼=X∪d× (d− 1)N when X is a regular tree of degree d.
+n> 1; (iii) X∼=X∪d× (d- 1)N when X is a regular tree of degree d.
 The Stone- ˇCech compactiﬁcation. Now suppose X is a normal space.
 The biggest compactiﬁcation of X, denoted β(X), is deﬁned as follows. Let
 44
@@ -1597,14 +1597,14 @@ case we say X is contractible (homotopy equivalent to a point).
 Example: A theta, a dumbbell and a ﬁgure 8 are all homotopy equivalent.
 The coolest proof of this is to slightly thicken these sets in the plane. All of
 the thickenings are homeomorphic, and all retract onto the original set.
-The punctured planeX = R2−{0} retracts onto the unit circleA =S1⊂
-X. The retraction can be given in polar coordinates byFt(es,θ ) = (e(1−t)s,θ ).
+The punctured planeX = R2-{0} retracts onto the unit circleA =S1⊂
+X. The retraction can be given in polar coordinates byFt(es,θ ) = (e(1-t)s,θ ).
 It is just obtained by retracting each ray through the origin to its intersection
 with the circle.
 The punctured torus. It is an interesting an initially unexpected fact that
 a punctured torus is homotopy equivalent to a bouquet of 2 circles. What
 can you say for a punctured surface of genus 2?
-In factX =S1×S1−B is homeomorphic to the rotary with an underpass
+In factX =S1×S1-B is homeomorphic to the rotary with an underpass
 shown in Figure 1. If we think of S1×S1 as a quotient of the square, then
 it is easy to see that X retracts onto S1∨S1. But X represents a diﬀerent
 thickening of this region from the ones coming from a dumbbell or theta or
@@ -1673,13 +1673,13 @@ The inverse of an isomorphism is unique.
 We let Isom(A,B )⊂ Mor(A,B ) denote the set of all isomorphisms for A
 to B, and we let Aut(A) = Isom(A,A ).
 Groups. A group is a set G equipped with a product operation G×G→G
-denoted f∗g, an inverse map G→ G, denoted g↦→ g−1, and an identity
+denoted f∗g, an inverse map G→ G, denoted g↦→ g-1, and an identity
 element denoted e∈G, such that:
 1. e∗g =g∗e =e for all g∈G,
 48
 
 --- Page 49 ---
-2. g∗g−1 =g−1∗g =ea for all g∈G, and
+2. g∗g-1 =g-1∗g =ea for all g∈G, and
 3. (f∗g)∗h =f∗ (g∗h) for all f,g,h ∈G.
 In any category, Aut(A) is a group. Conversely, a group is the same thing
 as a category with one object where all morphisms are isomorphisms.
@@ -1709,7 +1709,7 @@ and a path g from B to C, we can form a new path by
 (f∗g)(t) =
 {
 f(2t) for t∈ [0, 1/2], and
-g(2t− 1) for t∈ [1, 2, 1].
+g(2t- 1) for t∈ [1, 2, 1].
 Actually the map is given by
 [f]∗ [g] = [f∗g].
 49
@@ -1726,7 +1726,7 @@ h
 g * h
 Figure 4. Proof that the category of paths really is a category.
 Inverses. Finally we need to check that every pathf(t) has an inverse. But
-this is just that path deﬁned by g(t) =f(1−t). Then [g∗f]∈ Mor(A,A ) is
+this is just that path deﬁned by g(t) =f(1-t). Then [g∗f]∈ Mor(A,A ) is
 the same as [cA], since g∗f can be deformed to a point, like slurping up a
 single noodle of spaghetti.
 The category of unparameterized paths. We could also have identiﬁed
@@ -1750,7 +1750,7 @@ It is simply the group of all loops based at A.
 --- Page 51 ---
 Exercise: a path p from A to B determines an isomorphism
 π1(X,A )∼=π1(X,B ),
-given by f↦→p∗f∗p−1.
+given by f↦→p∗f∗p-1.
 Dependence on base point. If X is path connected, then for any two
 A,B ∈ X we have A∼= B in the category of paths, and thus Aut( A)∼=
 Aut(B). This shows:
@@ -1759,7 +1759,7 @@ of x up to isomorphism. More precisely, any path from x to y determines an
 isomorphism π1(X,x )∼=π1(X,y ).
 Inner automorphisms. In particular, a path from x to itself determines
 an isomorphism of G =π1(X,x ) to itself. These are exactly the inner auto-
-morphisms, of G, g↦→hgh−1.
+morphisms, of G, g↦→hgh-1.
 Simple connectivity. We say X is simply–connected if it is nonempty,
 path–connected, and π1(X,A ) is trivial. If X is a point, or more generally, if
 X is contractible, theπ1(X,A ) is trivial andX is simply–connected. The con-
@@ -1823,12 +1823,12 @@ illustrates many of the general ideals to be developed in the sequel. We will
 show:
 Theorem 10.1 The fundamental group of the circle S1 is isomorphic to Z.
 Covering spaces. A continuous map p :E→B evenly covers an open set
-U⊂ B if we can write p−1(U) =⊔Ui as a union of disjoint open sets, such
+U⊂ B if we can write p-1(U) =⊔Ui as a union of disjoint open sets, such
 thatp :Ui→U is a homeomorphism. If every point inB has a neighborhood
 which is evenly covered by p :E→B, then p is a covering map and E is a
 covering space of B.
 Put diﬀerently, once U is small enough, we have a family of continuous
-branches of the inverse of p, p−1
+branches of the inverse of p, p-1
 i :U→Ui, and whenever p(e)∈U we have
 e∈Ui for some i.
 Here we adopt the standard notation from ﬁber bundles (also used by
@@ -1836,7 +1836,7 @@ Munkres), where the base of a covering is denoted B, and the covering space
 (´ espace ´ etale) is denote E. One could also use F to denote the ﬁber, i.e. the
 preimage of a point in B.
 Exercise: if B is connected, then the number of points d in a ﬁber F =
-p−1(p) is independent of p. The number d is the degree of the covering.
+p-1(p) is independent of p. The number d is the degree of the covering.
 Lifting. Letf :X→B be a continuous map. We sayF :X→B is a lifting
 of f if F is also continuous, and p◦F = f. Thus we have a commutative
 diagram:
@@ -1850,7 +1850,7 @@ F
 B.
 A covering map is deﬁned so any lifting problem is locally solvable. That
 is, if f(X) is small enough to be contained in a chart U which is evenly
-covered, we can simple setF =p−1◦U. The fundamental group enters when
+covered, we can simple setF =p-1◦U. The fundamental group enters when
 we try to do lifting globally.
 Note that if we start with the map F : X→ E, and deﬁne f = p◦F :
 X→B, thenF automatically a lift off. In this way we can easily construct
@@ -1873,7 +1873,7 @@ F
 Theorem 10.2 Let f : [0, 1]→ B be a path and suppose b = p(e) = f(0).
 Then f has a unique lifting F such that F (0) =e.
 Proof. Consider the set T of t≥ 0 such that f|[0,t ] has a lifting with
-F (0) = e. Because π−1 is a local homeomorphism, T is open and contains
+F (0) = e. Because π-1 is a local homeomorphism, T is open and contains
 a neighborhood of 0. But t is also closed: if t0 = sup T , then there is a
 neighborhood U off(t0) that is evenly covered, and if there is an s∈T such
 that f([s,t 0])⊂ U. We can then piece together the lifting of f|[0,s ] with a
@@ -1907,8 +1907,8 @@ S1
 Figure 5. The covering map R→S1 can be pictured as a parking garage.
 give by p(x) =x mod 1. See Figure 5.
 In this setting, it is easy to understand path lifting. Namely if f([0, 1])
-lies entirely in an interval I⊂S1, then p−1 has a single valued branch along
-I and we can simply set F = p−1◦f. The branch is uniquely determine
+lies entirely in an interval I⊂S1, then p-1 has a single valued branch along
+I and we can simply set F = p-1◦f. The branch is uniquely determine
 once we specify F (0). By uniform continuity, any path f : [0, 1]→ S1 can
 be broken up into pieces of this type; by lifting each one, we get a lift of f.
 Space of paths and loops. The space of paths Pb(B) consists of all
@@ -1938,7 +1938,7 @@ homotopy. If ft(1) is constant during the homotopy from f0 to f1, then the
 same is true for Ft(1).
 The fundamental group. Now let Ω0(S1) be the space of loops, i.e. paths
 such that f(0) = f(1) = 0. If f ∈ Ω0(S1) and F = L(f), then F (1)∈
-p−1(0) = Z. Thus we have a continuous map
+p-1(0) = Z. Thus we have a continuous map
 T : Ω0(S1)→ Z.
 Since T (f) is continuous, it only depends on the homotopy class of f. Thus
 T descends to a map
@@ -1972,11 +1972,11 @@ Degree and preimages. Since S1 is modeled on R, it makes sense to talk
 about smooth or piecewise–linear maps f : S1 → S1. For example f′(x)
 makes sense for any smooth map f :S1→S1, since the derivative F′(x) of
 any lift of f is invariant under x↦→x +n.
-Now let deg(f,x ) = signf′(x) =−1, 0 or 1. We set deg(f,x ) = 0 if f′(x)
+Now let deg(f,x ) = signf′(x) =-1, 0 or 1. We set deg(f,x ) = 0 if f′(x)
 does not exist. The singular points of f are the x with deg(f,x ) = 0; their
 images are the singular values.
 Theorem 10.7 Let f : S1 → S1 be a smooth or PL map and suppose
-y∈ S1 is not a singular value of f. Then f−1(y) is ﬁnite, and deg(f) =∑
+y∈ S1 is not a singular value of f. Then f-1(y) is ﬁnite, and deg(f) =∑
 f(x)=y deg(f,x ).
 General path lifting. The same results hold for general covering spaces.
 First, as we have seen, any path f : [0, 1]→B with b0 =f(0) =p(e0) has a
@@ -2006,17 +2006,17 @@ Proof. Lift the homotopy.
 Here are some remarkable applications of the fact thatπ1(S1)∼= Z. They are
 all, so to speak, advanced versions of the intermediate value theorem, which
 itself comes from the fact that π0(I) = 0.
-LetBn denote the closed unit ball in Rn, andSn−1⊂Bn the unit sphere.
-The antipodal map of the sphere is given by x↦→− x in these coordinates.
+LetBn denote the closed unit ball in Rn, andSn-1⊂Bn the unit sphere.
+The antipodal map of the sphere is given by x↦→- x in these coordinates.
 Note that the antipodal map has no ﬁxed points (it should not be confused
-with the map x↦→−x mod 1 onS1.)
+with the map x↦→-x mod 1 onS1.)
 1. There is no retraction of B2 ontoS1.
 2. (Brouwer) Any continuous map F :B2→B2 has a ﬁxed point.
 3. (Perron–Frobenius) Any 3x3 matrix with Aij > 0 has a positive eigen-
 vector.
 4. (Gauss) Every nonconstant complex polynomial has a root in C.
-5. If f :S1→S1 satisﬁes f(−x) =−f(x), then deg(f) is odd.
-6. If F :S2→ R2 is continuous, then F (x) =F (−x) for some x∈S2.
+5. If f :S1→S1 satisﬁes f(-x) =-f(x), then deg(f) is odd.
+6. If F :S2→ R2 is continuous, then F (x) =F (-x) for some x∈S2.
 7. (Borsuk–Ulam) Given 2 pieces of cheese on a cutting board, there is a
 single stroke of the knife that will cut both in half.
 58
@@ -2050,13 +2050,13 @@ positive for all v∈S, we see the eigenvector is positive.
 Note: this case is actually not so hard: the map F : S→ S turns out
 to be a contraction for a suitable metric, so the ﬁxed point can be found by
 iteration.
-4. Zeros. Suppose F (z) = zd +a1zd−1 +··· +ad is a polynomial with no
+4. Zeros. Suppose F (z) = zd +a1zd-1 +··· +ad is a polynomial with no
 zero. Then for every radius r≥ 0 we have a map fr :S1→S1 given by
 fr(z) =F (rz)/|F (rz)|.
 These maps vary continuously with r. Since f0 is constant, deg(fr) = 0 for
 all r. But fr(z)→ zd uniformly as r→∞ . Thus deg( fr) = d >0 for all r
 suﬃciently large, which is a contradiction.
-5. Antipodes. Suppose f : S1→ S1 satisﬁes f(−x) = −f(x). We can
+5. Antipodes. Suppose f : S1→ S1 satisﬁes f(-x) = -f(x). We can
 then lift f to a map F : R→ R such that F (x + 1) = F (x) + deg(f), and
 59
 
@@ -2064,17 +2064,17 @@ then lift f to a map F : R→ R such that F (x + 1) = F (x) + deg(f), and
 F (x + 1/2) = F (x) +e(x), where e(x)∈ 1/2 + Z. Since e(x) is continuous,
 it must be constant, and since F (x + 1) =F (F (x + 1/2) + 1/2) =F (x) + 2e,
 we must have e = deg(f)/2. Thus deg(f) is odd.
-6. Squashed spheres. Suppose F : S2→ R2 satisﬁes F (x)̸= F (−x) for
+6. Squashed spheres. Suppose F : S2→ R2 satisﬁes F (x)̸= F (-x) for
 all x∈S2. We can then deﬁne a map ρ :S2→S1 by
-ρ(x) = F (x)−F (−x)
-|F (x)−F (−x)|·
+ρ(x) = F (x)-F (-x)
+|F (x)-F (-x)|·
 Naturallyρ|S1 has degree zero, since it extends over the northern hemisphere
-B2. But ρ(−x) =−ρ(x), so ρ|S1 must have odd degree, a contradiction.
+B2. But ρ(-x) =-ρ(x), so ρ|S1 must have odd degree, a contradiction.
 This result also holds for Sn.
 7. Sandwich preparation. The space of oriented lines in the plane —
 with a pair of lines at inﬁnity added — is homeomorphic to S2. This can
 be seen in several ways. The intrinsic geometric approach is to observe
-that RP2 = R2∪ RP1 is homeomorphic to S2/(x↦→ −x), and that lines
+that RP2 = R2∪ RP1 is homeomorphic to S2/(x↦→ -x), and that lines
 and points are in projective duality. More naively, think of the plane as
 P = R2×{ 2}⊂ R3, and think of S2 as the unit sphere centered at 0. Then
 any x ∈ S2 deﬁnes a plane x⊥ which meets R2 in a line with a natural
@@ -2086,21 +2086,21 @@ map F : S2→ R2 by taking the halfspace Hx⊂ P deﬁned by x∈ S2, and
 setting
 F (x) = (area(A1∩Hx), area(A2∩Hx)).
 This makes sense even at the north and south poles of S2. By the previous
-result, there is an x such that F (x) = F (−x). But this means exactly that
+result, there is an x such that F (x) = F (-x). But this means exactly that
 L cuts both A1 and A2 in half.
 The ham sandwich theorem. Here is an extension to higher dimensions.
 Theorem 11.1 Given 3 bounded open sets A, B and C in R3, there exists
 a plane that cuts each of them in half.
 Proof. After scaling we can assume A, B and C are all subsets of the unit
-ball B3. Now for each x∈S2 we consider the line Lx from x to−x. Along
+ball B3. Now for each x∈S2 we consider the line Lx from x to-x. Along
 this line we have three naturally distinguished points: xA, xB, xC — such
 60
 
 --- Page 61 ---
 that the plane perpendicular to Lx through xA cuts A in half, and similarly
 for xB and xC. Deﬁne a map f :S2→ R2 by
-f(x) = (⟨x,xA−xB⟩,⟨x,xA−xC⟩).
-Note that f(−x) =−f(x). We must have a point such that f(x) = f(−x);
+f(x) = (⟨x,xA-xB⟩,⟨x,xA-xC⟩).
+Note that f(-x) =-f(x). We must have a point such that f(x) = f(-x);
 at this point xA = xB = xC, and so the plane normal to Lx at this point
 bisects A, B and C simultaneously.
 12 Quotients, gluing and simplicial complexes
@@ -2109,9 +2109,9 @@ pieces, and especially simplicial complexes, to give some interesting low–
 dimensional examples.
 Gluing and quotients. Let X be a topological space, let A be a set and
 letf :X→A be a surjective map. The quotient topology onA is deﬁned by
-U⊂A is open ⇐⇒ f−1U⊂X is open.
+U⊂A is open ⇐⇒ f-1U⊂X is open.
 (Exercise: check this is really a topology).
-A map f :X→Y is called a quotient map if f is surjective and f−1(U)
+A map f :X→Y is called a quotient map if f is surjective and f-1(U)
 is open iﬀ U is open in Y . With the quotient topology on A, f : X→ A
 becomes a quotient map. Moreover, given any surjective map f : X→ Y ,
 there is a unique topology on Y making f a quotient map.
@@ -2145,7 +2145,7 @@ space:
 X =V (G)⊔E(G)× [0, 1]
 with the obvious identiﬁcations.
 The circle. We can think of S1 as [0, 1] with 0 glued to 1. Alternatively it
-can be realized as the 1 −skeleton of a 2-simplex. (The same thing works
+can be realized as the 1 -skeleton of a 2-simplex. (The same thing works
 for the n-sphere.)
 Wedges of circles. The space (X,x ) = ∨n
 1(Xi,xi) is obtained from ⊔Xi
@@ -2173,13 +2173,13 @@ To describe these, let A = [0, 1]×{ 0} and A′ ={1}× [0, 1] be the bottom
 Figure 6. The bridges of K¨ onigsberg.
 and top of the square, and letB andB′ be the right and left sides. We orient
 all these so the x andy coordinates are increasing on them. An edge J with
-reversed orientation will be written −J.
+reversed orientation will be written -J.
 1. The cylinder. If we glue B to B′ we obtain a cylinder, isomorphism
 to S1× [0, 1]. A typical neighborhood of a point on the gluing line
 corresponds to two half-moons along B and B′ in X. The same space
 results if we glue A to A′.
 Note that the horizontal lines in X become parallel closed circles in Y .
-2. The M¨ obius band.If we glue B to−B′ the result is a twisted cylinder
+2. The M¨ obius band.If we glue B to-B′ the result is a twisted cylinder
 called the M¨ obius band. The horizontal lines again become circles, but
 they behave very diﬀerentially now! Most of the circles have length 2,
 but the core of the M¨ obius band has length 1. The outer circle projects
@@ -2200,15 +2200,15 @@ to S1×S1. The horizontal lines in X give a family of parallel circles
 on Y .
 6. The sphere. If we glue A to B and A′ to B′, we get a space home-
 omorphic to S2. It is useful to use coordinates on S2 given by lati-
-tude α∈ [−π/2,π/ 2] and longitude θ∈ S1 = R/2πZ. The northern
+tude α∈ [-π/2,π/ 2] and longitude θ∈ S1 = R/2πZ. The northern
 hemisphere N is given by α≥ 0, and the western hemisphere W by
 0≤θ≤π.
 To see that Y ∼= S2 in detail, ﬁrst we project X to N. Then Y is
-homeomorphic to N with (0,θ ) glued to (0 ,−θ) for all θ. Now we
+homeomorphic to N with (0,θ ) glued to (0 ,-θ) for all θ. Now we
 rotate toN toW . Then the relation becomes (0,θ )∼ (π,θ ). Finally we
 observe that the quotient map f :W→S2 given by f(α,θ ) = (α, 2θ)
 makes exactly these identiﬁcations.
-7. The Klein bottle. Now glueB toB′ but glue A to−A′. The result is a
+7. The Klein bottle. Now glueB toB′ but glue A to-A′. The result is a
 closed, nonorientable surface! Unlike the torus, it cannot be embedded
 in 3-space.
 The way a physical Klein bottle is usually constructed, it passes through
@@ -2216,12 +2216,12 @@ itself in a way that abstract Klein bottle does not. One can by analogy
 consider how a M¨ obius band might be represented in ﬂatland: it is a
 strip in the plane that passes through itself as well.
 8. The real projective plane RP2. Probably the least familiar space is
-obtained by gluing A to−A′ and B to−B′. This is equivalent to
+obtained by gluing A to-A′ and B to-B′. This is equivalent to
 taking the quotient of the closed unit disk D ⊂ R2 by the relation
-v∼−v on the circle.
+v∼-v on the circle.
 9. The dunce cap. There are also a few interesting spaces that can be
 built from a triangle, the most famous of which is the dunce cap. Here
-we identify A to B and−C. Remarkably, the resulting space X is
+we identify A to B and-C. Remarkably, the resulting space X is
 contractible (but not collapsible!).
 Some assembly required. All of these spaces are simplicial complexes,
 however some subdivision may be required to see this. For example, the
@@ -2345,9 +2345,9 @@ E.
 Finally we must check that F is continuous. Here we use the fact that
 y has a path–connected neighborhood U. Shrinking U if necessary, we can
 assume that f(U) is evenly covered by p. This means we have a continuous
-branchp−1 ofp onf(U). Now for any y′∈U we can chooseg′ =h∗g, where
-h is a path from y to y′ in U. Then π−1◦f◦h provides a lift of f◦h to a
-path fromF (y) toF (y′). But clearly F (y′) =π−1(f(y′)), soF is continuous.
+branchp-1 ofp onf(U). Now for any y′∈U we can chooseg′ =h∗g, where
+h is a path from y to y′ in U. Then π-1◦f◦h provides a lift of f◦h to a
+path fromF (y) toF (y′). But clearly F (y′) =π-1(f(y′)), soF is continuous.
 Examples from complex analysis.
 1. The map exp : C→ C∗ is a covering map, so the results above show:
 There is a continuous, analytic branch oflog(z) on any simply–
@@ -2362,24 +2362,24 @@ the argument of z can be deﬁned on such a region.
 disjoint from the zeros ofp. Then a single–valued branch of f(z)1/d can
 be deﬁned on this region.
 In fact, if we let Z(f) denote the zeros of f, then we have a map
-f : C−Z(f)→ C∗ and a covering mapp : C∗→ C∗ given byp(z) =zd.
+f : C-Z(f)→ C∗ and a covering mapp : C∗→ C∗ given byp(z) =zd.
 Then the lifting problem can be solved since π1(U) is trivial.
 3. More generally, we can ask, given an arbitrary connected region U⊂
-C−Z(f), when can f(z)1/d be deﬁned consistently throughout U? For
+C-Z(f), when can f(z)1/d be deﬁned consistently throughout U? For
 this, it is necessary and suﬃcient that
 f∗(π1(U))⊂dZ⊂ Z∼=π1(C∗).
 For example, if f has simple zeros, and each bounded component of
-C−U contains an even number of zeros, thenf(z)1/2 can be consistently
-deﬁned. Thus if f(z) = (z−a1)··· (z−a2n) withai∈ R, we can deﬁne√
-f(z) on U = C−J where J = [a1,a 2]∪···∪ [a2n−1,a 2n].
+C-U contains an even number of zeros, thenf(z)1/2 can be consistently
+deﬁned. Thus if f(z) = (z-a1)··· (z-a2n) withai∈ R, we can deﬁne√
+f(z) on U = C-J where J = [a1,a 2]∪···∪ [a2n-1,a 2n].
 68
 
 --- Page 69 ---
 Second proof of oddness of degree. Here is a proof using lifting that
-a map f : S1→ S1 with f(−z) = −f(z) has odd degree. Think of S1 as
+a map f : S1→ S1 with f(-z) = -f(z) has odd degree. Think of S1 as
 the circle in the complex plane, and let p(z) = z2. Then p : S1→ S1 is a
 covering map, with Imp∗ = 2Z⊂ Z, and p(r(z)) =p(z).
-Suppose f(−z) = −f(z). Then F (z) = f(√z)2 is well–deﬁned, which
+Suppose f(-z) = -f(z). Then F (z) = f(√z)2 is well–deﬁned, which
 means we have a function F :S1→S1 such that the diagram:
 S1
 p
@@ -2396,7 +2396,7 @@ lift g as above. We now have to be careful, because we only know at ﬁrst
 that the lower triangle is commutative: p◦g =F . But this gives:
 g(z2)2 =F (z2) =f(z)2.
 Thus g(z2)/f(z) =±1 for each z. Since this function is continuous, it has
-a constant value ϵ =±1. Thus f(z) = ϵg(z2). But then f(z) = f(−z),
+a constant value ϵ =±1. Thus f(z) = ϵg(z2). But then f(z) = f(-z),
 contrary to out assumption.
 Classiﬁcation of covering spaces. LetB be a reasonable connected space,
 for example a simplicial complex or an open subset of Rn. By reasonable we
@@ -2444,7 +2444,7 @@ Theorem 13.5 If E is the universal cover of B, then Gal(E/B)∼=π1(B).
 70
 
 --- Page 71 ---
-Proof. Choose basepoints withp(e) =b, and letF =π−1(b). Then (E,e )∼=
+Proof. Choose basepoints withp(e) =b, and letF =π-1(b). Then (E,e )∼=
 (E,e′) for any e′∈F . This isomorphism gives an element of the deck group.
 Conversely, an elementg∈ Gal(E/B) is uniquely determined once we know
 e′ =g(e). Thus Gal(E,B ) is naturally identiﬁed with the set F .
@@ -2521,7 +2521,7 @@ given by pi(y) = [f∗h], where h is a path from x to y in U. This map is
 well–deﬁned because U is simply–connected, and it satisﬁes p◦pi(y) = y.
 Thusp : ˜B→B coversB evenly.
 Next, note G = π1(B,b ) acts naturally on ˜B by [g]· [f] = [g∗f]. This
-action is transitive on ﬁbers : if p(f1) = p(f2), then g = f1∗f−1
+action is transitive on ﬁbers : if p(f1) = p(f2), then g = f1∗f-1
 2 represents
 an element of G, and [g]· [f2] = [f1]. In fact G is naturally identiﬁed with
 Gal(˜B/b). Thus ˜B is the universal cover of B.
@@ -2570,7 +2570,7 @@ algebraic closure k ofk, but the analogy is not perfect. In fact Gal( k/k) is a
 proﬁnite group, and it is analogous to the proﬁnite completion of π1(B,b ).
 As an example, let k = Q and let K = Q(ω, 21/3)⊂ C, where ω3 = 1.
 Then deg(K/k) = 6 and in fact Gal( K/k)∼= S3. Indeed, K is the splitting
-ﬁeld of the equationX3−2. This equation has 3 roots, 2 1/3ωi withi = 0, 1, 2.
+ﬁeld of the equationX3-2. This equation has 3 roots, 2 1/3ωi withi = 0, 1, 2.
 Clearly K is the smallest ﬁeld containing these 3 roots, and any element of
 Gal(K/k) is determined by its action on these 3 roots. In other words, we
 have an injective map Gal(K/k)→ S3. But there is an obvious element of
@@ -2580,7 +2580,7 @@ order 2 in Gal(K/k), namely z↦→z. Thus Gal(K/k) =S3.
 --- Page 75 ---
 The ﬁelds between K and k correspond bijectively, then to subgroup of
 S3. For example, Q(21/3) = L is degree 3 over Q, but not Galois. There is
-only one root toX3−2 in this ﬁeld! So it cannot be moved. The ﬁeld L is the
+only one root toX3-2 in this ﬁeld! So it cannot be moved. The ﬁeld L is the
 ﬁxed ﬁeld of complex conjugation. On the other hand, Q(ω) = M is degree
 2 over Q, and hence it has Galois group Z/2, given by complex conjugation.
 The ﬁeld M is the ﬁxed ﬁeld of an element of order 3 in Gal( K/k), which
@@ -2656,11 +2656,11 @@ Theorem 14.2 The fundamental group of S1∨S1 is isomorphic to the free
 productF2 = Z∗ Z.
 By the same reasoning, π1(∨nS1)∼=Fn and more generally we have:
 Theorem 14.3 The fundamental group of any ﬁnite connected graph Γ is
-free. In fact π1(Γ)∼=Fn wheren =|E(Γ)|−| V (Γ)| + 1.
+free. In fact π1(Γ)∼=Fn wheren =|E(Γ)|-| V (Γ)| + 1.
 Proof. Choose a maximal tree T⊂ Γ; then Γ/T is a bouquet of n circles.
-Remark: Euler characteristic. The quantity V−E for a graph, V−
+Remark: Euler characteristic. The quantity V-E for a graph, V-
 E +F for a surface, and more generally the Euler characteristic χ(X) =∑
-K(−1)dim(K) for a simplicial complex, are all homotopy invariants. The
+K(-1)dim(K) for a simplicial complex, are all homotopy invariants. The
 case of a tree is the simplest example.
 Here is a related result for inﬁnite graphs.
 Theorem 14.4 For an inﬁnite, connected graph Y , the following are equiv-
@@ -2669,11 +2669,11 @@ alent:
 2. There is a ﬁnite subgraph K such that π1(K) is isomorphic to π1(Y ).
 3. There is a ﬁnite subgraph K such that every edge outside K discon-
 nectedY .
-4. Every component of Y−K is a tree rooted in K.
+4. Every component of Y-K is a tree rooted in K.
 Proof. Suppose Y is ﬁnitely–generated. Then by considering the support
 of the generating loops, we obtain a ﬁnite subgraph K such that π1(K)
-maps onto π1(Y ). Now suppose there is an edge E in Y−K that does not
-disconnect Y . Then we can collapse Y −E to a point and obtain a map
+maps onto π1(Y ). Now suppose there is an edge E in Y-K that does not
+disconnect Y . Then we can collapse Y -E to a point and obtain a map
 p : Y → S1, surjective on π1. But p(K) is a point, so π1(K) did not map
 surjectively toπ1(Y ). Thus (1) implies (2)π1(Y )∼=π1(K) as well as (3). But
 (3) implies (4) and (4) implies Y deformation retracts to K, which implies
@@ -2759,18 +2759,18 @@ G∼= Z/2∗ Z/2.
 Any word in this group is simply an alternating sequence of a’s andb’s, such
 asg =abababa. The Cayley graph is a straight line, and G can be visualized
 geometrically as the group generated by reﬂections in two parallel lines in
-R2. In other words we can take a(x) =−x and b(x) = 2−x acting on R.
+R2. In other words we can take a(x) =-x and b(x) = 2-x acting on R.
 We can also consider G as an inﬁnite dihedral group with f = a and
-r =ab. Then r−1 =ba, and hence
-fr =a(ab) =b = (ba)a =r−1f.
+r =ab. Then r-1 =ba, and hence
+fr =a(ab) =b = (ba)a =r-1f.
 3. G = Z/2∗ Z/2∗ Z/2. Here we have 3 n words of length n. This work
 can be realized as isometries of the hyperbolic plane, generated by reﬂections
 in the sides of an ideal triangle. (Other triangles will do as well!)
 Figure 8. Hyperbolic geometry and Z/2∗ Z/2∗ Z/2.
 In the upper halfplane model for H, we can think of G as the group
-generated by reﬂections in the ‘lines’ (geodesics) [1,∞], [−1,∞] and [−1, 1].
+generated by reﬂections in the ‘lines’ (geodesics) [1,∞], [-1,∞] and [-1, 1].
 (The latter is the unit semicircle centered atz = 0.) The generators can then
-be given directed by the transformations a(z) = 2−z, b(z) =−2−z, and
+be given directed by the transformations a(z) = 2-z, b(z) =-2-z, and
 c(z) = 1/z.
 80
 
@@ -2801,7 +2801,7 @@ The solution is obtained using N(r), the smallest normal subgroup con-
 taining r. This normal subgroup exists by general considerations; it can be
 constructed from the ‘outside’ by intersecting all normal subgroups contain-
 ing r. On the other hand, N can also be constructed from the inside: it is
-generated by the elementsgrg−1 whereg ranges over all elements ofG. Note
+generated by the elementsgrg-1 whereg ranges over all elements ofG. Note
 that it general not to let g range over the generators of G. Even with G is
 ﬁnitely generated, N(r) may be inﬁnitely generated. See below.
 To killr we simply set
@@ -2831,7 +2831,7 @@ where N(r1,...,r m) is the smallest normal subgroup of Fn containing the
 given relations.
 It is then clear that G has the desired universal property.
 One relator can give an inﬁnitely–generated kernel. For a simple
-example, let G =⟨a,b|b⟩. Then N(b) is generated by aiba−i for all i, and
+example, let G =⟨a,b|b⟩. Then N(b) is generated by aiba-i for all i, and
 as we have seen in the study of graphs the kernel of the map F2→ G∼= Z
 really is inﬁnitely generated in this case.
 What is G? If we are given a group H with generators a1,...,a n which
@@ -2846,12 +2846,12 @@ Examples.
 --- Page 83 ---
 1. We have G =⟨a⟩∼= Z.
 2. We have G =⟨a,b : ab = ba⟩∼= Z2. (An expression of the form
-w1 = w2 means, of course, w1w−1
+w1 = w2 means, of course, w1w-1
 2 is a relator.) To see this, we ﬁrst
 note that G is abelian. Thus every element of G can be written in the
 formaibj, and the map to Z2 is given by recording the exponents (i,j ).
 The only element that maps to zero is a0b0 = id, so G∼= Z2.
-3. We have G =⟨r,f : rn =f 2 =id,rf =fr−1⟩∼= D2n. Using the last
+3. We have G =⟨r,f : rn =f 2 =id,rf =fr-1⟩∼= D2n. Using the last
 relation, we can write every element ofG in the formrifj for somei,j .
 Then the ﬁrst two relations show we can take 0≤i<n and 0≤j <2.
 ThusG has at most 2n elements, so the map toD2n is an isomorphism.
@@ -2860,7 +2860,7 @@ subject to the relations:
 σ2
 i =e;
 σiσi+1σi =σi+1σiσi+1; and
-σiσj =σjσi if|i−j|> 1.
+σiσj =σjσi if|i-j|> 1.
 This is nontrivial to verify. The main point is to show that if a compli-
 cated word in the ( σi) maps to the identity in the free group, then it
 can be simpliﬁed to the identity using the relations above. The point
@@ -2894,7 +2894,7 @@ Theorem 15.2 A presentation for the free product with amalgamationG1∗A
 G2 is obtained from a presentation for G1∗G2 by adjoining the relations
 ψ1(ai) =ψ2(ai) as ai ranges over a set of generators for A.
 Proof. Let (a1,...,a n) be generators for A, and let H =G1∗G2/N, where
-N is the smallest normal subgroup containing the set ψ1(ai)ψ2(ai)−1. Now
+N is the smallest normal subgroup containing the set ψ1(ai)ψ2(ai)-1. Now
 suppose maps φi : Gi→ G are given making the diagram above commute.
 Thenφ1∪φ2 extends to a unique map Φ : G1∗G2→G. Compatibility with
 the maps ψi : A→ Gi means N⊂ Ker(Φ). Thus Φ descends to a unique
@@ -2960,7 +2960,7 @@ natural homomorphism
 φ :π1(B,b )→ Gal(E0/B)∼=H⊂G.
 Conversely, given φ : π1(B,b )→ G, we obtain an action of π1(B,b ) on
 (˜B,˜b)×G by
-γ· (x,g ) = (γ·x,gφ (γ)−1).
+γ· (x,g ) = (γ·x,gφ (γ)-1).
 We can then form the quotient space
 E = ˜B×π1(B)G,
 with basepoint e given by the image of (˜b, id). Now G acts on E by
@@ -3010,9 +3010,9 @@ U givesc = [a,b ]. Thus
 of U as above, with π1(Ui)∼=⟨ai,bi⟩∼=F2. Thus:
 π1(Σ2)∼=⟨a1,a 2,b 1,b 2 : [a1,b 1] = [a2,b 2]⟩.
 • The dunce cap is simply connected: we have
-π1(D)∼=⟨a : aaa−1 = id⟩.
+π1(D)∼=⟨a : aaa-1 = id⟩.
 • The Klein bottle satisﬁes
-π1(K)∼=⟨a,b : ab =ba−1⟩.
+π1(K)∼=⟨a,b : ab =ba-1⟩.
 If we added the relation b2 = 1, it would be the inﬁnite dihedral group
 D∞.
 87
@@ -3020,17 +3020,17 @@ D∞.
 --- Page 88 ---
 Thus K admits a Galois covering with Galois group D∞. Explicitly,
 there is an action of D∞ on the inﬁnite cylinder C =S1× R given by
-f(x,t ) = (−x,−t) and r(x,t ) = (x,t + 1),
+f(x,t ) = (-x,-t) and r(x,t ) = (x,t + 1),
 and the quotient is the Klein bottle. We can also observe that D∞ has
 a normal subgroupN =⟨r⟩∼= Z, thatC/N∼=S1× R/Z is a torus, and
 that D∞/N∼= Z/2 acts on C/N by the composition of the translation
-(x,t )↦→ (−x,t ) with the reﬂection ( x,t )↦→ (x,−t). (Note that −x is
-the antipodal map on S1, while−t is the reﬂection on R/Z.)
+(x,t )↦→ (-x,t ) with the reﬂection ( x,t )↦→ (x,-t). (Note that -x is
+the antipodal map on S1, while-t is the reﬂection on R/Z.)
 • The real projective plane, presented as a quotient of the square S,
 satisﬁes
 π1(P )∼=⟨a : a2 = 1⟩.
 It is tempting to think the presentation is G =⟨a,b : (ab)2 = 1⟩ — a
-much bigger group! (For example, G maps onto Z bya↦→ 1,b↦→− 1.)
+much bigger group! (For example, G maps onto Z bya↦→ 1,b↦→- 1.)
 But in fact∂S modulo gluing relations is not two circles, but one: there
 are 2 vertices (and 2 edges) in the quotient.
 Theorem 15.5 Given any ﬁnitely presented group G, there exists a ﬁnite
@@ -3043,11 +3043,11 @@ Examples: For the unknot, G(K) = Z. For the unlink on two compo-
 nents,G(L) = Z∗ Z.
 Presenting a knot or link group. (Wirtinger.) There is one generator
 for each arc of the knot projection. To each arc we associate a generator of
-π1(R3−K) that makes a right-handed underpass for that arc. (This means
+π1(R3-K) that makes a right-handed underpass for that arc. (This means
 as one moves along the generator, one can make a safe right-hand turn to
 get on the superhighway.)
 Now write ab for the loop that does a ﬁrst, then b. Then when c crosses
-over a−b, so that we have a right-hand underpass, we get ac = cb. At a
+over a-b, so that we have a right-hand underpass, we get ac = cb. At a
 left-handed underpass, we get ca =bc.
 88
 

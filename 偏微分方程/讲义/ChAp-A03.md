@@ -24,7 +24,7 @@ $$
 ab\le\frac{a^p}{p}+\frac{b^q}{q}.
 $$
 
-当 $a^p=b^q$ 时取等号（此时 $\frac{a^p}{p}+\frac{b^q}{q}=a^pb^{q/q}=ab$，亦由 $\ln$ 严格凹性知等号条件唯一）。$\blacksquare$
+当 $a^p=b^q$ 时取等号（此时 $\frac{a^p}{p}+\frac{b^q}{q}=a^pb^{q/q}=ab$，亦由 $\ln$ 严格凹性知等号条件唯一）。$\boxed{\sigma_\omega\sigma}$
 
 **加权形式**：通过尺度变换——以 $\varepsilon^{1/p}a$ 代 $a$、$\varepsilon^{-1/q}b$ 代 $b$，代入 Young 不等式：
 
@@ -68,7 +68,7 @@ $$
 =\frac1p+\frac1q=1.
 $$
 
-即得结论。$\blacksquare$
+即得结论。$\boxed{\sigma_\omega\sigma}$
 
 Hölder 不等式可以导出以下简单推论，它们反映了 $L^p$ 范数在不同指标下的关系。
 
@@ -122,6 +122,6 @@ $$
 
 开 $s$ 次方即得。此插值关系在正则性理论中至关重要。
 
-（3）结合 Young 不等式的加权形式（A.0.2）和插值不等式（A.0.4）即得。具体地，取 $\lambda$ 使 $\dfrac1r=\dfrac{\lambda}{p}+\dfrac{1-\lambda}{q}$，由（2）$\|u\|_{L^r}\le\|u\|_{L^p}^{\lambda}\|u\|_{L^q}^{1-\lambda}$；记 $X=\|u\|_{L^q}^{1-\lambda}$，$Y=\|u\|_{L^p}^{\lambda}$，对 $XY$ 应用加权 Young 不等式即可将混合项拆分为 $\varepsilon\|u\|_{L^q}+\varepsilon^{-\mu}\|u\|_{L^p}$。这种估计在偏微分方程的先验估计中极为有效。$\blacksquare$
+（3）结合 Young 不等式的加权形式（A.0.2）和插值不等式（A.0.4）即得。具体地，取 $\lambda$ 使 $\dfrac1r=\dfrac{\lambda}{p}+\dfrac{1-\lambda}{q}$，由（2）$\|u\|_{L^r}\le\|u\|_{L^p}^{\lambda}\|u\|_{L^q}^{1-\lambda}$；记 $X=\|u\|_{L^q}^{1-\lambda}$，$Y=\|u\|_{L^p}^{\lambda}$，对 $XY$ 应用加权 Young 不等式即可将混合项拆分为 $\varepsilon\|u\|_{L^q}+\varepsilon^{-\mu}\|u\|_{L^p}$。这种估计在偏微分方程的先验估计中极为有效。$\boxed{\sigma_\omega\sigma}$
 
 > **几何 / 物理意义**：Hölder 不等式及其推论构成 $L^p$ 空间理论的基础框架，为 Sobolev 嵌入定理提供核心工具，在椭圆方程解的正则性研究中起关键作用。插值不等式是处理非线性项的有力武器——它在不同的可积性指标之间搭建桥梁，允许把"弱信息"（低可积性）与"强信息"（高可积性）加权组合成所需估计；这些不等式共同构成了现代偏微分方程理论的基石。

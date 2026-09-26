@@ -21,9 +21,9 @@ Fact: ∣R∣ = ∣P(N)∣, which is strictly bigger than ∣N∣.
 --- Page 4 ---
 Open sets and neighborhood of R
 A set U ⊂ R is called open if for any x ∈ U, there is an open interval contained
-in U that contains x, i.e. (x − δ, x + δ) ⊂ U with δ > 0.
+in U that contains x, i.e. (x - δ, x + δ) ⊂ U with δ > 0.
 Notice that ∅ and R are open. An open set is necessarily a union of open intervals,
-as we can take the union of each (x − δ, x + δ) above for all x ∈ U.
+as we can take the union of each (x - δ, x + δ) above for all x ∈ U.
 A set U ⊂ R is a neighborhood of x ∈ R, if there is an open interval contained
 in U that contains x.
 Therefore, a set U ⊂ R is open if and only if it is a neighborhood for all x ∈ U.
@@ -34,7 +34,7 @@ Finally a set F ⊂ R is closed if and only if its complement F c is open in R.
 Intersection, union and real sequences
 An arbitrary union of open sets in R is open.
 A finite intersection of open sets in R is open.
-But ⋂n≥0(−1/n, 1/n) = {0}, which is not open.
+But ⋂n≥0(-1/n, 1/n) = {0}, which is not open.
 Example: the set of rational numbers Q ⊂ R is not open, nor closed.
 A sequence of real numbers xn converges to some x ∈ R if and only if for every
 neighborhood Vx of x, for all suﬀiciently large n (i.e. ∃N > 0, ∀n ≥ N), xn ∈ Vx .
@@ -45,12 +45,12 @@ belongs to F .
 --- Page 6 ---
 Interior, isolated, boundary and accumulation points in R
 Let A ⊂ R be a subset of R. Then x ∈ A is called
-1. an interior point of A if there exists δ > 0 such that (x − δ, x + δ) ⊂ A;
+1. an interior point of A if there exists δ > 0 such that (x - δ, x + δ) ⊂ A;
 2. an isolated point of A if there exists δ > 0 such that x is the only point of A
-belonging to (x − δ, x + δ);
-3. a boundary point of A if for every δ > 0, the interval (x − δ, x + δ) intersects
+belonging to (x - δ, x + δ);
+3. a boundary point of A if for every δ > 0, the interval (x - δ, x + δ) intersects
 both A and Ac ;
-4. an accumulation point of A if for every δ > 0, the interval (x − δ, x + δ) contains
+4. an accumulation point of A if for every δ > 0, the interval (x - δ, x + δ) contains
 some other point of A other than x.
 Important: rephrase these definitions in terms of neighborhoods.
 5
@@ -76,19 +76,19 @@ continuity
 Preimage of a function
 Consider a map between sets f ∶ E → F . For any subset Y ⊂ F , the preimage of Y
 by the map f is defined as
-f −1(Y ) = {x ∈ E ; f (x) ∈ Y }.
+f -1(Y ) = {x ∈ E ; f (x) ∈ Y }.
 It is a subset of E and this is well-defined for any map.
 Notice that for the direct image f (⋃ Ai ) = ⋃ f (Ai ), f (⋂ Ai ) ⊂ ⋂ f (Ai ), but for the
-preimage, f −1(⋃ Bi ) = ⋃ f −1(Bi ), f −1(⋂ Bi )= ⋂ f −1(Bi ).
+preimage, f -1(⋃ Bi ) = ⋃ f -1(Bi ), f -1(⋂ Bi )= ⋂ f -1(Bi ).
 7
 
 --- Page 10 ---
-The ϵ − δ definition of the continuity revisited
-Recall the ϵ − δ definition for a function f ∶ R → R. The continuity of the function f
+The ϵ - δ definition of the continuity revisited
+Recall the ϵ - δ definition for a function f ∶ R → R. The continuity of the function f
 at a point a with y = f (a) is defined as
-∀ϵ > 0, ∃δ > 0, ∀∣x − a∣ < δ, ∣f (x) − f (a)∣ < ϵ.
+∀ϵ > 0, ∃δ > 0, ∀∣x - a∣ < δ, ∣f (x) - f (a)∣ < ϵ.
 Let us rewrite this in terms of preimage:
-∀ϵ > 0, ∃δ > 0, (a − δ, a + δ) ⊂ f −1((f (a) − ϵ, f (a) + ϵ)).
+∀ϵ > 0, ∃δ > 0, (a - δ, a + δ) ⊂ f -1((f (a) - ϵ, f (a) + ϵ)).
 That is, the preimage of any neighborhood of y = f (a) is a neighborhood of a.
 In fact, the continuity above is equivalent to the very general statement:
 The preimage of any open set by f is an open set.
@@ -113,8 +113,8 @@ sets is open.
 --- Page 13 ---
 Open and closed sets
 A topology on X is simply the declaration of open sets (X, O).
-A set F is called closed (“fermé” in French) if its complement is open, i.e. if X − F
-is open or X − F ∈ O. You should check that
+A set F is called closed (“fermé” in French) if its complement is open, i.e. if X - F
+is open or X - F ∈ O. You should check that
 1. Trivial sets are closed;
 2. Closure under finite union ;
 3. Closure under arbitrary intersection .
@@ -171,20 +171,20 @@ some B3 ∈ B such that x ∈ B3 ⊂ B1 ∩ B2.
 Continuous functions
 We have the following generalized definition of continuity:
 A function f ∶ X → Y between two topological spaces is called continuous if
-f −1(U) is open in X for any open set U ⊂ Y .
+f -1(U) is open in X for any open set U ⊂ Y .
 That is, the preimage by a continuous function of an open set is an open set.
 Intuitively, this says “ f (x) is close to f (a) whenever x is close to a” .
 1. Composition of continuous functions is continuous.
 2. It suﬀices to verify the preimage condition on a basis B of Y .
 For example, to check that f ∶ X → R is continuous, it suﬀices to show that
-f −1(a, b) is open for all (a, b) ∈ R.
+f -1(a, b) is open for all (a, b) ∈ R.
 14
 
 --- Page 18 ---
 Homeomorphism
 Homeomorphic spaces are topologically the same.
 A bijection between spaces, f ∶ X → Y is a homeomorphism if and only if f
-and f −1 are continuous.
+and f -1 are continuous.
 In other words, O is open if and only if f (O) is open.
 A bijective continuous map is not always a homeomorphism. Example:
 f ∶ N → {0} ∪ {1/1, 1/2, 1/3, . . .}, f (0) = 0, f (n) = 1/n, n ≥ 1.
@@ -196,7 +196,7 @@ later in this course) is always a homeomorphism.
 Example: R and (0, 1)
 The overall size of a space is not something topologically invariant.
 The real numbers R and homeomorphic to the open interval (0, 1).
-Hint: consider tan ∶ (−π/2, π/2) → R.
+Hint: consider tan ∶ (-π/2, π/2) → R.
 One of the main goals of topology is to classify topological invariants, e.g. objects
 that are stable under homeomorphisms.
 16
@@ -206,10 +206,10 @@ Closure, interior and boundary
 We can already define a lot of notions with only open and closed sets.
 1. Closure. The closure A of A ⊂ X is the smallest closed set containing A.
 2. Interior. The interior ˚A of A ⊂ X is the largest open set contained in A.
-3. Boundary. The boundary ∂A of A ⊂ X is the difference A − ˚A.
+3. Boundary. The boundary ∂A of A ⊂ X is the difference A - ˚A.
 4. Density. We say A ⊂ X is dense if and only if A = X.
 A point x ∈ X lies on the boundary if and only if every neighborhood of x
-intersects both A and X − A. For example, the boundary of Q in R is R.
+intersects both A and X - A. For example, the boundary of Q in R is R.
 A topological space with a countable dense subset is called separable.
 17
 
@@ -219,7 +219,7 @@ We should generally replace the idea of convergence sequences by neighborhoods,
 since in general there is no metric to measure the distance to the (possible) limit.
 We say that x is the limit of a sequence {xn}n≥0 if every neighborhood of x
 meets all but a finite subset of {xn}n≥0.
-We say that x is a limit point of A if every neighborhood of x meets A − {x}.
+We say that x is a limit point of A if every neighborhood of x meets A - {x}.
 Verify that in a metric space, this means that x is limit point if and only if there
 exists a sequence an ∈ A such that an → x.
 Exercise: the closure A of A is the union of A and its limit points.
