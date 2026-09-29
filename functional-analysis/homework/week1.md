@@ -1,10 +1,10 @@
-## 习题 1.1
+# week 1
 
 > **定义 1.1.1** (度量空间) 设 $X$ 是一个非空集合，若对于 $X$ 中任意两个元素 $x,y$, 有一个实数 $d\left(x,y\right)$ 与它们对应，而且满足下面条件:<br>(i) **(非负性与正定性)** 对任意 $x,y\in X$, $d\left(x,y\right)\ge0$, 并且 $d\left(x,y\right)=0$ 的充要条件是 $x=y$;<br>(ii) **(对称性)** 对任意 $x,y\in X$, $d\left(x,y\right)=d\left(y,x\right)$;<br>(iii) **(三角不等式)** 对任意 $x,y,z\in X$, $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$,<br>则称 $\left(X,d\right)$ 是一个**度量空间** (或**距离空间**), $d$ 为 $X$ 上的**度量** (或**距离**), $d\left(x,y\right)$ 为**点 $x,y$ 之间的距离**.
 
 > **定义 1.1.2** (极限) 设 $\left(X,d\right)$ 是度量空间, $\left\{x_n\right\}_{n=1}^\infty$ 是 $X$ 中点列, $x_0\in X$, 若 $$\lim_{n\to\infty}d\left(x_n,x_0\right)=0,$$ 则称**点列 $\left\{x_n\right\}_{n=1}^\infty$ 按照度量 $d$ 收敛于 $x_0$**, 记为 $\lim_{n\to\infty}x_n=x_0$.
 
-### 1.1-2
+## 1.1-2
 
 设 $\left(X,d\right)$ 是度量空间, 在 $X$ 上定义
 
@@ -20,7 +20,7 @@ $$
 
 证明: $d'$ 和 $d''$ 都是 $X$ 上的度量, 并且 $\left(X,d'\right)$, $\left(X,d''\right)$ 中点列的收敛性和在 $\left(X,d\right)$ 中是一致的.
 
-#### 解答 1.1-2
+### 解答 1.1-2
 
 **$d'$ 是 $X$ 上的度量**. 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 由三角不等式及函数 $t\mapsto\frac{t}{1+t}$ 在 $\left[0,\infty\right)$ 上单调递增得
 
@@ -50,7 +50,7 @@ $$
 
 综上, 三种度量下的收敛性是等价的. 
 
-### 1.1-4
+## 1.1-4
 
 设 $X$ 是 $\left[0,1\right]$ 上多项式全体. 对于 $P,Q\in X$, $P\left(x\right)-Q\left(x\right)=\sum_{i=0}^{n}a_ix^i$, 令
 
@@ -69,7 +69,7 @@ $$
 
 (3) 按 $d_2$ 收敛可以推出按 $d_1$ 收敛, 但反之不真 (即存在多项式列 $\left\{P_k\right\},d_1\left(P_k,0\right)\to 0$, 但 $d_2\left(P_k,0\right)\not\rightarrow 0$).
 
-#### 解答 1.1-4
+### 解答 1.1-4
 
 (1) **$d_1$ 是度量**. 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 对任意 $R\in X$ 与 $x\in\left[0,1\right]$,
 
@@ -119,7 +119,7 @@ $$
 
 > **反之不真** 的构造思路: 要找一个函数, 函数值很小但是系数很大, 因此联想到要找能够包含大量正负抵消的函数——要是函数中出现了 $\left(-1\right)^n$ 就很合适. 而二项式天然适配这种需求, 因此尝试构造 $x^k\left(1-x\right)^k$, 其写作二项式后系数为 $2^k$, 果然无穷大.
 
-### 1.1-5
+## 1.1-5
 
 对 $0<p<1$, 记 $L^p\left[0,1\right]$ 是区间 $\left[a,b\right]$ 上勒贝格可测且 $p$ 次可积的函数全体. 令
 
@@ -135,7 +135,7 @@ $$
 
 (3) 若等价关系 $f\sim g$ 是指两个函数 $f,g$ 满足 $f\underset{m}{\doteq}g$, 仍以 $f$ 来表示 $p$ 次可积函数 $f$ 在 $L^p\left[a,b\right]=L^p\left[a,b\right]/\sim$ 中对应的等价类, 则 $\left(L^p\left[a,b\right],d\right)$ 是度量空间.
 
-#### 解答 1.1-5
+### 解答 1.1-5
 
 (1) 不妨设 $a\le b$. 易知 $\left(1+t\right)^p\le1+t^p$ ($t\ge0$). 于是
 
@@ -159,7 +159,7 @@ $$
 
 故在等价类空间 $L^p\left[0,1\right]/\sim$ 上, $d\left(\left[f\right],\left[g\right]\right)=0\Leftrightarrow\left[f\right]=\left[g\right]$, 因此 $\left(L^p\left[0,1\right]/\sim,d\right)$ 是度量空间. 
 
-### 1.1-7
+## 1.1-7
 
 在三维欧几里得空间 $\mathbb R^3$ 中, 考虑单位球面
 
@@ -179,7 +179,7 @@ $$
 
 (3) 证明: $d$ 是 $S^2$ 上的度量.
 
-#### 解答 1.1-7
+### 解答 1.1-7
 
 (1) 易知
 
