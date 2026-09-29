@@ -6,8 +6,6 @@
 
 > **例 1.1.2** (n 维 Euclid 空间) 在 $n$ 个有序实数组 $x=\left(x_1,x_2,\cdots,x_n\right)$ 全体组成的集合 $X$ 中，定义 $$d\left(x,y\right)=\sqrt{\sum_{i=1}^{n}\left(x_i-y_i\right)^2},$$ 则 $\left(X,d\right)$ 是度量空间，称为 $n$ 维 Euclid（欧几里得）空间，通常记为 $\mathbb R^n$.
 
-> **例 1.1.6** ($C[a,b]$) 在闭区间 $\left[a,b\right]$ 上的一切连续实（或复）值函数的集 $C\left[a,b\right]$ 中，定义 $$d\left(f,g\right)=\max_{a\le t\le b}\left|f\left(t\right)-g\left(t\right)\right|,$$ 它是 $C\left[a,b\right]$ 上的度量.
-
 > **例 1.1.10** (一致收敛与度量收敛) 由例 1.1.10 的讨论可知，$C\left[a,b\right]$ 中点列按度量 $d$ 收敛等价于区间 $\left[a,b\right]$ 上的函数列一致收敛.
 
 > **例 1.1.11** (等价度量) 设 $\left(X,d\right)$ 是度量空间，我们还可以在 $X$ 上定义新的度量 $$d'\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)},\quad d''\left(x,y\right)=\ln\left(1+d\left(x,y\right)\right),\quad\forall x,y\in X,$$ 它们是不同的度量. 但是容易验证，对于空间 $X$ 中的点列 $\left\{x_n\right\}$，$$\lim_{n\to\infty}x_n\overset d=x_0\Leftrightarrow\lim_{n\to\infty}x_n\overset{d'}=x_0\Leftrightarrow\lim_{n\to\infty}x_n\overset{d''}=x_0.$$
