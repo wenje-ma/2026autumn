@@ -4,6 +4,16 @@
 
 > **定义 1.1.2** (极限) 设 $\left(X,d\right)$ 是度量空间, $\left\{x_n\right\}_{n=1}^\infty$ 是 $X$ 中点列, $x_0\in X$, 若 $$\lim_{n\to\infty}d\left(x_n,x_0\right)=0,$$ 则称**点列 $\left\{x_n\right\}_{n=1}^\infty$ 按照度量 $d$ 收敛于 $x_0$**, 记为 $\lim_{n\to\infty}x_n=x_0$.
 
+> **例 1.1.2** (n 维 Euclid 空间) 在 $n$ 个有序实数组 $x=\left(x_1,x_2,\cdots,x_n\right)$ 全体组成的集合 $X$ 中，定义 $$d\left(x,y\right)=\sqrt{\sum_{i=1}^{n}\left(x_i-y_i\right)^2},$$ 则 $\left(X,d\right)$ 是度量空间，称为 $n$ 维 Euclid（欧几里得）空间，通常记为 $\mathbb R^n$.
+
+> **例 1.1.6** ($C[a,b]$) 在闭区间 $\left[a,b\right]$ 上的一切连续实（或复）值函数的集 $C\left[a,b\right]$ 中，定义 $$d\left(f,g\right)=\max_{a\le t\le b}\left|f\left(t\right)-g\left(t\right)\right|,$$ 它是 $C\left[a,b\right]$ 上的度量.
+
+> **例 1.1.10** (一致收敛与度量收敛) 由例 1.1.10 的讨论可知，$C\left[a,b\right]$ 中点列按度量 $d$ 收敛等价于区间 $\left[a,b\right]$ 上的函数列一致收敛.
+
+> **例 1.1.11** (等价度量) 设 $\left(X,d\right)$ 是度量空间，我们还可以在 $X$ 上定义新的度量 $$d'\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)},\quad d''\left(x,y\right)=\ln\left(1+d\left(x,y\right)\right),\quad\forall x,y\in X,$$ 它们是不同的度量. 但是容易验证，对于空间 $X$ 中的点列 $\left\{x_n\right\}$，$$\lim_{n\to\infty}x_n\overset d=x_0\Leftrightarrow\lim_{n\to\infty}x_n\overset{d'}=x_0\Leftrightarrow\lim_{n\to\infty}x_n\overset{d''}=x_0.$$
+
+> **例 1.1.12** (可测函数等价类空间) 对于有限区间 $\left[a,b\right]$，记 $\mathfrak G=\left\{\left[a,b\right]\text{ 上几乎处处有限的 Lebesgue 可测函数}\right\}$. $\mathfrak G$ 中两个函数 $f,g$ 是**等价**的，是指它们满足 $f\underset{m}{\doteq}g$. 仍以 $f$ 来表示 Lebesgue 可测函数 $f$ 在 $\mathcal S=\mathfrak G/\sim$ 中对应的等价类. 对于 $f,g\in\mathcal S$，定义 $$d\left(f,g\right)=\int_{\left[a,b\right]}\frac{\left|f\left(t\right)-g\left(t\right)\right|}{1+\left|f\left(t\right)-g\left(t\right)\right|}\mathrm dm\left(t\right),$$ 容易验证这是一个度量，进而 $\left(\mathcal S,d\right)$ 是完备的度量空间.
+
 ## 1.1-2
 
 设 $\left(X,d\right)$ 是度量空间, 在 $X$ 上定义
@@ -21,6 +31,8 @@ $$
 证明: $d'$ 和 $d''$ 都是 $X$ 上的度量, 并且 $\left(X,d'\right)$, $\left(X,d''\right)$ 中点列的收敛性和在 $\left(X,d\right)$ 中是一致的.
 
 ### 解答 1.1-2
+
+本题即**例 1.1.11** 所断言的结论, 下面给出证明.
 
 **$d'$ 是 $X$ 上的度量**. 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 由三角不等式及函数 $t\mapsto\frac{t}{1+t}$ 在 $\left[0,\infty\right)$ 上单调递增得
 
@@ -93,7 +105,7 @@ $$
 d_1\left(P_k,P\right)\to0\Leftrightarrow\max_{x\in\left[0,1\right]}\left|P_k\left(x\right)-P\left(x\right)\right|\to0.
 $$
 
-这正是 $\left\{P_k\right\}$ 在 $\left[0,1\right]$ 上一致收敛于多项式 $P$ 的定义, 两者等价. 
+这正是 $\left\{P_k\right\}$ 在 $\left[0,1\right]$ 上一致收敛于多项式 $P$ 的定义, 两者等价. (此即**例 1.1.10** 的结论在多项式子空间上的情形: $C\left[a,b\right]$ 中点列按度量 $d$ 收敛等价于函数列一致收敛.) 
 
 (3) **$d_1$ 推出 $d_2$**. 设 $d_2\left(P_k,Q\right)\to0$, 记 $P_k-Q=\sum_{i=0}^{n_k}a_i^{\left(k\right)}x^i$, 则 $\sum_{i=0}^{n_k}\left|a_i^{\left(k\right)}\right|\to0$. 对一切 $x\in\left[0,1\right]$ 有 $x^i\le1$, 故
 
@@ -151,7 +163,7 @@ $$
 
 积分即得 $d\left(f,g\right)\le d\left(f,h\right)+d\left(h,g\right)$. 故 $d$ 是伪度量. 
 
-(3) 依据**定义 1.1.1 (度量空间)**, 由 (2) 已知非负性、对称性与三角不等式成立, 只需再验证正定性. 若 $d\left(f,g\right)=0$, 即 $\int_{0}^{1}\left|f-g\right|^p\mathrm dt=0$. 因被积函数 $\left|f-g\right|^p\ge0$ 且可测, 由积分的性质,
+(3) 依据**定义 1.1.1 (度量空间)**, 由 (2) 已知非负性、对称性与三角不等式成立, 只需再验证正定性 (商空间构造方式同**例 1.1.12**). 若 $d\left(f,g\right)=0$, 即 $\int_{0}^{1}\left|f-g\right|^p\mathrm dt=0$. 因被积函数 $\left|f-g\right|^p\ge0$ 且可测, 由积分的性质,
 
 $$
 \int_{0}^{1}\left|f-g\right|^p\mathrm dt=0\Leftrightarrow\left|f-g\right|^p=0\text{ a.e.}\Leftrightarrow f=g\text{ a.e.}\Leftrightarrow f\sim g.
@@ -187,9 +199,9 @@ $$
 d\left(\left(1,0,0\right),\left(x_1,x_2,0\right)\right)=\arccos x_1=\arcsin x_2
 $$
 
-(2) **左边**:
+(2) **左边** (其中 $\rho$ 为**例 1.1.2** 的欧氏度量):
 
-易知 $\rho\left(x,y\right)=2\sin\frac{\theta}{2}\le\theta=d\left(x,y\right)$ ($\theta>0$).
+设 $\theta=d\left(x,y\right)\in\left[0,\pi\right]$ 为 $x,y$ 的中心角, 则 $\rho\left(x,y\right)=\left\|x-y\right\|=2\sin\frac{\theta}{2}\le\theta=d\left(x,y\right)$.
 
 **右边**:
 
