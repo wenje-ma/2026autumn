@@ -1,12 +1,28 @@
 ## 习题 1.1
 
+> **定义 1.1.1** (度量空间) 设 $X$ 是一个非空集合，若对于 $X$ 中任意两个元素 $x,y$, 有一个实数 $d\left(x,y\right)$ 与它们对应，而且满足下面条件:<br>(i) **(非负性与正定性)** 对任意 $x,y\in X$, $d\left(x,y\right)\ge0$, 并且 $d\left(x,y\right)=0$ 的充要条件是 $x=y$;<br>(ii) **(对称性)** 对任意 $x,y\in X$, $d\left(x,y\right)=d\left(y,x\right)$;<br>(iii) **(三角不等式)** 对任意 $x,y,z\in X$, $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$,<br>则称 $\left(X,d\right)$ 是一个**度量空间** (或**距离空间**), $d$ 为 $X$ 上的**度量** (或**距离**), $d\left(x,y\right)$ 为**点 $x,y$ 之间的距离**.
+
+> **定义 1.1.2** (极限) 设 $\left(X,d\right)$ 是度量空间, $\left\{x_n\right\}_{n=1}^\infty$ 是 $X$ 中点列, $x_0\in X$, 若 $$\lim_{n\to\infty}d\left(x_n,x_0\right)=0,$$ 则称**点列 $\left\{x_n\right\}_{n=1}^\infty$ 按照度量 $d$ 收敛于 $x_0$**, 记为 $\lim_{n\to\infty}x_n=x_0$.
+
 ### 1.1-2
 
-设 $\left(X,d\right)$ 是度量空间, 证明: 例 1.1.11 引进的 $d'$ 和 $d''$ 也是 $X$ 上的度量, 并且 $\left(X,d'\right)$, $\left(X,d''\right)$ 中点列的收敛性和在 $\left(X,d\right)$ 中是一致的.
+设 $\left(X,d\right)$ 是度量空间, 在 $X$ 上定义
+
+$$
+d'\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)},\quad\forall x,y\in X
+$$
+
+和
+
+$$
+d''\left(x,y\right)=\ln\left(1+d\left(x,y\right)\right),\quad\forall x,y\in X.
+$$
+
+证明: $d'$ 和 $d''$ 都是 $X$ 上的度量, 并且 $\left(X,d'\right)$, $\left(X,d''\right)$ 中点列的收敛性和在 $\left(X,d\right)$ 中是一致的.
 
 #### 解答 1.1-2
 
-**$d'$ 是 $X$ 上的度量**. (i) (ii) 显然. (iii) 由三角不等式及函数 $t\mapsto\frac{t}{1+t}$ 在 $\left[0,\infty\right)$ 上单调递增得
+**$d'$ 是 $X$ 上的度量**. 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 由三角不等式及函数 $t\mapsto\frac{t}{1+t}$ 在 $\left[0,\infty\right)$ 上单调递增得
 
 $$
 \frac{d\left(x,y\right)}{1+d\left(x,y\right)}\le\frac{d\left(x,z\right)+d\left(z,y\right)}{1+d\left(x,z\right)+d\left(z,y\right)}\le\frac{d\left(x,z\right)}{1+d\left(x,z\right)}+\frac{d\left(z,y\right)}{1+d\left(z,y\right)}.
@@ -14,15 +30,15 @@ $$
 
 故 $d'$ 是度量.
 
-**$d''$ 是 $X$ 上的度量**. (i) (ii) 显然. (iii) 由三角不等式及 $\ln$ 的单调性得
+**$d''$ 是 $X$ 上的度量**. 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 由三角不等式及 $\ln$ 的单调性得
 
 $$
-\ln(1+d(x,y))\le\ln\left(1+d\left(x,z\right)+d\left(z,y\right)\right)\le\ln\left(1+d\left(x,z\right)\right)+\ln\left(1+d\left(z,y\right)\right).
+\ln\left(1+d\left(x,y\right)\right)\le\ln\left(1+d\left(x,z\right)+d\left(z,y\right)\right)\le\ln\left(1+d\left(x,z\right)\right)+\ln\left(1+d\left(z,y\right)\right).
 $$
 
 故 $d''$ 是度量.
 
-**收敛性一致.** 记 $\epsilon_n=d\left(x_n,x_0\right)$, 即证: 对于空间 $X$ 中的点列 $\left\{x_n\right\}$,
+**收敛性一致.** 依据**定义 1.1.2 (极限)**, $x_n\overset d\to x_0\iff\epsilon_n\to0$, 故只需证 $\epsilon_n\to0\iff d'\left(x_n,x_0\right)\to0\iff d''\left(x_n,x_0\right)\to0$. 即证: 对于空间 $X$ 中的点列 $\left\{x_n\right\}$,
 
 $$
 \lim_{n\to\infty}x_n\stackrel{d}{=}x_0\Leftrightarrow\lim_{n\to\infty} x_n\stackrel{d'}{=}x_0\Leftrightarrow\lim_{n\to\infty}x_n\stackrel{d''}{=}x_0.
@@ -55,7 +71,7 @@ $$
 
 #### 解答 1.1-4
 
-(1) **$d_1$ 是度量**. (i) (ii) 显然. (iii) 对任意 $R\in X$ 与 $x\in\left[0,1\right]$,
+(1) **$d_1$ 是度量**. 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 对任意 $R\in X$ 与 $x\in\left[0,1\right]$,
 
 $$
 \left|P\left(x\right)-Q\left(x\right)\right|\le\left|P\left(x\right)-R\left(x\right)\right|+\left|R\left(x\right)-Q\left(x\right)\right|\le d_1\left(P,R\right)+d_1\left(R,Q\right).
@@ -63,7 +79,7 @@ $$
 
 对 $x$ 取最大值即得 $d_1\left(P,Q\right)\le d_1\left(P,R\right)+d_1\left(R,Q\right)$.
 
-**$d_2$ 是度量**. (i) (ii) 显然. (iii) 设 $P-R=\sum_{i=0}^{n}a_ix^i$, $R-Q=\sum_{i=0}^{n}b_ix^i$, 则 $P-Q=\sum_{i=0}^{n}\left(a_i+b_i\right)x^i$, 于是
+**$d_2$ 是度量**. 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 设 $P-R=\sum_{i=0}^{n}a_ix^i$, $R-Q=\sum_{i=0}^{n}b_ix^i$, 则 $P-Q=\sum_{i=0}^{n}\left(a_i+b_i\right)x^i$, 于是
 
 $$
 d_2\left(P,Q\right)=\sum_{i=0}^{n}\left|a_i+b_i\right|\le\sum_{i=0}^{n}\left|a_i\right|+\sum_{i=0}^{n}\left|b_i\right|=d_2\left(P,R\right)+d_2\left(R,Q\right).
@@ -71,7 +87,7 @@ $$
 
 故 $d_1,d_2$ 都是 $X$ 上的度量. 
 
-(2) 由定义,
+(2) 由题设 $d_1$ 的定义,
 
 $$
 d_1\left(P_k,P\right)\to0\Leftrightarrow\max_{x\in\left[0,1\right]}\left|P_k\left(x\right)-P\left(x\right)\right|\to0.
@@ -101,7 +117,7 @@ $$
 
 故存在 $d_1\left(P_k,0\right)\to0$ 而 $d_2\left(P_k,0\right)\not\to0$ 的多项式列. 
 
-> **反之不真** 的构造思路: 要找一个函数, 函数值很小但是系数很大, 因此联想到要找能够包含大量正负抵消的函数——要是函数中出现了 $(-1)^n$ 就很合适. 而二项式天然适配这种需求, 因此尝试构造 $x^k(1-x)^k$, 其写作二项式后系数为 $2^k$, 果然无穷大.
+> **反之不真** 的构造思路: 要找一个函数, 函数值很小但是系数很大, 因此联想到要找能够包含大量正负抵消的函数——要是函数中出现了 $\left(-1\right)^n$ 就很合适. 而二项式天然适配这种需求, 因此尝试构造 $x^k\left(1-x\right)^k$, 其写作二项式后系数为 $2^k$, 果然无穷大.
 
 ### 1.1-5
 
@@ -127,7 +143,7 @@ $$
 \left(a+b\right)^p=b^p\left(1+\frac{a}{b}\right)^p\le b^p\left[1+\left(\frac{a}{b}\right)^p\right]=a^p+b^p
 $$
 
-(2) (ii) 显然. (iii) 对任意可测函数 $h$, 由 (1) 逐点地有
+(2) 依据**定义 1.1.1 (度量空间)**, (i) 非负性、(ii) 对称性显然. (iii) 对任意可测函数 $h$, 由 (1) 逐点地有
 
 $$
 \left|f\left(t\right)-g\left(t\right)\right|^p\le\left(\left|f\left(t\right)-h\left(t\right)\right|+\left|h\left(t\right)-g\left(t\right)\right|\right)^p\le\left|f\left(t\right)-h\left(t\right)\right|^p+\left|h\left(t\right)-g\left(t\right)\right|^p.
@@ -135,7 +151,7 @@ $$
 
 积分即得 $d\left(f,g\right)\le d\left(f,h\right)+d\left(h,g\right)$. 故 $d$ 是伪度量. 
 
-(3) 只需验证正定性. 若 $d\left(f,g\right)=0$, 即 $\int_{0}^{1}\left|f-g\right|^p\mathrm dt=0$. 因被积函数 $\left|f-g\right|^p\ge0$ 且可测, 由积分的性质,
+(3) 依据**定义 1.1.1 (度量空间)**, 由 (2) 已知非负性、对称性与三角不等式成立, 只需再验证正定性. 若 $d\left(f,g\right)=0$, 即 $\int_{0}^{1}\left|f-g\right|^p\mathrm dt=0$. 因被积函数 $\left|f-g\right|^p\ge0$ 且可测, 由积分的性质,
 
 $$
 \int_{0}^{1}\left|f-g\right|^p\mathrm dt=0\Leftrightarrow\left|f-g\right|^p=0\text{ a.e.}\Leftrightarrow f=g\text{ a.e.}\Leftrightarrow f\sim g.
@@ -185,7 +201,7 @@ $$
 
 合并即得 $\rho\left(x,y\right)\le d\left(x,y\right)\le\frac{\pi}{2}\rho\left(x,y\right)$. 
 
-(3) (i) (ii) 显然. (iii) 设 $\alpha=d\left(x,y\right)$, $\beta=d\left(y,z\right)$, $\gamma=d\left(x,z\right)\in\left[0,\pi\right]$.
+(3) 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 设 $\alpha=d\left(x,y\right)$, $\beta=d\left(y,z\right)$, $\gamma=d\left(x,z\right)\in\left[0,\pi\right]$.
 
 若 $\alpha+\beta\ge\pi$, 则 $\gamma\le\pi\le\alpha+\beta$, 不等式显然成立.
 
