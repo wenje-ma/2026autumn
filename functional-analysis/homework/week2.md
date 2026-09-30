@@ -40,7 +40,7 @@
 
 证明 $C_c^\infty\left(\mathbb R^n\right)$ 在 $L^p\left(\mathbb R^n\right)$ 中稠密.
 
-### 解答
+### 解答 1
 
 依据**定义 1.4.5 (稠密性)**, 且闭包是极限点的集合, 因此只需证明 $L^p\left(\mathbb R^n\right)$ 中的每一个点都可以是 $C_c^\infty\left(\mathbb R^n\right)$ 的极限点即可, 即证: 对任意 $f\in L^p\left(\mathbb R^n\right)$ 与任意 $\epsilon>0$, 存在 $\varphi\in C_c^\infty\left(\mathbb R^n\right)$ 使得 $\left\|f-\varphi\right\|_p<\epsilon$.
 
@@ -89,7 +89,7 @@ $$
 
 其中矩阵 $\begin{bmatrix}a&b\\c&d\end{bmatrix}$ 是非奇异的. 证明: $\varphi$ 是拓扑同胚 (即 $\varphi$ 是到上的一一对应, 且 $\varphi$ 和 $\varphi^{-1}$ 都是连续的).
 
-### 解答
+### 解答 2-3
 
 (i) 依据**定义 1.2.2 (半范数与范数)**, 逐条验证.
 
@@ -175,7 +175,7 @@ $$
 
 (ii) 在 $C_b\left(0,1\right]$ 中点列 $\left\{x_n\right\}$ 按范数 $\left\|\cdot\right\|$ 收敛于 $x_0$ 的充要条件是 $\left\{x_n\right\}$ 在 $\left(0,1\right]$ 上一致收敛于 $x_0$.
 
-### 解答
+### 解答 2-6
 
 (i) 首先, $C_b\left(0,1\right]$ 按通常函数的线性运算成为线性空间: 有界连续函数的线性组合仍有界且连续. 依据**定义 1.2.2 (半范数与范数)**, 只需验证 $\left\|\cdot\right\|$ 是范数.
 
@@ -221,7 +221,7 @@ $$
 x_1,x_2,\cdots,x_n\text{ 是一组线性无关的向量}.
 $$
 
-### 解答
+### 解答 2-10
 
 设 $\sum_{i=1}^n c_i x_i=0$, 其中 $c_i\in\mathbb K$. 对任意 $j\in\left\{1,2,\cdots,n\right\}$, 取内积并依据**定义 1.2.3 (内积空间)** 中对第一变元的线性性:
 
@@ -245,7 +245,7 @@ $$
 
 (v) 设 $L$ 是由 $H$ 的两个子集 $M$ 和 $N$ 张成的线性子空间, 证明 $L^\perp=M^\perp\cap N^\perp$.
 
-### 解答
+### 解答 2-12
 
 依据**定义 (正交补)**, 以下用 $x\perp A$ 表示 $x$ 与 $A$ 中每个元素正交.
 
@@ -289,7 +289,7 @@ $$
 \left\langle x,y\right\rangle=\sum_{\lambda\in\Lambda}\left\langle x,e_\lambda\right\rangle\overline{\left\langle y,e_\lambda\right\rangle}.
 $$
 
-### 解答
+### 解答 3-1
 
 由**定理 1.3.2 (标准正交基的等价条件)** (i), 对任何 $x,y\in H$ 有傅里叶展开
 
@@ -315,7 +315,7 @@ $$
 
 证明: $\left\{\mathrm{e}^{\mathrm{i}mx}\mathrm{e}^{\mathrm{i}ny}:m,n\in\mathbb Z\right\}$ 构成 $L^2\left(\left[0,2\pi\right]\times\left[0,2\pi\right]\right)$ 的一组标准正交基.
 
-### 解答
+### 解答 3-3
 
 **标准正交性.** 对任意 $m,n,m',n'\in\mathbb Z$, 乘积测度下，若二重积分的被积函数绝对值可积, 则可使用富比尼定理:
 
@@ -367,7 +367,7 @@ $$
 
 (ii) $\left\{h_n:n=0,1,\cdots,n\right\}$ 是一组标准正交基.
 
-### 解答
+### 解答 3-5
 
 (i) 依据**例 1.3.8 (勒让德多项式)**: 勒让德多项式 $P_n$ 是 $L^2\left[-1,1\right]$ 中的正交多项式系, 单位化后的 $h_n$ 正是 $\left\{g_k\right\}$ 经过格拉姆–施密特过程得到的标准正交向量系. 而格拉姆–施密特过程保正两两正交且范数为 $1$, 因此对任意 $i\neq j$, $\left\langle h_i,h_j\right\rangle=0$, 且 $\left\|h_i\right\|=1$. 故 $\left\{h_n:n=0,1,\cdots,N\right\}$ 是 $L^2\left[-1,1\right]$ 中的标准正交系 (依据**定义 1.3.1**).
 
@@ -395,7 +395,7 @@ $$
 
 成为希尔伯特空间.
 
-### 解答
+### 解答 3-7
 
 按几乎处处相等的等价类取商, 与 $L^2\left(\mathbb R\right)$ 的处理方式一致; 以下在等价类意义下讨论.
 
@@ -457,7 +457,7 @@ $$
 \lim_{n\to\infty}\sum_{k=1}^n \left\langle x,e_k\right\rangle e_k=\lim_{n\to\infty}\sum_{k=1}^n \left\langle x,e_k'\right\rangle e_k'.
 $$
 
-### 解答
+### 解答 3-8
 
 记 $S_n=\sum_{k=1}^n\left\langle x,e_k\right\rangle e_k$, $S_n'=\sum_{k=1}^n\left\langle x,e_k'\right\rangle e_k'$. 先说明两个极限都存在.
 
@@ -491,7 +491,7 @@ $$
 
 张成的线性子空间. 给出 $H$ 中的一组完全标准正交系, 但不是完备的.
 
-### 解答
+### 解答 3-10
 
 取
 

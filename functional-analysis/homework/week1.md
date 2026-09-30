@@ -58,7 +58,7 @@ $$
 
 **$\Leftarrow$ 方向**: 若 $d'\left(x_n,x_0\right)\to0$, 即 $\frac{\epsilon_n}{1+\epsilon_n}\to0$. 若 $\epsilon_n\not\to0$, 则存在子列 $\epsilon_{n_k}\ge\delta>0$, 于是 $\frac{\epsilon_{n_k}}{1+\epsilon_{n_k}}\ge\frac{\delta}{1+\delta}>0$, 矛盾, 故 $\epsilon_n\to0$. 若 $d''\left(x_n,x_0\right)=\ln\left(1+\epsilon_n\right)\to0$, 同样得 $\epsilon_n\to0$.
 
-综上, 三种度量下的收敛性是等价的. 
+综上, 三种度量下的收敛性是等价的.
 
 ## 1.1-4
 
@@ -95,7 +95,7 @@ $$
 d_2\left(P,Q\right)=\sum_{i=0}^{n}\left|a_i+b_i\right|\le\sum_{i=0}^{n}\left|a_i\right|+\sum_{i=0}^{n}\left|b_i\right|=d_2\left(P,R\right)+d_2\left(R,Q\right).
 $$
 
-故 $d_1,d_2$ 都是 $X$ 上的度量. 
+故 $d_1,d_2$ 都是 $X$ 上的度量. $\blacksquare$
 
 (2) 由题设 $d_1$ 的定义,
 
@@ -103,7 +103,7 @@ $$
 d_1\left(P_k,P\right)\to0\Leftrightarrow\max_{x\in\left[0,1\right]}\left|P_k\left(x\right)-P\left(x\right)\right|\to0.
 $$
 
-这正是 $\left\{P_k\right\}$ 在 $\left[0,1\right]$ 上一致收敛于多项式 $P$ 的定义, 两者等价. (此即**例 1.1.10** 的结论在多项式子空间上的情形: $C\left[a,b\right]$ 中点列按度量 $d$ 收敛等价于函数列一致收敛.) 
+这正是 $\left\{P_k\right\}$ 在 $\left[0,1\right]$ 上一致收敛于多项式 $P$ 的定义, 两者等价. (此即**例 1.1.10** 的结论在多项式子空间上的情形: $C\left[a,b\right]$ 中点列按度量 $d$ 收敛等价于函数列一致收敛.) $\blacksquare$
 
 (3) **$d_1$ 推出 $d_2$**. 设 $d_2\left(P_k,Q\right)\to0$, 记 $P_k-Q=\sum_{i=0}^{n_k}a_i^{\left(k\right)}x^i$, 则 $\sum_{i=0}^{n_k}\left|a_i^{\left(k\right)}\right|\to0$. 对一切 $x\in\left[0,1\right]$ 有 $x^i\le1$, 故
 
@@ -125,7 +125,7 @@ $$
 d_2\left(P_k,0\right)=\sum_{j=0}^{k}\binom{k}{j}=2^k\to\infty.
 $$
 
-故存在 $d_1\left(P_k,0\right)\to0$ 而 $d_2\left(P_k,0\right)\not\to0$ 的多项式列. 
+故存在 $d_1\left(P_k,0\right)\to0$ 而 $d_2\left(P_k,0\right)\not\to0$ 的多项式列. $\blacksquare$
 
 > **反之不真** 的构造思路: 要找一个函数, 函数值很小但是系数很大, 因此联想到要找能够包含大量正负抵消的函数——要是函数中出现了 $\left(-1\right)^n$ 就很合适. 而二项式天然适配这种需求, 因此尝试构造 $x^k\left(1-x\right)^k$, 其写作二项式后系数为 $2^k$, 果然无穷大.
 
@@ -150,7 +150,7 @@ $$
 (1) 不妨设 $a\le b$. 易知 $\left(1+t\right)^p\le1+t^p$ ($t\ge0$). 于是
 
 $$
-\left(a+b\right)^p=b^p\left(1+\frac{a}{b}\right)^p\le b^p\left[1+\left(\frac{a}{b}\right)^p\right]=a^p+b^p
+\left(a+b\right)^p=b^p\left(1+\frac{a}{b}\right)^p\le b^p\left[1+\left(\frac{a}{b}\right)^p\right]=a^p+b^p\quad\blacksquare
 $$
 
 (2) 依据**定义 1.1.1 (度量空间)**, (i) 非负性、(ii) 对称性显然. (iii) 对任意可测函数 $h$, 由 (1) 逐点地有
@@ -159,7 +159,7 @@ $$
 \left|f\left(t\right)-g\left(t\right)\right|^p\le\left(\left|f\left(t\right)-h\left(t\right)\right|+\left|h\left(t\right)-g\left(t\right)\right|\right)^p\le\left|f\left(t\right)-h\left(t\right)\right|^p+\left|h\left(t\right)-g\left(t\right)\right|^p.
 $$
 
-积分即得 $d\left(f,g\right)\le d\left(f,h\right)+d\left(h,g\right)$. 故 $d$ 是伪度量. 
+积分即得 $d\left(f,g\right)\le d\left(f,h\right)+d\left(h,g\right)$. 故 $d$ 是伪度量. $\blacksquare$
 
 (3) 依据**定义 1.1.1 (度量空间)**, 由 (2) 已知非负性、对称性与三角不等式成立, 只需再验证正定性 (商空间构造方式同**例 1.1.12**). 若 $d\left(f,g\right)=0$, 即 $\int_{0}^{1}\left|f-g\right|^p\mathrm dt=0$. 因被积函数 $\left|f-g\right|^p\ge0$ 且可测, 由积分的性质,
 
@@ -167,7 +167,7 @@ $$
 \int_{0}^{1}\left|f-g\right|^p\mathrm dt=0\Leftrightarrow\left|f-g\right|^p=0\text{ a.e.}\Leftrightarrow f=g\text{ a.e.}\Leftrightarrow f\sim g.
 $$
 
-故在等价类空间 $L^p\left[0,1\right]/\sim$ 上, $d\left(\left[f\right],\left[g\right]\right)=0\Leftrightarrow\left[f\right]=\left[g\right]$, 因此 $\left(L^p\left[0,1\right]/\sim,d\right)$ 是度量空间. 
+故在等价类空间 $L^p\left[0,1\right]/\sim$ 上, $d\left(\left[f\right],\left[g\right]\right)=0\Leftrightarrow\left[f\right]=\left[g\right]$, 因此 $\left(L^p\left[0,1\right]/\sim,d\right)$ 是度量空间. $\blacksquare$
 
 ## 1.1-7
 
@@ -194,7 +194,7 @@ $$
 (1) 易知
 
 $$
-d\left(\left(1,0,0\right),\left(x_1,x_2,0\right)\right)=\arccos x_1=\arcsin x_2
+d\left(\left(1,0,0\right),\left(x_1,x_2,0\right)\right)=\arccos x_1=\arcsin x_2\quad\blacksquare
 $$
 
 (2) **左边** (其中 $\rho$ 为**例 1.1.2** 的欧氏度量):
@@ -209,7 +209,7 @@ $$
 d\left(x,y\right)=\theta=2u\le\pi\sin u=\frac{\pi}{2}\cdot2\sin\frac{\theta}{2}=\frac{\pi}{2}\rho\left(x,y\right).
 $$
 
-合并即得 $\rho\left(x,y\right)\le d\left(x,y\right)\le\frac{\pi}{2}\rho\left(x,y\right)$. 
+合并即得 $\rho\left(x,y\right)\le d\left(x,y\right)\le\frac{\pi}{2}\rho\left(x,y\right)$. $\blacksquare$
 
 (3) 依据**定义 1.1.1 (度量空间)**, (i) (ii) 显然. (iii) 设 $\alpha=d\left(x,y\right)$, $\beta=d\left(y,z\right)$, $\gamma=d\left(x,z\right)\in\left[0,\pi\right]$.
 
@@ -233,6 +233,6 @@ $$
 \end{aligned}
 $$
 
-由于 $\gamma,\alpha+\beta\in\left[0,\pi\right]$ 且 $\cos$ 在 $\left[0,\pi\right]$ 上严格递减, 得 $\gamma\le\alpha+\beta$. 故三角不等式成立, $d$ 是 $S^2$ 上的度量. 
+由于 $\gamma,\alpha+\beta\in\left[0,\pi\right]$ 且 $\cos$ 在 $\left[0,\pi\right]$ 上严格递减, 得 $\gamma\le\alpha+\beta$. 故三角不等式成立, $d$ 是 $S^2$ 上的度量. $\blacksquare$
 
 > **证明技巧**: 把 $x$, $z$ 沿 $y$ 正交分解, 拆成平行于 $y$ 的和垂直于 $y$ 的部分, 而 $x$ 与 $z$ 各自垂直于 $y$ 的那部分分量的内积必然 $\ge-1$, 由此放缩证毕.
