@@ -57,7 +57,7 @@ $$
 
 故只需说明特征函数可由 $C_c^\infty\left(\mathbb R^n\right)$ 中函数逼近.
 
-(2) 接下来便使用光滑紧支函数 $\psi$ 在 $L^p$ 范数下逼近特征函数 $\chi_E$。对 $\mathbb R^n$ 中任意勒贝格可测集 $E$ ($m\left(E\right)<\infty$), 存在紧集 $K\subset E$ 与开集 $U\supset E$ 使得 $m\left(U\setminus K\right)<\epsilon$; 利用卷积可构造 $\psi\in C_c^\infty\left(\mathbb R^n\right)$ 满足 $0\le\psi\le1$, $\psi\equiv1$ 于 $K$ 上, $\operatorname{supp}\psi\subset U$, 从而 $\left\|\chi_E-\psi\right\|_p\le m\left(U\setminus K\right)^{1/p}<\epsilon$.
+(2) 接下来便使用光滑紧支函数 $\psi$ 在 $L^p$ 范数下逼近特征函数 $\chi_E$. 对 $\mathbb R^n$ 中任意勒贝格可测集 $E$ ($m\left(E\right)<\infty$), 存在紧集 $K\subset E$ 与开集 $U\supset E$ 使得 $m\left(U\setminus K\right)<\epsilon$; 利用卷积可构造 $\psi\in C_c^\infty\left(\mathbb R^n\right)$ 满足 $0\le\psi\le1$, $\psi\equiv1$ 于 $K$ 上, $\operatorname{supp}\psi\subset U$, 从而 $\left\|\chi_E-\psi\right\|_p\le m\left(U\setminus K\right)^{1/p}<\epsilon$.
 
 (3) 由线性性, 任意简单函数 $\Phi=\sum_i c_i\chi_{E_i}$ 均可被 $C_c^\infty\left(\mathbb R^n\right)$ 中函数 $\varphi$ 逼近: 对每个 $i$ 取 $\psi_i$ 逼近 $\chi_{E_i}$, 令 $\varphi=\sum_i c_i\psi_i\in C_c^\infty\left(\mathbb R^n\right)$, 则 $\left\|\Phi-\varphi\right\|_p\le\sum_i\left|c_i\right|\left\|\chi_{E_i}-\psi_i\right\|_p$ 可任意小.
 
@@ -341,27 +341,27 @@ $$
 
 ---
 
-5. 在 $L^2\left[-1,1\right]$ 中, 函数列 $g_k\left(x\right)=x^k\left(k=0,1,2,\cdots\right)$ 是线性无关的。因此可以用格拉姆–施密特方法将 $\left\{g_k\right\}$ 化成标准正交的:
+5. 在 $L^2\left[-1,1\right]$ 中, 函数列 $g_k\left(x\right)=x^k\left(k=0,1,2,\cdots\right)$ 是线性无关的. 因此可以用格拉姆–施密特方法将 $\left\{g_k\right\}$ 化成标准正交的:
 
 $$
 h_0=\frac{g_0}{\left\|g_0\right\|},\quad h_1=\frac{g_1-\left\langle g_1,h_0\right\rangle h_0}{\left\|g_1-\left\langle g_1,h_0\right\rangle h_0\right\|},\cdots.
 $$
 
-显然 $h_k$ 依旧是 $k$ 次的多项式。可是要用直接计算的方法算出函数 $h_k$ 是比较麻烦的, 因此对许多具体问题往往还要用一些特殊的方法。
+显然 $h_k$ 依旧是 $k$ 次的多项式. 可是要用直接计算的方法算出函数 $h_k$ 是比较麻烦的, 因此对许多具体问题往往还要用一些特殊的方法.
 
 实际上, 可以证明勒让德多项式
 
 $$
-P_0\left(x\right)=1,P_n\left(x\right)=\frac{1}{2^n n!}\frac{\mathrm d^n}{\mathrm dx^n}\left(x^2-1\right)^n,\quad n=1,2,\cdots
+P_0\left(x\right)=1,\quad P_n\left(x\right)=\frac{1}{2^n n!}\frac{\mathrm d^n}{\mathrm dx^n}\left(x^2-1\right)^n,\quad n=1,2,\cdots
 $$
 
-是 $L^2\left[-1,1\right]$ 中的正交多项式系。将勒让德多项式单位化得到
+是 $L^2\left[-1,1\right]$ 中的正交多项式系. 将勒让德多项式单位化得到
 
 $$
 h_0\left(x\right)=\frac{1}{\sqrt{2}},\quad h_n\left(x\right)=\frac{1}{2^n n!}\sqrt{\frac{2n+1}{2}}\frac{\mathrm d^n}{\mathrm dx^n}\left(x^2-1\right)^n,\quad n=1,2,\cdots
 $$
 
-就是 $\left\{g_n\right\}$ 经过格拉姆–施密特过程得到的标准正交向量系。又由于多项式全体在 $L^2\left[-1,1\right]$ 中稠密, 因此 $\left\{h_n:n=0,1,\cdots\right\}$ 构成了一组标准正交基. 证明:
+就是 $\left\{g_n\right\}$ 经过格拉姆–施密特过程得到的标准正交向量系. 又由于多项式全体在 $L^2\left[-1,1\right]$ 中稠密, 因此 $\left\{h_n:n=0,1,\cdots\right\}$ 构成了一组标准正交基. 证明:
 
 (i) $\left\{h_n:n=0,1,\cdots,n\right\}$ 是一组标准正交系;
 
@@ -369,9 +369,9 @@ $$
 
 ### 解答
 
-(i) 依据**例 1.3.8 (勒让德多项式)**:勒让德多项式 $P_n$ 是 $L^2\left[-1,1\right]$ 中的正交多项式系, 单位化后的 $h_n$ 正是 $\left\{g_k\right\}$ 经过 Gram-Schmidt 过程得到的标准正交向量系. 而 Gram-Schmidt 过程保正两两正交且范数为 $1$, 因此对任意 $i\neq j$, $\left\langle h_i,h_j\right\rangle=0$, 且 $\left\|h_i\right\|=1$. 故 $\left\{h_n:n=0,1,\cdots,N\right\}$ 是 $L^2\left[-1,1\right]$ 中的标准正交系 (依据**定义 1.3.1**).
+(i) 依据**例 1.3.8 (勒让德多项式)**: 勒让德多项式 $P_n$ 是 $L^2\left[-1,1\right]$ 中的正交多项式系, 单位化后的 $h_n$ 正是 $\left\{g_k\right\}$ 经过格拉姆–施密特过程得到的标准正交向量系. 而格拉姆–施密特过程保正两两正交且范数为 $1$, 因此对任意 $i\neq j$, $\left\langle h_i,h_j\right\rangle=0$, 且 $\left\|h_i\right\|=1$. 故 $\left\{h_n:n=0,1,\cdots,N\right\}$ 是 $L^2\left[-1,1\right]$ 中的标准正交系 (依据**定义 1.3.1**).
 
-(ii) 首先, $h_n$ 是 $n$ 次多项式, 且 $\left\{h_0,h_1,\cdots,h_N\right\}$ 与 $\left\{g_0,g_1,\cdots,g_N\right\}=\left\{1,x,\cdots,x^N\right\}$ 张成同一线性空间 (Gram-Schmidt 过程不改变张成空间), 故
+(ii) 首先, $h_n$ 是 $n$ 次多项式, 且 $\left\{h_0,h_1,\cdots,h_N\right\}$ 与 $\left\{g_0,g_1,\cdots,g_N\right\}=\left\{1,x,\cdots,x^N\right\}$ 张成同一线性空间 (格拉姆–施密特过程不改变张成空间), 故
 
 $$
 \operatorname{span}\left\{h_n:n=0,1,\cdots\right\}=\text{多项式全体 }P.
@@ -397,19 +397,49 @@ $$
 
 ### 解答
 
-(按几乎处处相等的等价类取商, 与 $L^2\left(\mathbb R\right)$ 的处理方式一致; 以下在等价类意义下讨论.)
+按几乎处处相等的等价类取商, 与 $L^2\left(\mathbb R\right)$ 的处理方式一致; 以下在等价类意义下讨论.
 
-**$H$ 是线性空间.** 对 $f,g\in H$ 与数 $\alpha,\beta$, 由 $\left|f\right|^2\omega,\left|g\right|^2\omega$ 可积及 $\left|\alpha f+\beta g\right|^2\omega\le2\left|\alpha\right|^2\left|f\right|^2\omega+2\left|\beta\right|^2\left|g\right|^2\omega$ (由不等式 $\left(a+b\right)^2\le2a^2+2b^2$), 得 $\alpha f+\beta g\in H$, 故 $H$ 是线性空间.
+**$H$ 是线性空间.** 对 $f,g\in H$ 与数 $\alpha,\beta$, 由 $\left|f\right|^2\omega$, $\left|g\right|^2\omega$ 可积及由不等式 $\left(a+b\right)^2\le2a^2+2b^2$,
 
-**$\left\langle\cdot,\cdot\right\rangle$ 是内积.** 依据**定义 1.2.3 (内积空间)**, 逐条验证. (i) 共轭对称性: $\left\langle f,g\right\rangle=\int f\overline g\omega=\overline{\int g\overline f\omega}=\overline{\left\langle g,f\right\rangle}$. (ii) 对第一变元的线性性: 由积分线性性, $\left\langle\alpha f+\beta g,h\right\rangle=\alpha\left\langle f,h\right\rangle+\beta\left\langle g,h\right\rangle$. (iii) 正定性: $\left\langle f,f\right\rangle=\int\left|f\right|^2\omega\ge0$, 且 $\left\langle f,f\right\rangle=0\Leftrightarrow\int\left|f\right|^2\omega=0\Leftrightarrow \left|f\right|^2\omega=0$ a.e. $\Leftrightarrow f=0$ a.e. $\Leftrightarrow f=0$ (在等价类意义下). 故 $\left\langle\cdot,\cdot\right\rangle$ 是 $H$ 上的内积.
+$$
+\left|\alpha f+\beta g\right|^2\omega\le2\left|\alpha\right|^2\left|f\right|^2\omega+2\left|\beta\right|^2\left|g\right|^2\omega
+$$
 
-**完备性.** 设 $\left\{f_n\right\}$ 是 $H$ 中的基本点列, 即 $\left\|f_n-f_m\right\|_H^2=\int\left|f_n-f_m\right|^2\omega\mathrm dt\to0$. 考虑映射 $f\mapsto f\sqrt{\omega}$: 则 $f_n\sqrt{\omega}\in L^2\left(\mathbb R,\mathrm dm\right)$ 且
+得 $\alpha f+\beta g\in H$, 故 $H$ 是线性空间.
+
+**$\left\langle\cdot,\cdot\right\rangle$ 是内积.** 依据**定义 1.2.3 (内积空间)**, 逐条验证. (i) 共轭对称性:
+
+$$
+\left\langle f,g\right\rangle=\int f\overline g\omega=\overline{\int g\overline f\omega}=\overline{\left\langle g,f\right\rangle}.
+$$
+
+(ii) 对第一变元的线性性: 由积分线性性,
+
+$$
+\left\langle\alpha f+\beta g,h\right\rangle=\alpha\left\langle f,h\right\rangle+\beta\left\langle g,h\right\rangle.
+$$
+
+(iii) 正定性: $\left\langle f,f\right\rangle=\int\left|f\right|^2\omega\ge0$, 且
+
+$$
+\begin{aligned}
+&\quad\;\left\langle f,f\right\rangle=0\\
+&\Leftrightarrow\int\left|f\right|^2\omega=0\\
+&\Leftrightarrow \left|f\right|^2\omega=0\text{ a.e.}\\
+&\Leftrightarrow f=0\text{ a.e.}\\
+&\Leftrightarrow f=0\text{ (在等价类意义下)}.
+\end{aligned}
+$$
+
+故 $\left\langle\cdot,\cdot\right\rangle$ 是 $H$ 上的内积.
+
+**完备性.** 设 $\left\{f_n\right\}$ 是 $H$ 中的基本点列, 即 $\left\|f_n-f_m\right\|_H^2=\int\left|f_n-f_m\right|^2\omega\mathrm dt\to0$. 由于 $L^p(E)$ 已知完备 (**例 1.2.8**), 故考虑构造保范映射 $f\mapsto f\sqrt{\omega}: H \to L^2(\mathbb R)$ 将 $H$ 放到 $L^p(E)$ 中再拉回即可: 则 $f_n\sqrt{\omega}\in L^2\left(\mathbb R,\mathrm dm\right)$ 且
 
 $$
 \left\|f_n\sqrt{\omega}-f_m\sqrt{\omega}\right\|_{L^2\left(\mathbb R\right)}^2=\int\left|f_n-f_m\right|^2\omega\mathrm dt=\left\|f_n-f_m\right\|_H^2\to0,
 $$
 
-故 $\left\{f_n\sqrt{\omega}\right\}$ 是 $L^2\left(\mathbb R\right)$ 中的基本点列. 由**例 1.2.8** ( $L^p\left(E\right)$ 的完备性), 存在 $g\in L^2\left(\mathbb R\right)$ 使 $\left\|f_n\sqrt{\omega}-g\right\|_{L^2\left(\mathbb R\right)}\to0$. 令
+故 $\left\{f_n\sqrt{\omega}\right\}$ 是 $L^2\left(\mathbb R\right)$ 中的基本点列. 由**例 1.2.8** ($L^p\left(E\right)$ 的完备性), 存在 $g\in L^2\left(\mathbb R\right)$ 使 $\left\|f_n\sqrt{\omega}-g\right\|_{L^2\left(\mathbb R\right)}\to0$. 令
 
 $$
 f\left(t\right)=\begin{cases}g\left(t\right)/\sqrt{\omega\left(t\right)},&\omega\left(t\right)>0,\\0,&\omega\left(t\right)=0,\end{cases}
@@ -437,7 +467,7 @@ $$
 \left\|S_n-S_m\right\|^2=\left\|\sum_{k=m+1}^n\left\langle x,e_k\right\rangle e_k\right\|^2=\sum_{k=m+1}^n\left|\left\langle x,e_k\right\rangle\right|^2\to0\left(m,n\to\infty\right),
 $$
 
-故 $\left\{S_n\right\}$ 是 $H$ 中的基本点列. 依据**注 1.3.1** (或 $H$ 的完备性), $S_n$ 收敛, 记 $S=\lim S_n$; 同理 $S_n'$ 收敛, 记 $S'=\lim S_n'$. 事实上, **注 1.3.1** 正是断言: 该极限与可数集 $\left\{e_\lambda:\left\langle x,e_\lambda\right\rangle\neq0\right\}$ 的排列顺序无关, 本题即要求证明这一断言.
+故 $\left\{S_n\right\}$ 是 $H$ 中的基本点列. 依据 $H$ 的完备性, $S_n$ 收敛, 记 $S=\lim S_n$; 同理 $S_n'$ 收敛, 记 $S'=\lim S_n'$.
 
 下证 $S=S'$. 显然 $S,S'\in\overline{\operatorname{span}\left\{e_k\right\}}$. 对任意固定的 $j$, 依据**引理 1.2.4 (内积的连续性)** 与标准正交性,
 
@@ -449,7 +479,7 @@ $$
 \left\langle S',e_j\right\rangle=\lim_{n\to\infty}\sum_{k=1}^n\left\langle x,e_k'\right\rangle\left\langle e_k',e_j\right\rangle=\left\langle x,e_j\right\rangle,
 $$
 
-第二个等号是因为 $\left\{e_k'\right\}$ 是 $\left\{e_k\right\}$ 的重排: 序列中恰有一个 $e_{k_0}'=e_j$, 其余各项与 $e_j$ 正交, 故 $\sum_k\left\langle x,e_k'\right\rangle\left\langle e_k',e_j\right\rangle=\left\langle x,e_j\right\rangle$. 因此 $S-S'\perp e_j$ 对一切 $j$ 成立, 由内积连续性得 $S-S'\perp\overline{\operatorname{span}\left\{e_k\right\}}$; 而 $S-S'\in\overline{\operatorname{span}\left\{e_k\right\}}$, 故 $\left\langle S-S',S-S'\right\rangle=0$, 由**定义 1.2.3** 的正定性得 $S-S'=0$, 即 $S=S'$. 证毕. $\blacksquare$
+第二个等式成立是因为 $\left\{e_k'\right\}$ 是 $\left\{e_k\right\}$ 的重排: 序列中恰有一个 $e_{k_0}'=e_j$, 其余各项与 $e_j$ 正交. 因此 $S-S'\perp e_j$ 对一切 $j$ 成立, 由**引理 1.2.4 (内积的连续性)** 得 $S-S'\perp\overline{\operatorname{span}\left\{e_k\right\}}$; 而 $S-S'\in\overline{\operatorname{span}\left\{e_k\right\}}$, 故 $\left\langle S-S',S-S'\right\rangle=0$, 由**定义 1.2.3** 的正定性得 $S-S'=0$, 即 $S=S'$. 证毕. $\blacksquare$
 
 ---
 
@@ -469,7 +499,7 @@ $$
 \mathcal E=\left\{e_n:=\sqrt2\cos nx,\tilde e_n:=\sqrt2\sin nx:n=1,2,\cdots\right\}.
 $$
 
-**$\mathcal E$ 是 $H$ 中的标准正交系.** 由**例 1.3.3**, $\left\{1,\sqrt2\cos nx,\sqrt2\sin nx:n\ge1\right\}$ 是 $L^2\left[0,2\pi\right]$ 的标准正交系, 故其子集 $\mathcal E$ 也是标准正交系 (依据**定义 1.3.1**); 且 $e_n,\tilde e_n\in H$ ( $\cos nx,\sin nx\in H$ 且 $H$ 是线性子空间).
+**$\mathcal E$ 是 $H$ 中的标准正交系.** 由**例 1.3.3**, $\left\{1,\sqrt2\cos nx,\sqrt2\sin nx:n\ge1\right\}$ 是 $L^2\left[0,2\pi\right]$ 的标准正交系, 故其子集 $\mathcal E$ 也是标准正交系 (依据**定义 1.3.1**); 且 $e_n,\tilde e_n\in H$ ($\cos nx,\sin nx\in H$ 且 $H$ 是线性子空间).
 
 **$\mathcal E$ 在 $H$ 中是完全的.** 设 $x\in H$ 且 $x\perp\mathcal E$. 因 $H=\operatorname{span}\left\{f_0,\cos nx,\sin nx:n\ge1\right\}$, 存在 $c_0,c_k,d_k$ 使得 (有限和)
 
@@ -483,7 +513,16 @@ $$
 0=\left\langle x,\cos kx\right\rangle=c_0\left\langle f_0,\cos kx\right\rangle+c_k\left\langle\cos kx,\cos kx\right\rangle.
 $$
 
-计算傅里叶系数: $\left\langle f_0,\cos kx\right\rangle=\frac{1}{k}\left\langle\cos kx,\cos kx\right\rangle=\frac{1}{2k}$, $\left\langle\cos kx,\cos kx\right\rangle=\frac12$, 故 $0=\frac{c_0}{2k}+\frac{c_k}{2}$, 即 $c_k=-\frac{c_0}{k}$; 同理 $d_k=-\frac{c_0}{k}$. 由于 $x$ 是有限线性组合, 当 $k>N$ 时 $c_k=d_k=0$, 代入 $c_k=-c_0/k$ 得 $c_0=0$, 从而所有 $c_k=d_k=0$, 即 $x=0$. 依据**定理 1.3.2** (iii), $\mathcal E$ 在 $H$ 中完全.
+计算傅里叶系数:
+
+$$
+\begin{aligned}
+\left\langle f_0,\cos kx\right\rangle=\frac{1}{k}\left\langle\cos kx,\cos kx\right\rangle&=\frac{1}{2k},\\
+\left\langle\cos kx,\cos kx\right\rangle&=\frac12,
+\end{aligned}
+$$
+
+故 $0=\frac{c_0}{2k}+\frac{c_k}{2}$, 即 $c_k=-\frac{c_0}{k}$; 同理 $d_k=-\frac{c_0}{k}$. 由于 $x$ 是有限线性组合, 当 $k>N$ 时 $c_k=d_k=0$, 代入 $c_k=-c_0/k$ 得 $c_0=0$, 从而所有 $c_k=d_k=0$, 即 $x=0$. 依据**定理 1.3.2** (iii), $\mathcal E$ 在 $H$ 中完全.
 
 **$\mathcal E$ 不是完备的.** 取 $x=f_0\in H$. 计算得 $\left\|1\right\|^2=1$, $\left\|\cos nx\right\|^2=\left\|\sin nx\right\|^2=\frac12$, 故
 
@@ -500,3 +539,5 @@ $$
 即帕塞瓦尔等式不成立. 依据**定理 1.3.2** (iv), $\mathcal E$ 不是完备的.
 
 因此 $\mathcal E=\left\{\sqrt2\cos nx,\sqrt2\sin nx:n=1,2,\cdots\right\}$ 是 $H$ 中的一组完全标准正交系, 但不是完备的. $\blacksquare$
+
+> **为什么选取 $f_0$ 作为反例**: 正交系 $\mathcal E$ 不含常数方向的基向量, 无法捕获常数分量. 而 $f_0\in H$, 其展开式中恰好含有常数项 $1$, 这就导致了帕塞瓦尔等式不能取等.
