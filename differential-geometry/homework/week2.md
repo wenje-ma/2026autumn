@@ -1,44 +1,44 @@
 # 作业 2
 
-> **命题 2.4**（弧长参数的判别）设 $\boldsymbol\gamma=\boldsymbol\gamma(\tau)$ 是正则 $C^k$ 曲线，则 $\tau$ 是**弧长参数**，当且仅当 $\left|\frac{\mathrm d\boldsymbol\gamma}{\mathrm d\tau}\right|\equiv1$。
+> **命题 2.4** (弧长参数的判别) 设 $\boldsymbol\gamma=\boldsymbol\gamma(\tau)$ 是正则 $C^k$ 曲线, 则 $\tau$ 是**弧长参数**, 当且仅当 $\left|\frac{\mathrm d\boldsymbol\gamma}{\mathrm d\tau}\right|\equiv1$.
 
-> **定义 5.2**（曲率与主法向量）若 $\dot{\boldsymbol T}$ 处处非零，则 $\boldsymbol N(s):=\dot{\boldsymbol T}(s)/\|\dot{\boldsymbol T}(s)\|$ 为主法向量，$\kappa(s):=\langle\dot{\boldsymbol T},\boldsymbol N\rangle=\|\dot{\boldsymbol T}(s)\|$ 为曲率，满足 $\dot{\boldsymbol T}=\kappa\boldsymbol N$。
+> **定义 5.2** (曲率与主法向量) 若 $\dot{\boldsymbol T}$ 处处非零, 则 $\boldsymbol N(s):=\dot{\boldsymbol T}(s)/\|\dot{\boldsymbol T}(s)\|$ 为主法向量, $\kappa(s):=\langle\dot{\boldsymbol T},\boldsymbol N\rangle=\|\dot{\boldsymbol T}(s)\|$ 为曲率, 满足 $\dot{\boldsymbol T}=\kappa\boldsymbol N$.
 
-> **定义 5.3**（副法向量与弗雷内标架）$\boldsymbol B(s):=\boldsymbol T(s)\wedge\boldsymbol N(s)$ 为副法向量，$\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 构成右手单位正交系，称为弗雷内标架。
+> **定义 5.3** (副法向量与弗雷内标架) $\boldsymbol B(s):=\boldsymbol T(s)\wedge\boldsymbol N(s)$ 为副法向量, $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 构成右手单位正交系, 称为弗雷内标架.
 
-> **定义 5.4**（空间弗雷内方程）$$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}=\begin{bmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{bmatrix}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}.$$
+> **定义 5.4** (空间弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}=\begin{bmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{bmatrix}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}.$$
 
-> **定理 5.6**（空间曲线基本定理）在 $\mathbb R^3$ 上相差一个等距变换的意义下，$\kappa,\tau$ 唯一确定一条曲线。
+> **定理 5.6** (空间曲线基本定理) 在 $\mathbb R^3$ 上相差一个等距变换的意义下, $\kappa,\tau$ 唯一确定一条曲线.
 
-> **命题 5.7**（一般参数下的曲率与挠率公式）记 $v=|\boldsymbol r'|$，$w=|\boldsymbol r'\wedge\boldsymbol r''|$，则 $\kappa=\frac{w}{v^{3}}$，$\tau=\frac{(\boldsymbol r',\boldsymbol r'',\boldsymbol r''')}{w^{2}}$，其中 $(\boldsymbol a,\boldsymbol b,\boldsymbol c):=\det(\boldsymbol a,\boldsymbol b,\boldsymbol c)$ 为混合积。
+> **命题 5.7** (一般参数下的曲率与挠率公式) 记 $v=|\boldsymbol r'|$, $w=|\boldsymbol r'\wedge\boldsymbol r''|$, 则 $\kappa=\frac{w}{v^{3}}$, $\tau=\frac{(\boldsymbol r',\boldsymbol r'',\boldsymbol r''')}{w^{2}}$, 其中 $(\boldsymbol a,\boldsymbol b,\boldsymbol c):=\det(\boldsymbol a,\boldsymbol b,\boldsymbol c)$ 为混合积.
 
-> **定义 6.1 / 推导 6.A**（密切平面与泰勒展开）$\boldsymbol\gamma$ 在 $\boldsymbol\gamma(s_0)$ 处有展开 $\boldsymbol\gamma(s)=\boldsymbol\gamma(s_0)+\boldsymbol T(s_0)(s-s_0)+\tfrac12\dot{\boldsymbol T}(s_0)(s-s_0)^2+O\left((s-s_0)^3\right)$，其中 $\boldsymbol T(s_0),\dot{\boldsymbol T}(s_0)$ 落在密切平面 $\mathrm{span}\{\boldsymbol T,\boldsymbol N\}(s_0)$ 内。
+> **定义 6.1 / 推导 6.A** (密切平面与泰勒展开) $\boldsymbol\gamma$ 在 $\boldsymbol\gamma(s_0)$ 处有展开 $\boldsymbol\gamma(s)=\boldsymbol\gamma(s_0)+\boldsymbol T(s_0)(s-s_0)+\tfrac12\dot{\boldsymbol T}(s_0)(s-s_0)^2+O\left((s-s_0)^3\right)$, 其中 $\boldsymbol T(s_0),\dot{\boldsymbol T}(s_0)$ 落在密切平面 $\mathrm{span}\{\boldsymbol T,\boldsymbol N\}(s_0)$ 内.
 
-> **命题 7.2**（$\kappa,\tau$ 均正常数 ⟹ 圆柱螺线）曲率、挠率均为正常数的空间曲线一定是圆柱螺线（由空间曲线基本定理，等距意义下唯一）。
+> **命题 7.2** ($\kappa,\tau$ 均正常数 ⟹ 圆柱螺线) 曲率, 挠率均为正常数的空间曲线一定是圆柱螺线 (由空间曲线基本定理, 等距意义下唯一).
 
-> **例 1.1**（切线像，0923 讲义）设 $\boldsymbol\gamma^{*}:=\boldsymbol T$ 是 $\boldsymbol\gamma$ 的切线像，以 $s^{*}$（满足 $\mathrm ds^{*}=\kappa\,\mathrm ds$）为弧长参数时，其曲率与挠率为 $$\kappa^{*}=\sqrt{1+\left(\frac\tau\kappa\right)^{2}},\qquad \tau^{*}=\frac1\kappa\cdot\frac{\left(\frac\tau\kappa\right)'}{1+\left(\frac\tau\kappa\right)^{2}}.$$
+> **例 1.1** (切线像, 0923 讲义) 设 $\boldsymbol\gamma^{*}:=\boldsymbol T$ 是 $\boldsymbol\gamma$ 的切线像, 以 $s^{*}$ (满足 $\mathrm ds^{*}=\kappa\,\mathrm ds$) 为弧长参数时, 其曲率与挠率为 $$\kappa^{*}=\sqrt{1+\left(\frac\tau\kappa\right)^{2}},\qquad \tau^{*}=\frac1\kappa\cdot\frac{\left(\frac\tau\kappa\right)'}{1+\left(\frac\tau\kappa\right)^{2}}.$$
 
-> **定理 4.1**（芬切尔，0928 讲义）设 $\boldsymbol\gamma:[0,L]\to E^3$ 是正则闭曲线，则全曲率 $\int_{\boldsymbol\gamma}\kappa(s)\,\mathrm ds\ge2\pi$，等号当且仅当 $\boldsymbol\gamma$ 是平面凸闭曲线。
+> **定理 4.1** (芬切尔, 0928 讲义) 设 $\boldsymbol\gamma:[0,L]\to E^3$ 是正则闭曲线, 则全曲率 $\int_{\boldsymbol\gamma}\kappa(s)\,\mathrm ds\ge2\pi$, 等号当且仅当 $\boldsymbol\gamma$ 是平面凸闭曲线.
 
-> **基础知识**（非讲义编号）叉积恒等式 $(\boldsymbol a\wedge\boldsymbol b)\wedge\boldsymbol c=\boldsymbol b\langle\boldsymbol a,\boldsymbol c\rangle-\boldsymbol a\langle\boldsymbol b,\boldsymbol c\rangle$；点到直线的距离 $d(P,l)=|(P-Q)\wedge\boldsymbol u|$（$Q\in l$，$\boldsymbol u$ 为单位方向向量）；混合积 $\langle\boldsymbol a\wedge\boldsymbol b,\boldsymbol c\rangle=\det(\boldsymbol a,\boldsymbol b,\boldsymbol c)$。
+> **基础知识** (非讲义编号) 叉积恒等式 $(\boldsymbol a\wedge\boldsymbol b)\wedge\boldsymbol c=\boldsymbol b\langle\boldsymbol a,\boldsymbol c\rangle-\boldsymbol a\langle\boldsymbol b,\boldsymbol c\rangle$; 点到直线的距离 $d(P,l)=|(P-Q)\wedge\boldsymbol u|$ ($Q\in l$, $\boldsymbol u$ 为单位方向向量); 混合积 $\langle\boldsymbol a\wedge\boldsymbol b,\boldsymbol c\rangle=\det(\boldsymbol a,\boldsymbol b,\boldsymbol c)$.
 
 ## 1 (习题二)
 
-11. 设弧长参数曲线 $\boldsymbol r(s)$ 的曲率 $\kappa>0$，挠率 $\tau>0$，$\boldsymbol b(s)$ 是 $\widetilde C$ 的副法向量，定义曲线 $\widetilde C$：
+11. 设弧长参数曲线 $\boldsymbol r(s)$ 的曲率 $\kappa>0$, 挠率 $\tau>0$, $\boldsymbol b(s)$ 是 $\widetilde C$ 的副法向量, 定义曲线 $\widetilde C$:
 
 $$
 \widetilde{\boldsymbol r}(s)=\int_{0}^{s}\boldsymbol b(u)\mathrm du.
 $$
 
-(1) 证明：$s$ 是曲线 $\widetilde C$ 的弧长参数且 $\widetilde \kappa=\tau,\widetilde \tau=\kappa$；
+(1) 证明: $s$ 是曲线 $\widetilde C$ 的弧长参数且 $\widetilde \kappa=\tau,\widetilde \tau=\kappa$;
 
-(2) 求 $\widetilde C$ 的弗雷内标架。
+(2) 求 $\widetilde C$ 的弗雷内标架.
 
 ### 解答 1-11
 
-设 $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 是曲线 $\boldsymbol r(s)$（记 $C$）的弗雷内标架（**定义 5.3（副法向量与弗雷内标架）**），其中 $\boldsymbol B=\boldsymbol b$。
+设 $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 是曲线 $\boldsymbol r(s)$ (记 $C$) 的弗雷内标架 (**定义 5.3 (副法向量与弗雷内标架)**), 其中 $\boldsymbol B=\boldsymbol b$.
 
-(1) 由微积分基本定理，$\widetilde{\boldsymbol r}'(s)=\boldsymbol b(s)$。因副法向量 $\boldsymbol b$ 是单位向量（**定义 5.3**），故 $\left|\widetilde{\boldsymbol r}'\right|\equiv1$；由**命题 2.4（弧长参数的判别）**，$s$ 是曲线 $\widetilde C$ 的弧长参数。
+(1) 由微积分基本定理, $\widetilde{\boldsymbol r}'(s)=\boldsymbol b(s)$. 因副法向量 $\boldsymbol b$ 是单位向量 (**定义 5.3**), 故 $\left|\widetilde{\boldsymbol r}'\right|\equiv1$; 由**命题 2.4 (弧长参数的判别)**, $s$ 是曲线 $\widetilde C$ 的弧长参数.
 
 于是 $\widetilde C$ 的单位切向量为
 
@@ -46,39 +46,39 @@ $$
 \widetilde{\boldsymbol T}=\frac{\mathrm d\widetilde{\boldsymbol r}}{\mathrm ds}=\boldsymbol b=\boldsymbol B.
 $$
 
-对 $s$ 求导，由**定义 5.4（空间弗雷内方程）**中 $\dot{\boldsymbol B}=-\tau\boldsymbol N$：
+对 $s$ 求导, 由**定义 5.4 (空间弗雷内方程)**中 $\dot{\boldsymbol B}=-\tau\boldsymbol N$:
 
 $$
 \dot{\widetilde{\boldsymbol T}}=\dot{\boldsymbol B}=-\tau\boldsymbol N.
 $$
 
-因 $\tau>0$，由**定义 5.2（曲率与主法向量）**得
+因 $\tau>0$, 由**定义 5.2 (曲率与主法向量)**得
 
 $$
 \widetilde\kappa=\left\|\dot{\widetilde{\boldsymbol T}}\right\|=\tau,\qquad
 \widetilde{\boldsymbol N}=\frac{\dot{\widetilde{\boldsymbol T}}}{\widetilde\kappa}=-\boldsymbol N.
 $$
 
-再由**定义 5.3**，副法向量
+再由**定义 5.3**, 副法向量
 
 $$
 \widetilde{\boldsymbol B}=\widetilde{\boldsymbol T}\wedge\widetilde{\boldsymbol N}
 =\boldsymbol B\wedge(-\boldsymbol N)=-(\boldsymbol B\wedge\boldsymbol N).
 $$
 
-用**基础知识（叉积恒等式）** $(\boldsymbol a\wedge\boldsymbol b)\wedge\boldsymbol c=\boldsymbol b\langle\boldsymbol a,\boldsymbol c\rangle-\boldsymbol a\langle\boldsymbol b,\boldsymbol c\rangle$ 计算 $\boldsymbol B\wedge\boldsymbol N=(\boldsymbol T\wedge\boldsymbol N)\wedge\boldsymbol N=\boldsymbol N\langle\boldsymbol T,\boldsymbol N\rangle-\boldsymbol T\langle\boldsymbol N,\boldsymbol N\rangle=-\boldsymbol T$，故
+用**基础知识 (叉积恒等式)** $(\boldsymbol a\wedge\boldsymbol b)\wedge\boldsymbol c=\boldsymbol b\langle\boldsymbol a,\boldsymbol c\rangle-\boldsymbol a\langle\boldsymbol b,\boldsymbol c\rangle$ 计算 $\boldsymbol B\wedge\boldsymbol N=(\boldsymbol T\wedge\boldsymbol N)\wedge\boldsymbol N=\boldsymbol N\langle\boldsymbol T,\boldsymbol N\rangle-\boldsymbol T\langle\boldsymbol N,\boldsymbol N\rangle=-\boldsymbol T$, 故
 
 $$
 \widetilde{\boldsymbol B}=\boldsymbol T.
 $$
 
-于是 $\dot{\widetilde{\boldsymbol B}}=\dot{\boldsymbol T}=\kappa\boldsymbol N$；又 $\widetilde C$ 的弗雷内方程给出 $\dot{\widetilde{\boldsymbol B}}=-\widetilde\tau\,\widetilde{\boldsymbol N}=-\widetilde\tau(-\boldsymbol N)=\widetilde\tau\boldsymbol N$，对比系数得
+于是 $\dot{\widetilde{\boldsymbol B}}=\dot{\boldsymbol T}=\kappa\boldsymbol N$; 又 $\widetilde C$ 的弗雷内方程给出 $\dot{\widetilde{\boldsymbol B}}=-\widetilde\tau\,\widetilde{\boldsymbol N}=-\widetilde\tau(-\boldsymbol N)=\widetilde\tau\boldsymbol N$, 对比系数得
 
 $$
 \widetilde\tau=\kappa.
 $$
 
-故 $\widetilde\kappa=\tau$，$\widetilde\tau=\kappa$. $\blacksquare$
+故 $\widetilde\kappa=\tau$, $\widetilde\tau=\kappa$. $\blacksquare$
 
 (2) $\widetilde C$ 的弗雷内标架为
 
@@ -90,7 +90,7 @@ $$
 
 ---
 
-12. 给定曲线 $\boldsymbol r(s)$，它的曲率和挠率分别是 $\kappa,\tau$；$\boldsymbol r(s)$ 的单位切向量 $\boldsymbol t(s)$ 可视作单位球面 $S^2$ 上的一条曲线，称为曲线 $\boldsymbol r(s)$ 的切线像。证明：曲线 $\widetilde{\boldsymbol r}(s)=\boldsymbol t(s)$ 的曲率、挠率分别为
+12. 给定曲线 $\boldsymbol r(s)$, 它的曲率和挠率分别是 $\kappa,\tau$; $\boldsymbol r(s)$ 的单位切向量 $\boldsymbol t(s)$ 可视作单位球面 $S^2$ 上的一条曲线, 称为曲线 $\boldsymbol r(s)$ 的切线像. 证明: 曲线 $\widetilde{\boldsymbol r}(s)=\boldsymbol t(s)$ 的曲率, 挠率分别为
 
 $$
 \widetilde{\kappa}=\sqrt{1+\left(\frac{\tau}{\kappa}\right)^2},\quad
@@ -99,24 +99,24 @@ $$
 
 ### 解答 1-12
 
-记 $\boldsymbol\gamma^{*}:=\boldsymbol t=\boldsymbol T$ 为切线像（**例 1.1（切线像，0923 讲义）**）。设 $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 为 $\boldsymbol r$ 的弗雷内标架，并记 $\lambda:=\frac\tau\kappa$。
+记 $\boldsymbol\gamma^{*}:=\boldsymbol t=\boldsymbol T$ 为切线像 (**例 1.1 (切线像, 0923 讲义)**). 设 $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 为 $\boldsymbol r$ 的弗雷内标架, 并记 $\lambda:=\frac\tau\kappa$.
 
-(1) **弧长参数。**由**定义 5.4（空间弗雷内方程）**，$\dot{\boldsymbol\gamma}^{*}=\dot{\boldsymbol T}=\kappa\boldsymbol N$，故
+(1) **弧长参数.**由**定义 5.4 (空间弗雷内方程)**, $\dot{\boldsymbol\gamma}^{*}=\dot{\boldsymbol T}=\kappa\boldsymbol N$, 故
 
 $$
 \mathrm ds^{*}=\left|\frac{\mathrm d\boldsymbol\gamma^{*}}{\mathrm ds}\right|\mathrm ds=\kappa\,\mathrm ds,
 $$
 
-于是 $\boldsymbol\gamma^{*}$ 的单位切向量 $\boldsymbol T^{*}=\frac{\mathrm d\boldsymbol\gamma^{*}}{\mathrm ds^{*}}=\frac1\kappa\dot{\boldsymbol T}=\boldsymbol N$。
+于是 $\boldsymbol\gamma^{*}$ 的单位切向量 $\boldsymbol T^{*}=\frac{\mathrm d\boldsymbol\gamma^{*}}{\mathrm ds^{*}}=\frac1\kappa\dot{\boldsymbol T}=\boldsymbol N$.
 
-(2) **曲率。**对 $s^{*}$ 求导（$\frac{\mathrm d}{\mathrm ds^{*}}=\frac1\kappa\frac{\mathrm d}{\mathrm ds}$）：
+(2) **曲率.**对 $s^{*}$ 求导 ($\frac{\mathrm d}{\mathrm ds^{*}}=\frac1\kappa\frac{\mathrm d}{\mathrm ds}$):
 
 $$
 \frac{\mathrm d\boldsymbol T^{*}}{\mathrm ds^{*}}=\frac1\kappa\dot{\boldsymbol N}
 =\frac1\kappa(-\kappa\boldsymbol T+\tau\boldsymbol B)=-\boldsymbol T+\lambda\boldsymbol B,
 $$
 
-其中用到 $\dot{\boldsymbol N}=-\kappa\boldsymbol T+\tau\boldsymbol B$（**定义 5.4**）。由**定义 5.2（曲率与主法向量）**，$\boldsymbol T\perp\boldsymbol B$ 且均为单位向量，故
+其中用到 $\dot{\boldsymbol N}=-\kappa\boldsymbol T+\tau\boldsymbol B$ (**定义 5.4**). 由**定义 5.2 (曲率与主法向量)**, $\boldsymbol T\perp\boldsymbol B$ 且均为单位向量, 故
 
 $$
 \widetilde\kappa=\left\|\frac{\mathrm d\boldsymbol T^{*}}{\mathrm ds^{*}}\right\|
@@ -125,7 +125,7 @@ $$
 =\sqrt{1+\left(\frac\tau\kappa\right)^{2}}.
 $$
 
-(3) **标架。**主法向与副法向分别为
+(3) **标架.**主法向与副法向分别为
 
 $$
 \boldsymbol N^{*}=\frac{-\boldsymbol T+\lambda\boldsymbol B}{\sqrt{1+\lambda^{2}}},\qquad
@@ -134,9 +134,9 @@ $$
 =\frac{\boldsymbol B+\lambda\boldsymbol T}{\sqrt{1+\lambda^{2}}},
 $$
 
-其中用到 $\boldsymbol N\wedge\boldsymbol T=-\boldsymbol B$，$\boldsymbol N\wedge\boldsymbol B=\boldsymbol T$。
+其中用到 $\boldsymbol N\wedge\boldsymbol T=-\boldsymbol B$, $\boldsymbol N\wedge\boldsymbol B=\boldsymbol T$.
 
-(4) **挠率。**由 $\boldsymbol B^{*}$ 的弗雷内方程 $\frac{\mathrm d\boldsymbol B^{*}}{\mathrm ds^{*}}=-\widetilde\tau\,\boldsymbol N^{*}$ 及 $\dot{\boldsymbol B}=-\tau\boldsymbol N$，$\dot{\boldsymbol T}=\kappa\boldsymbol N$ 计算：
+(4) **挠率.**由 $\boldsymbol B^{*}$ 的弗雷内方程 $\frac{\mathrm d\boldsymbol B^{*}}{\mathrm ds^{*}}=-\widetilde\tau\,\boldsymbol N^{*}$ 及 $\dot{\boldsymbol B}=-\tau\boldsymbol N$, $\dot{\boldsymbol T}=\kappa\boldsymbol N$ 计算:
 
 $$
 \begin{aligned}
@@ -151,7 +151,7 @@ $$
 \end{aligned}
 $$
 
-另一方面 $\boldsymbol T-\lambda\boldsymbol B=-\sqrt{1+\lambda^{2}}\,\boldsymbol N^{*}$，故
+另一方面 $\boldsymbol T-\lambda\boldsymbol B=-\sqrt{1+\lambda^{2}}\,\boldsymbol N^{*}$, 故
 
 $$
 \frac{\mathrm d\boldsymbol B^{*}}{\mathrm ds^{*}}
@@ -167,23 +167,23 @@ $$
 
 ---
 
-16. 设 $P_0$ 是 $E^3$ 的曲线 $\widetilde C$ 上一点，$P$ 是 $\widetilde C$ 上 $P_0$ 的邻近点，$l$ 是 $P_0$ 处的切线；证明：
+16. 设 $P_0$ 是 $E^3$ 的曲线 $\widetilde C$ 上一点, $P$ 是 $\widetilde C$ 上 $P_0$ 的邻近点, $l$ 是 $P_0$ 处的切线; 证明:
 
 $$
 \lim_{P\to P_0}\frac{2d(P,l)}{d^2(P_0,P)}=\kappa(P_0),
 $$
 
-这里 $d$ 表示 $E^3$ 的距离。
+这里 $d$ 表示 $E^3$ 的距离.
 
 ### 解答 1-16
 
-设 $\boldsymbol\gamma=\boldsymbol\gamma(s)$ 以弧长为参数，$P_0=\boldsymbol\gamma(0)$，$P=\boldsymbol\gamma(s)$（$s\to0$）。$l$ 是过 $P_0$、方向为 $\boldsymbol T(0)$ 的直线。由**基础知识（点到直线的距离）**，$P$ 到 $l$ 的距离为
+设 $\boldsymbol\gamma=\boldsymbol\gamma(s)$ 以弧长为参数, $P_0=\boldsymbol\gamma(0)$, $P=\boldsymbol\gamma(s)$ ($s\to0$). $l$ 是过 $P_0$, 方向为 $\boldsymbol T(0)$ 的直线. 由**基础知识 (点到直线的距离)**, $P$ 到 $l$ 的距离为
 
 $$
 d(P,l)=\left|\left(\boldsymbol\gamma(s)-\boldsymbol\gamma(0)\right)\wedge\boldsymbol T(0)\right|.
 $$
 
-由**推导 6.A（密切平面与泰勒展开）**，在 $s_0=0$ 处展开（$\dot{\boldsymbol T}(0)=\kappa(0)\boldsymbol N(0)$，见**定义 5.2**）：
+由**推导 6.A (密切平面与泰勒展开)**, 在 $s_0=0$ 处展开 ($\dot{\boldsymbol T}(0)=\kappa(0)\boldsymbol N(0)$, 见**定义 5.2**):
 
 $$
 \boldsymbol\gamma(s)=\boldsymbol\gamma(0)+s\boldsymbol T(0)+\tfrac{s^{2}}{2}\kappa(0)\boldsymbol N(0)+O\left(s^{3}\right).
@@ -203,21 +203,21 @@ $$
 \end{aligned}
 $$
 
-其中用到 $\boldsymbol T\wedge\boldsymbol T=\boldsymbol0$，$\boldsymbol N\wedge\boldsymbol T=-\boldsymbol B$（**定义 5.3（副法向量与弗雷内标架）**），$\boldsymbol B$ 为单位向量。故
+其中用到 $\boldsymbol T\wedge\boldsymbol T=\boldsymbol0$, $\boldsymbol N\wedge\boldsymbol T=-\boldsymbol B$ (**定义 5.3 (副法向量与弗雷内标架)**), $\boldsymbol B$ 为单位向量. 故
 
 $$
 d(P,l)=\left|\left(\boldsymbol\gamma(s)-\boldsymbol\gamma(0)\right)\wedge\boldsymbol T(0)\right|
 =\tfrac{s^{2}}{2}\kappa(0)+O\left(s^{3}\right).
 $$
 
-又因 $|\boldsymbol T|=1$，弦长
+又因 $|\boldsymbol T|=1$, 弦长
 
 $$
 d(P_0,P)=|\boldsymbol\gamma(s)-\boldsymbol\gamma(0)|
 =\left|s\boldsymbol T(0)+O\left(s^{2}\right)\right|=s+O\left(s^{2}\right),
 $$
 
-故 $d^{2}(P_0,P)=s^{2}+O\left(s^{3}\right)$。因此
+故 $d^{2}(P_0,P)=s^{2}+O\left(s^{3}\right)$. 因此
 
 $$
 \frac{2d(P,l)}{d^{2}(P_0,P)}
@@ -230,17 +230,17 @@ $$
 
 ---
 
-17. 求满足 $\tau=c\kappa$（$c$ 为常数，$\kappa>0$）的曲线。
+17. 求满足 $\tau=c\kappa$ ($c$ 为常数, $\kappa>0$) 的曲线.
 
 ### 解答 1-17
 
-设 $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 为曲线的弗雷内标架（**定义 5.3**）。由**定义 5.4（空间弗雷内方程）**，$\dot{\boldsymbol T}=\kappa\boldsymbol N$，$\dot{\boldsymbol B}=-\tau\boldsymbol N$。定义固定方向的单位向量
+设 $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 为曲线的弗雷内标架 (**定义 5.3**). 由**定义 5.4 (空间弗雷内方程)**, $\dot{\boldsymbol T}=\kappa\boldsymbol N$, $\dot{\boldsymbol B}=-\tau\boldsymbol N$. 定义固定方向的单位向量
 
 $$
 \boldsymbol v:=\frac{c\boldsymbol T+\boldsymbol B}{\sqrt{1+c^{2}}}.
 $$
 
-对其沿弧长求导，代入 $\tau=c\kappa$：
+对其沿弧长求导, 代入 $\tau=c\kappa$:
 
 $$
 \dot{\boldsymbol v}
@@ -251,20 +251,20 @@ $$
 =\boldsymbol0.
 $$
 
-故 $\boldsymbol v$ 是**常向量**。此时
+故 $\boldsymbol v$ 是**常向量**. 此时
 
 $$
 \langle\boldsymbol T,\boldsymbol v\rangle=\left\langle\boldsymbol T,\frac{c\boldsymbol T+\boldsymbol B}{\sqrt{1+c^{2}}}\right\rangle
 =\frac{c}{\sqrt{1+c^{2}}}=\text{常数},
 $$
 
-即切向量 $\boldsymbol T$ 与固定方向 $\boldsymbol v$ 的夹角恒定。
+即切向量 $\boldsymbol T$ 与固定方向 $\boldsymbol v$ 的夹角恒定.
 
-**结论**：满足 $\tau=c\kappa$（$c$ 常数，$\kappa>0$）的曲线恰是**一般螺旋线（general helix）**——即切线与某个固定方向成定角的曲线（等价地，曲线落在以该固定方向为轴的圆柱面上、具恒定螺距）。其中 $\kappa$ 可任意给定，它决定具体的螺旋线形状；若进一步 $\kappa$ 亦为常数，则 $\tau=c\kappa$ 为常数，由**命题 7.2（$\kappa,\tau$ 均正常数 ⟹ 圆柱螺线）**，曲线是**圆柱螺线**。$\blacksquare$
+**结论**: 满足 $\tau=c\kappa$ ($c$ 常数, $\kappa>0$) 的曲线恰是**一般螺旋线 (general helix)**--即切线与某个固定方向成定角的曲线 (等价地, 曲线落在以该固定方向为轴的圆柱面上, 具恒定螺距). 其中 $\kappa$ 可任意给定, 它决定具体的螺旋线形状; 若进一步 $\kappa$ 亦为常数, 则 $\tau=c\kappa$ 为常数, 由**命题 7.2 ($\kappa,\tau$ 均正常数 ⟹ 圆柱螺线)**, 曲线是**圆柱螺线**. $\blacksquare$
 
 ---
 
-19. 求沿曲线的向量场 $\boldsymbol v(s)$，使其同时满足以下各式：
+19. 求沿曲线的向量场 $\boldsymbol v(s)$, 使其同时满足以下各式:
 
 $$
 \begin{aligned}
@@ -276,13 +276,13 @@ $$
 
 ### 解答 1-19
 
-设 $\{\boldsymbol t,\boldsymbol n,\boldsymbol b\}$ 为弗雷内标架（**定义 5.3**）。由**定义 5.4（空间弗雷内方程）**，$\dot{\boldsymbol t}=\kappa\boldsymbol n$，$\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$，$\dot{\boldsymbol b}=-\tau\boldsymbol n$。断言
+设 $\{\boldsymbol t,\boldsymbol n,\boldsymbol b\}$ 为弗雷内标架 (**定义 5.3**). 由**定义 5.4 (空间弗雷内方程)**, $\dot{\boldsymbol t}=\kappa\boldsymbol n$, $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$. 断言
 
 $$
 \boldsymbol v(s)=\tau(s)\,\boldsymbol t(s)+\kappa(s)\,\boldsymbol b(s)
 $$
 
-（此即**达布向量（旋转向量）**）。逐式验证，利用**基础知识（叉积恒等式）** $(\boldsymbol a\wedge\boldsymbol b)\wedge\boldsymbol c=\boldsymbol b\langle\boldsymbol a,\boldsymbol c\rangle-\boldsymbol a\langle\boldsymbol b,\boldsymbol c\rangle$ 及 $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$，$\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$，$\boldsymbol b\wedge\boldsymbol n=-\boldsymbol t$：
+(此即**达布向量 (旋转向量)**). 逐式验证, 利用**基础知识 (叉积恒等式)** $(\boldsymbol a\wedge\boldsymbol b)\wedge\boldsymbol c=\boldsymbol b\langle\boldsymbol a,\boldsymbol c\rangle-\boldsymbol a\langle\boldsymbol b,\boldsymbol c\rangle$ 及 $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$, $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$, $\boldsymbol b\wedge\boldsymbol n=-\boldsymbol t$:
 
 $$
 \begin{aligned}
@@ -295,7 +295,7 @@ $$
 \end{aligned}
 $$
 
-三式全部成立。**唯一性**：若 $\boldsymbol w$ 也满足，则由 $\boldsymbol w\wedge\boldsymbol t=\kappa\boldsymbol n$ 及 $\boldsymbol w\wedge\boldsymbol b=-\tau\boldsymbol n$，设 $\boldsymbol w=\alpha\boldsymbol t+\beta\boldsymbol n+\gamma\boldsymbol b$，则 $\boldsymbol w\wedge\boldsymbol t=\gamma(\boldsymbol b\wedge\boldsymbol t)+$（$\alpha,\beta$ 项）$=\gamma\boldsymbol n+\cdots$，比较 $\boldsymbol n$ 分量得 $\gamma=\kappa$；由 $\boldsymbol w\wedge\boldsymbol b$ 比较得 $\alpha=\tau$；由 $\boldsymbol w\wedge\boldsymbol n$ 比较 $\boldsymbol b$ 分量得 $\beta=0$。故 $\boldsymbol w=\boldsymbol v$ 唯一。
+三式全部成立.**唯一性**: 若 $\boldsymbol w$ 也满足, 则由 $\boldsymbol w\wedge\boldsymbol t=\kappa\boldsymbol n$ 及 $\boldsymbol w\wedge\boldsymbol b=-\tau\boldsymbol n$, 设 $\boldsymbol w=\alpha\boldsymbol t+\beta\boldsymbol n+\gamma\boldsymbol b$, 则 $\boldsymbol w\wedge\boldsymbol t=\gamma(\boldsymbol b\wedge\boldsymbol t)+$ ($\alpha,\beta$ 项)$=\gamma\boldsymbol n+\cdots$, 比较 $\boldsymbol n$ 分量得 $\gamma=\kappa$; 由 $\boldsymbol w\wedge\boldsymbol b$ 比较得 $\alpha=\tau$; 由 $\boldsymbol w\wedge\boldsymbol n$ 比较 $\boldsymbol b$ 分量得 $\beta=0$. 故 $\boldsymbol w=\boldsymbol v$ 唯一.
 
 $$
 \boxed{\;\boldsymbol v(s)=\tau(s)\,\boldsymbol t(s)+\kappa(s)\,\boldsymbol b(s)\;}\quad\blacksquare
@@ -303,13 +303,13 @@ $$
 
 ---
 
-20. 证明：曲线 $\boldsymbol r(t)=(t+\sqrt{3}\sin t,2\cos t,\sqrt{3}t-\sin t)$ 与曲线 $\widetilde{\boldsymbol r}(t)=\left(2\cos\frac{t}{2},2\sin\frac{t}{2},-t\right)$ 是合同的。
+20. 证明: 曲线 $\boldsymbol r(t)=(t+\sqrt{3}\sin t,2\cos t,\sqrt{3}t-\sin t)$ 与曲线 $\widetilde{\boldsymbol r}(t)=\left(2\cos\frac{t}{2},2\sin\frac{t}{2},-t\right)$ 是合同的.
 
 ### 解答 1-20
 
-两曲线**合同**即相差 $\mathbb R^3$ 的一个等距变换。由**定理 5.6（空间曲线基本定理）**，只需证明二者具有相同的曲率与挠率，再用**命题 5.7（一般参数下的曲率与挠率公式）**计算。
+两曲线**合同**即相差 $\mathbb R^3$ 的一个等距变换. 由**定理 5.6 (空间曲线基本定理)**, 只需证明二者具有相同的曲率与挠率, 再用**命题 5.7 (一般参数下的曲率与挠率公式)**计算.
 
-**(1) 曲线 $\boldsymbol r$.** 求导：
+**(1) 曲线 $\boldsymbol r$.** 求导:
 
 $$
 \boldsymbol r'=\left(1+\sqrt3\cos t,\,-2\sin t,\,\sqrt3-\cos t\right),\quad
@@ -335,7 +335,7 @@ w^{2}=\left(-2+2\sqrt3\cos t\right)^{2}+16\sin^{2}t+\left(-2\cos t-2\sqrt3\right
 =16+16\cos^{2}t+16\sin^{2}t=32,
 $$
 
-故 $w=4\sqrt2$。混合积
+故 $w=4\sqrt2$. 混合积
 
 $$
 \left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)
@@ -346,14 +346,14 @@ $$
 \end{pmatrix}=-8.
 $$
 
-由**命题 5.7**：
+由**命题 5.7**:
 
 $$
 \kappa=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14,\qquad
 \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=\frac{-8}{32}=-\frac14.
 $$
 
-**(2) 曲线 $\widetilde{\boldsymbol r}$.** 求导：
+**(2) 曲线 $\widetilde{\boldsymbol r}$.** 求导:
 
 $$
 \widetilde{\boldsymbol r}'=\left(-\sin\tfrac{t}{2},\,\cos\tfrac{t}{2},\,-1\right),\quad
@@ -372,7 +372,7 @@ $$
 \tilde w^{2}=\tfrac14\sin^{2}\tfrac{t}{2}+\tfrac14\cos^{2}\tfrac{t}{2}+\tfrac14=\tfrac12,
 $$
 
-故 $\tilde w=\frac1{\sqrt2}$。混合积
+故 $\tilde w=\frac1{\sqrt2}$. 混合积
 
 $$
 \left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)
@@ -391,7 +391,7 @@ $$
 \tilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\tilde w^{2}}=\frac{-1/8}{1/2}=-\frac14.
 $$
 
-**(3) 结论。**两条曲线的曲率、挠率分别相等：$\kappa=\widetilde\kappa=\frac14$，$\tau=\widetilde\tau=-\frac14$。由**定理 5.6（空间曲线基本定理）**，它们在 $\mathbb R^3$ 中相差一个等距变换，即两曲线**合同**。$\blacksquare$
+**(3) 结论.**两条曲线的曲率, 挠率分别相等: $\kappa=\widetilde\kappa=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 5.6 (空间曲线基本定理)**, 它们在 $\mathbb R^3$ 中相差一个等距变换, 即两曲线**合同**. $\blacksquare$
 
 ---
 
@@ -403,25 +403,25 @@ $$
 \int_\gamma\kappa(s)ds>4\pi.
 $$
 
-思考：是否存在 $\epsilon>0$, 对任何非平凡纽结 $\gamma$, 满足
+思考: 是否存在 $\epsilon>0$, 对任何非平凡纽结 $\gamma$, 满足
 
 $$
 \int_\gamma\kappa(s)ds\ge4\pi+\epsilon.
 $$
 
-若存在, 请证明；若不存在, 请说明理由.
+若存在, 请证明; 若不存在, 请说明理由.
 
 ### 解答 2
 
-**不存在**这样的 $\epsilon>0$。理由如下。
+**不存在**这样的 $\epsilon>0$. 理由如下.
 
-对任意 $\delta>0$，可以构造一条非平凡纽结 $\gamma$，使其全曲率落在区间 $\left(4\pi,\,4\pi+\delta\right)$ 内。构造思路：取一条几乎整段落在一张平面内的闭曲线，它形如一个"平面圆周上打一个微小纽结"的形状——
+对任意 $\delta>0$, 可以构造一条非平凡纽结 $\gamma$, 使其全曲率落在区间 $\left(4\pi,\,4\pi+\delta\right)$ 内. 构造思路: 取一条几乎整段落在一张平面内的闭曲线, 它形如一个"平面圆周上打一个微小纽结"的形状--
 
-- 远离纽结的部分是一段接近整圆的圆弧，其全曲率趋近圆周的全曲率 $2\pi$（由**定理 4.1（芬切尔，0928 讲义）**，平面凸闭曲线取到全曲率下界 $2\pi$）；
-- 微小纽结所在的小段，其切向量几乎额外扫过一整圈（该小段本身作为闭合环，全曲率由芬切尔不等式大于等于 $2\pi$，且随其趋近平面凸环而趋近 $2\pi$）。
+- 远离纽结的部分是一段接近整圆的圆弧, 其全曲率趋近圆周的全曲率 $2\pi$ (由**定理 4.1 (芬切尔, 0928 讲义)**, 平面凸闭曲线取到全曲率下界 $2\pi$);
+- 微小纽结所在的小段, 其切向量几乎额外扫过一整圈 (该小段本身作为闭合环, 全曲率由芬切尔不等式大于等于 $2\pi$, 且随其趋近平面凸环而趋近 $2\pi$).
 
-于是总全曲率趋近 $2\pi+2\pi=4\pi$，且始终严格大于 $4\pi$（因为它是非平凡纽结，法里-米尔诺定理给出 $\int_\gamma\kappa>4\pi$）。取纽结小段足够小，即可使 $\int_\gamma\kappa<4\pi+\delta$。
+于是总全曲率趋近 $2\pi+2\pi=4\pi$, 且始终严格大于 $4\pi$ (因为它是非平凡纽结, 法里-米尔诺定理给出 $\int_\gamma\kappa>4\pi$). 取纽结小段足够小, 即可使 $\int_\gamma\kappa<4\pi+\delta$.
 
-因此对任意 $\delta>0$ 都存在非平凡纽结满足 $4\pi<\int_\gamma\kappa<4\pi+\delta$。若存在题设中的 $\epsilon>0$ 使一切非平凡纽结都有 $\int_\gamma\kappa\ge4\pi+\epsilon$，则取下确界将给出 $\inf_{\text{纽结}}\int_\gamma\kappa\ge4\pi+\epsilon>4\pi$，与上面构造出的、全曲率可以任意接近 $4\pi$ 的纽结矛盾。
+因此对任意 $\delta>0$ 都存在非平凡纽结满足 $4\pi<\int_\gamma\kappa<4\pi+\delta$. 若存在题设中的 $\epsilon>0$ 使一切非平凡纽结都有 $\int_\gamma\kappa\ge4\pi+\epsilon$, 则取下确界将给出 $\inf_{\text{纽结}}\int_\gamma\kappa\ge4\pi+\epsilon>4\pi$, 与上面构造出的, 全曲率可以任意接近 $4\pi$ 的纽结矛盾.
 
-所以，全体非平凡纽结的全曲率的下确界恰为 $4\pi$（Milnor），它被趋近但从不达到；不存在对一切非平凡纽结一致的 $\epsilon>0$. $\blacksquare$
+所以, 全体非平凡纽结的全曲率的下确界恰为 $4\pi$ (Milnor), 它被趋近但从不达到; 不存在对一切非平凡纽结一致的 $\epsilon>0$. $\blacksquare$
