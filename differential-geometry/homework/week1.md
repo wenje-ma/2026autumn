@@ -7,7 +7,7 @@ $$\operatorname{len}\left(\boldsymbol\gamma|_{[t_1,t_2]}\right)=\int_{t_1}^{t_2}
 
 > **定义 3.1** (弗雷内标架) 设 $\boldsymbol\gamma:[0,L]\to\mathbb R^2$ 是以弧长为参数的平面正则曲线, 切向量 $\boldsymbol T(s):=\dot{\boldsymbol\gamma}(s)$ 是单位向量; $\mathbb R^2$ 中存在唯一的单位向量 $\boldsymbol N(s)\perp\boldsymbol T(s)$ 使 $\{\boldsymbol T,\boldsymbol N\}$ 构成右手系, 称为曲线在 $\boldsymbol\gamma(s)$ 处的弗雷内标架.
 
-> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\end{bmatrix}=\begin{bmatrix}0&\kappa\\-\kappa&0\end{bmatrix}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\end{bmatrix},\qquad\dot{\boldsymbol\gamma}=\boldsymbol T.$$
+> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\end{bmatrix}=\begin{bmatrix}0&\kappa\\-\kappa&0\end{bmatrix}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\end{bmatrix},\quad\dot{\boldsymbol\gamma}=\boldsymbol T.$$
 
 > **定义 3.3** (有向曲率) 二维弗雷内方程中的数量函数 $\kappa(s)$ 称为平面曲线的**有向曲率**, 其绝对值 $|\kappa(s)|$ 即通常意义下的曲率.
 
@@ -23,9 +23,7 @@ $$\operatorname{len}\left(\boldsymbol\gamma|_{[t_1,t_2]}\right)=\int_{t_1}^{t_2}
 
 > **定义 5.4** (空间弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}=\begin{bmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{bmatrix}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}.$$
 
-> **命题 5.7** (一般参数下的曲率与挠率公式) 记 $v=|\boldsymbol r'|$, $w=|\boldsymbol r'\times\boldsymbol r''|$, 则
-$$\kappa=\frac{w}{v^{3}},\qquad\tau=\frac{(\boldsymbol r',\boldsymbol r'',\boldsymbol r''')}{w^{2}},$$
-其中 $(\boldsymbol a,\boldsymbol b,\boldsymbol c):=\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\rangle=\det(\boldsymbol a,\boldsymbol b,\boldsymbol c)$ 为混合积.
+> **命题 5.7** (一般参数下的曲率与挠率公式) 记 $v=|\boldsymbol r'|$, $w=|\boldsymbol r'\times\boldsymbol r''|$, 则 $$\kappa=\frac{w}{v^{3}},\quad\tau=\frac{(\boldsymbol r',\boldsymbol r'',\boldsymbol r''')}{w^{2}},$$ 其中 $(\boldsymbol a,\boldsymbol b,\boldsymbol c):=\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\rangle=\det(\boldsymbol a,\boldsymbol b,\boldsymbol c)$ 为混合积.
 
 > **命题 6.2** (挠率衡量离平面程度) $\tau\equiv0$ 当且仅当 $\boldsymbol\gamma$ 是平面曲线.
 

@@ -16,7 +16,7 @@
 
 > **命题 7.2** ($\kappa,\tau$ 均正常数 ⟹ 圆柱螺线) 曲率, 挠率均为正常数的空间曲线一定是圆柱螺线 (由空间曲线基本定理, 等距意义下唯一).
 
-> **例 1.1** (切线像, 0923 讲义) 设 $\boldsymbol\gamma^{*}:=\boldsymbol T$ 是 $\boldsymbol\gamma$ 的切线像, 以 $s^{*}$ (满足 $\mathrm ds^{*}=\kappa\,\mathrm ds$) 为弧长参数时, 其曲率与挠率为 $$\kappa^{*}=\sqrt{1+\left(\frac\tau\kappa\right)^{2}},\qquad \tau^{*}=\frac1\kappa\cdot\frac{\left(\frac\tau\kappa\right)'}{1+\left(\frac\tau\kappa\right)^{2}}.$$
+> **例 1.1** (切线像, 0923 讲义) 设 $\boldsymbol\gamma^{*}:=\boldsymbol T$ 是 $\boldsymbol\gamma$ 的切线像, 以 $s^{*}$ (满足 $\mathrm ds^{*}=\kappa\,\mathrm ds$) 为弧长参数时, 其曲率与挠率为 $$\kappa^{*}=\sqrt{1+\left(\frac\tau\kappa\right)^{2}},\quad \tau^{*}=\frac1\kappa\cdot\frac{\left(\frac\tau\kappa\right)'}{1+\left(\frac\tau\kappa\right)^{2}}.$$
 
 > **定理 4.1** (芬切尔, 0928 讲义) 设 $\boldsymbol\gamma:[0,L]\to E^3$ 是正则闭曲线, 则全曲率 $\int_{\boldsymbol\gamma}\kappa(s)\,\mathrm ds\ge2\pi$, 等号当且仅当 $\boldsymbol\gamma$ 是平面凸闭曲线.
 
@@ -55,7 +55,7 @@ $$
 因 $\tau>0$, 由**定义 5.2 (曲率与主法向量)**得
 
 $$
-\widetilde\kappa=\left\|\dot{\widetilde{\boldsymbol T}}\right\|=\tau,\qquad
+\widetilde\kappa=\left\|\dot{\widetilde{\boldsymbol T}}\right\|=\tau,\quad
 \widetilde{\boldsymbol N}=\frac{\dot{\widetilde{\boldsymbol T}}}{\widetilde\kappa}=-\boldsymbol N.
 $$
 
@@ -83,8 +83,8 @@ $$
 (2) $\widetilde C$ 的弗雷内标架为
 
 $$
-\boxed{\;\widetilde{\boldsymbol T}=\boldsymbol b=\boldsymbol B,\qquad
-\widetilde{\boldsymbol N}=-\boldsymbol N,\qquad
+\boxed{\;\widetilde{\boldsymbol T}=\boldsymbol b=\boldsymbol B,\quad
+\widetilde{\boldsymbol N}=-\boldsymbol N,\quad
 \widetilde{\boldsymbol B}=\boldsymbol T\;}\quad\blacksquare
 $$
 
@@ -128,7 +128,7 @@ $$
 (3) **标架.**主法向与副法向分别为
 
 $$
-\boldsymbol N^{*}=\frac{-\boldsymbol T+\lambda\boldsymbol B}{\sqrt{1+\lambda^{2}}},\qquad
+\boldsymbol N^{*}=\frac{-\boldsymbol T+\lambda\boldsymbol B}{\sqrt{1+\lambda^{2}}},\quad
 \boldsymbol B^{*}=\boldsymbol T^{*}\wedge\boldsymbol N^{*}
 =\boldsymbol N\wedge\frac{-\boldsymbol T+\lambda\boldsymbol B}{\sqrt{1+\lambda^{2}}}
 =\frac{\boldsymbol B+\lambda\boldsymbol T}{\sqrt{1+\lambda^{2}}},
@@ -161,7 +161,7 @@ $$
 对比 $-\widetilde\tau\,\boldsymbol N^{*}$ 得
 
 $$
-\boxed{\;\widetilde\kappa=\sqrt{1+\left(\frac\tau\kappa\right)^{2}},\qquad
+\boxed{\;\widetilde\kappa=\sqrt{1+\left(\frac\tau\kappa\right)^{2}},\quad
 \widetilde\tau=\frac1\kappa\cdot\frac{\left(\frac\tau\kappa\right)'}{1+\left(\frac\tau\kappa\right)^{2}}\;}\quad\blacksquare
 $$
 
@@ -223,7 +223,7 @@ $$
 \frac{2d(P,l)}{d^{2}(P_0,P)}
 =\frac{2\left[\frac{s^{2}}{2}\kappa(0)+O\left(s^{3}\right)\right]}{s^{2}+O\left(s^{3}\right)}
 =\kappa(0)\cdot\frac{1+O\left(s\right)}{1+O\left(s\right)}
-\longrightarrow\kappa(0)=\kappa(P_0),\qquad s\to0.
+\longrightarrow\kappa(0)=\kappa(P_0),\quad s\to0.
 $$
 
 即 $\lim_{P\to P_0}\dfrac{2d(P,l)}{d^{2}(P_0,P)}=\kappa(P_0)$. $\blacksquare$
@@ -349,7 +349,7 @@ $$
 由**命题 5.7**:
 
 $$
-\kappa=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14,\qquad
+\kappa=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14,\quad
 \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=\frac{-8}{32}=-\frac14.
 $$
 
@@ -362,13 +362,13 @@ $$
 $$
 
 $$
-\tilde v^{2}=\sin^{2}\tfrac{t}{2}+\cos^{2}\tfrac{t}{2}+1=2,\qquad \tilde v=\sqrt2.
+\tilde v^{2}=\sin^{2}\tfrac{t}{2}+\cos^{2}\tfrac{t}{2}+1=2,\quad \tilde v=\sqrt2.
 $$
 
 $$
 \widetilde{\boldsymbol r}'\wedge\widetilde{\boldsymbol r}''
 =\left(-\tfrac12\sin\tfrac{t}{2},\,\tfrac12\cos\tfrac{t}{2},\,\tfrac12\right),
-\qquad
+\quad
 \tilde w^{2}=\tfrac14\sin^{2}\tfrac{t}{2}+\tfrac14\cos^{2}\tfrac{t}{2}+\tfrac14=\tfrac12,
 $$
 
@@ -387,7 +387,7 @@ $$
 故
 
 $$
-\tilde\kappa=\frac{\tilde w}{\tilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14,\qquad
+\tilde\kappa=\frac{\tilde w}{\tilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14,\quad
 \tilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\tilde w^{2}}=\frac{-1/8}{1/2}=-\frac14.
 $$
 
