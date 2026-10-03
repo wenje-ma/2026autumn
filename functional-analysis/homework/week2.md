@@ -427,13 +427,13 @@ $$
 &\Leftrightarrow\int\left|f\right|^2\omega=0\\
 &\Leftrightarrow \left|f\right|^2\omega=0\text{ a.e.}\\
 &\Leftrightarrow f=0\text{ a.e.}\\
-&\Leftrightarrow f=0\text{ (在等价类意义下)}.
+&\Leftrightarrow f=0\text{ \left(在等价类意义下\right)}.
 \end{aligned}
 $$
 
 故 $\left\langle\cdot,\cdot\right\rangle$ 是 $H$ 上的内积.
 
-**完备性.** 设 $\left\{f_n\right\}$ 是 $H$ 中的基本点列, 即 $\left\|f_n-f_m\right\|_H^2=\int\left|f_n-f_m\right|^2\omega\mathrm dt\to0$. 由于 $L^p(E)$ 已知完备 (**例 1.2.8**), 故考虑构造保范映射 $f\mapsto f\sqrt{\omega}: H \to L^2(\mathbb R)$ 将 $H$ 放到 $L^p(E)$ 中再拉回即可: 则 $f_n\sqrt{\omega}\in L^2\left(\mathbb R,\mathrm dm\right)$ 且
+**完备性.** 设 $\left\{f_n\right\}$ 是 $H$ 中的基本点列, 即 $\left\|f_n-f_m\right\|_H^2=\int\left|f_n-f_m\right|^2\omega\mathrm dt\to0$. 由于 $L^p\left(E\right)$ 已知完备 (**例 1.2.8**), 故考虑构造保范映射 $f\mapsto f\sqrt{\omega}: H \to L^2\left(\mathbb R\right)$ 将 $H$ 放到 $L^p\left(E\right)$ 中再拉回即可: 则 $f_n\sqrt{\omega}\in L^2\left(\mathbb R,\mathrm dm\right)$ 且
 
 $$
 \left\|f_n\sqrt{\omega}-f_m\sqrt{\omega}\right\|_{L^2\left(\mathbb R\right)}^2=\int\left|f_n-f_m\right|^2\omega\mathrm dt=\left\|f_n-f_m\right\|_H^2\to0,

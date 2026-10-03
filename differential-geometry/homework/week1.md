@@ -1,37 +1,35 @@
 # 作业 1
 
-> **定义 2.1** (弧长) 设 $\boldsymbol\gamma:[a,b]\to\mathbb R^n$ 是一条简单 $C^k$ 曲线, 则其在参数区间 $[t_1,t_2]$ 上的弧长为
-$$\operatorname{len}\left(\boldsymbol\gamma|_{[t_1,t_2]}\right)=\int_{t_1}^{t_2}|\boldsymbol\gamma'(t)|\,\mathrm dt.$$
+> **定义 2.1** (弧长) 设 $\boldsymbol\gamma:\left[a,b\right]\to\mathbb R^n$ 是一条简单 $C^k$ 曲线, 则其在参数区间 $\left[t_1,t_2\right]$ 上的弧长为
+$$\operatorname{len}\left(\boldsymbol\gamma|_{\left[t_1,t_2\right]}\right)=\int_{t_1}^{t_2}|\boldsymbol\gamma'\left(t\right)|\,\mathrm dt.$$
 
-> **命题 2.2** (弧长与参数选取无关) 弧长 $\operatorname{len}(\boldsymbol\gamma|_{[t_1,t_2]})$ 的值不依赖于曲线的参数化方式.
+> **命题 2.2** (弧长与参数选取无关) 弧长 $\operatorname{len}\left(\boldsymbol\gamma|_{\left[t_1,t_2\right]}\right)$ 的值不依赖于曲线的参数化方式.
 
-> **定义 3.1** (弗雷内标架) 设 $\boldsymbol\gamma:[0,L]\to\mathbb R^2$ 是以弧长为参数的平面正则曲线, 切向量 $\boldsymbol T(s):=\dot{\boldsymbol\gamma}(s)$ 是单位向量; $\mathbb R^2$ 中存在唯一的单位向量 $\boldsymbol N(s)\perp\boldsymbol T(s)$ 使 $\{\boldsymbol T,\boldsymbol N\}$ 构成右手系, 称为曲线在 $\boldsymbol\gamma(s)$ 处的弗雷内标架.
+> **定义 3.1** (弗雷内标架) 设 $\boldsymbol\gamma:\left[0,L\right]\to\mathbb R^2$ 是以弧长为参数的平面正则曲线, 切向量 $\boldsymbol T\left(s\right):=\dot{\boldsymbol\gamma}\left(s\right)$ 是单位向量; $\mathbb R^2$ 中存在唯一的单位向量 $\boldsymbol N\left(s\right)\perp\boldsymbol T\left(s\right)$ 使 $\left\{\boldsymbol T,\boldsymbol N\right\}$ 构成右手系, 称为曲线在 $\boldsymbol\gamma\left(s\right)$ 处的弗雷内标架.
 
 > **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\end{bmatrix}=\begin{bmatrix}0&\kappa\\-\kappa&0\end{bmatrix}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\end{bmatrix},\quad\dot{\boldsymbol\gamma}=\boldsymbol T.$$
 
-> **定义 3.3** (有向曲率) 二维弗雷内方程中的数量函数 $\kappa(s)$ 称为平面曲线的**有向曲率**, 其绝对值 $|\kappa(s)|$ 即通常意义下的曲率.
+> **定义 3.3** (有向曲率) 二维弗雷内方程中的数量函数 $\kappa\left(s\right)$ 称为平面曲线的**有向曲率**, 其绝对值 $\left|\kappa\left(s\right)\right|$ 即通常意义下的曲率.
 
-> **定义 4.1** (等距变换) 映射 $F:\mathbb R^2\to\mathbb R^2$ 若保持欧氏距离, 则称平面等距变换, 均可写为 $F(\boldsymbol x)=\boldsymbol A\boldsymbol x+\boldsymbol b$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$; $\det\boldsymbol A=1$ 称**保向等距变换**, $\det\boldsymbol A=-1$ 称**反向等距变换**.
+> **定义 4.1** (等距变换) 映射 $F:\mathbb R^2\to\mathbb R^2$ 若保持欧氏距离, 则称平面等距变换, 均可写为 $F\left(\boldsymbol x\right)=\boldsymbol A\boldsymbol x+\boldsymbol b$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$; $\det\boldsymbol A=1$ 称**保向等距变换**, $\det\boldsymbol A=-1$ 称**反向等距变换**.
 
-> **定理 4.2** (平面曲线基本定理)  (1) 设 $\boldsymbol\gamma_1,\boldsymbol\gamma_2:[0,L]\to\mathbb R^2$ 均以弧长为参数且 $\boldsymbol\gamma_2=\boldsymbol A\boldsymbol\gamma_1+\boldsymbol\beta_0$ ($\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$), 则 $\kappa_1(s)=\kappa_2(s)$; (2) 给定 $\bar\kappa\in C^1([0,L])$, 在保向等距变换的意义下存在唯一的正则曲线以 $\bar\kappa$ 为有向曲率.
+> **定理 4.2** (平面曲线基本定理)  (1) 设 $\boldsymbol\gamma_1,\boldsymbol\gamma_2:\left[0,L\right]\to\mathbb R^2$ 均以弧长为参数且 $\boldsymbol\gamma_2=\boldsymbol A\boldsymbol\gamma_1+\boldsymbol\beta_0$ ($\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$), 则 $\kappa_1\left(s\right)=\kappa_2\left(s\right)$; (2) 给定 $\bar\kappa\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\bar\kappa$ 为有向曲率.
 
-> **命题 5.1** (直线段刻画) 设 $\boldsymbol\gamma$ 是正则 $C^k$ 曲线, $s$ 为弧长, $\boldsymbol T=\dot{\boldsymbol\gamma}$, 则在一段区间 $[a,b]$ 上 $\dot{\boldsymbol T}|_{[a,b]}\equiv\boldsymbol 0$ 当且仅当 $\boldsymbol\gamma$ 在该段上是直线段.
+> **命题 5.1** (直线段刻画) 设 $\boldsymbol\gamma$ 是正则 $C^k$ 曲线, $s$ 为弧长, $\boldsymbol T=\dot{\boldsymbol\gamma}$, 则在一段区间 $\left[a,b\right]$ 上 $\dot{\boldsymbol T}|_{\left[a,b\right]}\equiv\boldsymbol 0$ 当且仅当 $\boldsymbol\gamma$ 在该段上是直线段.
 
-> **定义 5.2** (曲率与主法向量) 若 $\dot{\boldsymbol T}$ 处处非零, 则 $\boldsymbol N(s):=\dot{\boldsymbol T}(s)/\|\dot{\boldsymbol T}(s)\|$ 为主法向量, $\kappa(s):=\langle\dot{\boldsymbol T},\boldsymbol N\rangle=\|\dot{\boldsymbol T}(s)\|$ 为曲率, 满足 $\dot{\boldsymbol T}=\kappa\boldsymbol N$.
+> **定义 5.2** (曲率与主法向量) 若 $\dot{\boldsymbol T}$ 处处非零, 则 $\boldsymbol N\left(s\right):=\dot{\boldsymbol T}\left(s\right)/\left\|\dot{\boldsymbol T}\left(s\right)\right\|$ 为主法向量, $\kappa\left(s\right):=\left\langle\dot{\boldsymbol T},\boldsymbol N\right\rangle=\left\|\dot{\boldsymbol T}\left(s\right)\right\|$ 为曲率, 满足 $\dot{\boldsymbol T}=\kappa\boldsymbol N$.
 
-> **定义 5.3** (副法向量与弗雷内标架) $\boldsymbol B(s):=\boldsymbol T(s)\times\boldsymbol N(s)$ 为副法向量, $\{\boldsymbol T,\boldsymbol N,\boldsymbol B\}$ 构成右手单位正交系, 称为弗雷内标架.
+> **定义 5.3** (副法向量与弗雷内标架) $\boldsymbol B\left(s\right):=\boldsymbol T\left(s\right)\times\boldsymbol N\left(s\right)$ 为副法向量, $\left\{\boldsymbol T,\boldsymbol N,\boldsymbol B\right\}$ 构成右手单位正交系, 称为弗雷内标架.
 
 > **定义 5.4** (空间弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}=\begin{bmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{bmatrix}\begin{bmatrix}\boldsymbol T\\\boldsymbol N\\\boldsymbol B\end{bmatrix}.$$
 
-> **命题 5.7** (一般参数下的曲率与挠率公式) 记 $v=|\boldsymbol r'|$, $w=|\boldsymbol r'\times\boldsymbol r''|$, 则 $$\kappa=\frac{w}{v^{3}},\quad\tau=\frac{(\boldsymbol r',\boldsymbol r'',\boldsymbol r''')}{w^{2}},$$ 其中 $(\boldsymbol a,\boldsymbol b,\boldsymbol c):=\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\rangle=\det(\boldsymbol a,\boldsymbol b,\boldsymbol c)$ 为混合积.
+> **命题 5.7** (一般参数下的曲率与挠率公式) 记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则 $$\kappa=\frac{w}{v^{3}},\quad\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},$$ 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
 
 > **命题 6.2** (挠率衡量离平面程度) $\tau\equiv0$ 当且仅当 $\boldsymbol\gamma$ 是平面曲线.
 
-> **命题 3.1** (球面曲线判定, 0923 讲义) 设 $\boldsymbol\gamma$ 以弧长为参数且 $\kappa,\tau$ 处处非零, 则 $\boldsymbol\gamma$ 是球面曲线当且仅当
-$$\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\frac{\mathrm d}{\mathrm ds}\frac1\kappa\right)^{2}\equiv\text{常数}>0.$$
-此时有分解 $\boldsymbol\gamma=-\frac1\kappa\,\boldsymbol N-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol B$, 从而 $\|\boldsymbol\gamma\|^{2}=\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\left(\frac1\kappa\right)'\right)^{2}$.
+> **命题 3.1** (球面曲线判定, 0923 讲义) 设 $\boldsymbol\gamma$ 以弧长为参数且 $\kappa,\tau$ 处处非零, 则 $\boldsymbol\gamma$ 是球面曲线当且仅当 $$\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\frac{\mathrm d}{\mathrm ds}\frac1\kappa\right)^{2}\equiv\text{常数}>0.$$ 此时有分解 $\boldsymbol\gamma=-\frac1\kappa\,\boldsymbol N-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol B$, 从而 $\left\|\boldsymbol\gamma\right\|^{2}=\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\left(\frac1\kappa\right)'\right)^{2}$.
 
-> **基础知识** 内积求导法则 $\frac{\mathrm d}{\mathrm dt}\langle\boldsymbol a,\boldsymbol a\rangle=2\langle\boldsymbol a,\boldsymbol a'\rangle$; 微积分基本定理与 $\left|\int f\right|\le\int|f|$; 常微分方程初值问题解的存在唯一性.
+> **基础知识** 内积求导法则 $\frac{\mathrm d}{\mathrm dt}\left\langle\boldsymbol a,\boldsymbol a\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle$; 微积分基本定理与 $\left|\int f\right|\le\int\left|f\right|$; 常微分方程初值问题解的存在唯一性.
 
 ## 1
 
